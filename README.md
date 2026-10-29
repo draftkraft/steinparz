@@ -30,3 +30,9 @@ Zimmerdaten laut Betreiber: sieben Zimmer mit fünf Doppelbetten und zwei Einzel
 Gästestimmen: kurze Originalauszüge von Kath (August 2026), Lara (August 2026) und Anja Teresa (Juni 2026) aus den im Airbnb-Inserat gelesenen Bewertungen. Ergänzungen sind als sinngemäße Zusammenfassungen gekennzeichnet und zur Quelle verlinkt.
 
 Geprüft: JavaScript-Syntax, lokale Bilddateien, interne Sprungziele, korrigierte Zimmerdaten sowie Desktop-Darstellung und Tastaturbedienung der Galerie in Safari. Mobile Regeln sind implementiert; eine Prüfung auf einem echten Mobilgerät steht aus.
+
+## Visuelle Überarbeitung
+
+Neue, durchgängige Gestaltung mit bildschirmfüllenden Natur-, Garten-, Winter- und Buchungsabschnitten, geteilten Bildkapiteln und horizontalem Galerierundgang. Die mobile Navigation öffnet als Vollbildfläche; ein dezenter Fortschrittsbalken zeigt die Leseposition. CSS wurde vollständig konsolidiert.
+
+Geprüft in Safari: Desktop-Einstieg sowie Responsive Design Mode mit 390 × 844 px, Menü öffnen und Sprungziel auswählen, horizontaler Galerierundgang. Außerdem HTML-Struktur, lokale Assets, Sprungziele und JavaScript-Syntax geprüft. Dies ersetzt keinen Test auf einem physischen Mobilgerät.

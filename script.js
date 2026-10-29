@@ -54,3 +54,44 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   });
   document.documentElement.classList.add('motion-ready');
 }
+
+const menuButton = document.querySelector('.menu-toggle');
+function closeMenu() {
+  document.body.classList.remove('menu-open');
+  menuButton.setAttribute('aria-expanded', 'false');
+}
+menuButton.addEventListener('click', () => {
+  const open = document.body.classList.toggle('menu-open');
+  menuButton.setAttribute('aria-expanded', String(open));
+});
+document.querySelectorAll('#main-nav a').forEach(link => link.addEventListener('click', closeMenu));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && document.body.classList.contains('menu-open')) {
+    closeMenu();
+    menuButton.focus();
+  }
+});
+matchMedia('(min-width: 701px)').addEventListener('change', event => {
+  if (event.matches) closeMenu();
+});
+const track = document.querySelector('.gallery-track');
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+for (const [selector, direction] of [['.strip-prev', -1], ['.strip-next', 1]]) {
+  document.querySelector(selector).addEventListener('click', () => {
+    track.scrollBy({ left: direction * track.clientWidth * 0.72, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+  });
+}
+let progressQueued = false;
+function updateProgress() {
+  const height = document.documentElement.scrollHeight - innerHeight;
+  document.querySelector('.reading-progress').style.transform = `scaleX(${height > 0 ? Math.min(1, Math.max(0, scrollY / height)) : 0})`;
+  progressQueued = false;
+}
+addEventListener('scroll', () => {
+  if (!progressQueued) {
+    progressQueued = true;
+    requestAnimationFrame(updateProgress);
+  }
+}, { passive: true });
+addEventListener('resize', updateProgress);
+updateProgress();
