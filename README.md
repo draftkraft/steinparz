@@ -1,38 +1,51 @@
 # Teichhof Steinparz
 
-Responsive deutschsprachige Website für das Ferienhaus Teichhof in Steinparz, Niederösterreich. Statisches HTML, CSS und JavaScript; keine Installation, kein Build und keine externen Laufzeit-Abhängigkeiten.
+Statische, mehrsprachige Website für das Ferienhaus Teichhof in Steinparz, Niederösterreich. Veröffentlicht über GitHub Pages mit der Custom Domain `steinparz.com`.
 
-## Lokal ansehen
+## Inhalte bearbeiten
+
+Die gemeinsame HTML-Vorlage liegt in `site/template.html`; Texte, Metadaten, Bildbeschreibungen und Fragen/Antworten liegen in `site/locales/{sprache}.json`. Die generierten HTML-Seiten nicht direkt bearbeiten.
+
+Sprachen: Deutsch (`/`), Englisch (`/en/`), Italienisch (`/it/`), Französisch (`/fr/`), Slowenisch (`/sl/`), Ungarisch (`/hu/`), Tschechisch (`/cs/`) und Slowakisch (`/sk/`). Der Sprachumschalter ändert die URL; es gibt keine automatische Weiterleitung anhand der Browsersprache.
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -r requirements-dev.txt
+.venv/bin/python scripts/build_site.py
+.venv/bin/python scripts/check_site.py
+node --check script.js
+```
+
+Danach die generierten HTML-Dateien zusammen mit Vorlage und Übersetzungen committen. GitHub Pages liefert die fertigen Dateien aus; `.nojekyll` verhindert die Verarbeitung der Vorlage durch Jekyll. Das Deployment braucht keine Python-Pakete.
+
+## Lokale Vorschau
 
 ```sh
 python3 -m http.server 8080
 ```
 
-Danach http://localhost:8080 öffnen. Alternativ `index.html` direkt im Browser öffnen.
+http://localhost:8080 öffnen. Die Sprachlinks brauchen einen Server mit diesem Ordner als Root. Direkte `file://`-Vorschauen zeigen die einzelnen Seiten und ihre relativen Assets, unterstützen aber keine absoluten Sprachlinks.
 
-## Inhalt
+## Suche und Sprachversionen
 
-- Originalbilder, Unterkunftsdaten und Buchungslink aus dem [Airbnb-Inserat](https://www.airbnb.de/rooms/1211640025110560668), abgerufen am 29.10.2026.
-- Responsive Darstellung, tastaturbedienbare Fotogalerie, native Dialog-Fokusführung und reduzierte Animation bei entsprechender Systemeinstellung.
-- Keine Tracking-Skripte, extern geladenen Schriftarten oder eingebetteten Karten. Airbnb und Google Maps werden erst beim Öffnen der Links aufgerufen.
-- Preise und Verfügbarkeit werden direkt auf Airbnb angezeigt.
+- Jede Sprache hat eine eigene URL, einen lokalisierten Titel, eine Beschreibung und `lang`-Kennzeichnung.
+- Selbstreferenzierende Canonicals, gegenseitige `hreflang`-Links und `x-default` sowie eine mehrsprachige `sitemap.xml`.
+- `robots.txt` erlaubt die öffentlichen Seiten und Assets; Vorlage und Buildskripte sind vom Crawling ausgeschlossen.
+- JSON-LD beschreibt Website, Sprachseite und Unterkunft (`LodgingBusiness`/`Accommodation`). Keine erfundenen Preise, Straßenadressen, Sterne oder Belegungszahlen; keine Zusage von Google-Rich-Results.
+- Bilder haben übersetzte Beschreibungen, feste Abmessungen und verzögertes Laden unterhalb des Einstiegs. Das ursprüngliche Titelmotiv hat WebP-Varianten in 960, 1600 und 2560 Pixel Breite.
+- Sitemap nach Domain-Verifizierung in Google Search Console unter `https://steinparz.com/sitemap.xml` einreichen. Indexierung und Rankings hängen von Suchmaschinen ab.
+- HTTPS muss auf der Domain ein gültiges Zertifikat ausliefern, bevor HTTPS-Canonicals von Suchmaschinen zuverlässig abgerufen werden können.
 
-## Hosting
+## Gestaltung
 
-Den gesamten Ordner als statische Website bereitstellen. Alle Asset-Pfade sind relativ und funktionieren auch unter einem Repository-Unterpfad. Vor einer öffentlichen kommerziellen Veröffentlichung sind die tatsächlichen Betreiberangaben für Impressum und Datenschutz zu ergänzen; diese wurden nicht erfunden.
+Bildschirmfüllende Natur-, Garten-, Winter- und Buchungsabschnitte; geteilte Bildkapitel; mobile Vollbildnavigation. Die Galerie zeigt alle sechs Motive in einer vertikalen Bildfolge ohne seitliches Scrollen. Einzelbilder öffnen sich in einem Dialog mit Pfeiltastensteuerung, Escape, Fokus-Rückgabe und Bildzähler. Animationen respektieren reduzierte Bewegung; das Scrollen bleibt nativ.
 
-## Gestaltung und Inhalt (Update)
+## Quellen und bestätigte Angaben
 
-Bildschirmfüllender Einstieg mit einem 2560 px breiten Originalbild, Bildkapitel zu Natur und Familienzeit, Wintermotiv und eine Galerie mit sechs Bildern. Die Galerie unterstützt Pfeiltasten, Escape, Fokus-Rückgabe und einen Bildzähler. Dezente Einblendungen respektieren reduzierte Bewegung; das Scrollen bleibt nativ.
+Originalfotos aus dem vom Betreiber bereitgestellten Bildordner sowie dem [Airbnb-Inserat](https://www.airbnb.de/rooms/1211640025110560668). Die publizierten WebP-Dateien enthalten keine übernommenen EXIF-Metadaten. Das ursprüngliche Startmotiv bleibt erhalten; Steg und Abendhaus haben eigene Aufnahmen.
 
-Zimmerdaten laut Betreiber: sieben Zimmer mit fünf Doppelbetten und zwei Einzelbetten. Die buchbare Belegung wird weiterhin über Airbnb angegeben. Ruderboot und Tierwelt basieren auf Betreiberangaben; Tierbeobachtungen werden nicht zugesichert.
+Betreiberangaben: sieben Zimmer, fünf Doppelbetten, zwei Einzelbetten, Ruderboot und Tierwelt. Drei Badezimmer laut Inserat. Die buchbare Gästezahl, Preise und Hausregeln stehen weiterhin auf Airbnb. Tierbeobachtungen werden nicht zugesichert.
 
-Gästestimmen: kurze Originalauszüge von Kath (August 2026), Lara (August 2026) und Anja Teresa (Juni 2026) aus den im Airbnb-Inserat gelesenen Bewertungen. Ergänzungen sind als sinngemäße Zusammenfassungen gekennzeichnet und zur Quelle verlinkt.
+Gästestimmen: kurze Originalauszüge von Kath (August 2026), Lara (August 2026) und Anja Teresa (Juni 2026). Ergänzende Beschreibungen sind sinngemäße Zusammenfassungen. Auf anderen Sprachseiten sind die Auszüge als Übersetzungen aus dem Deutschen gekennzeichnet.
 
-Geprüft: JavaScript-Syntax, lokale Bilddateien, interne Sprungziele, korrigierte Zimmerdaten sowie Desktop-Darstellung und Tastaturbedienung der Galerie in Safari. Mobile Regeln sind implementiert; eine Prüfung auf einem echten Mobilgerät steht aus.
-
-## Visuelle Überarbeitung
-
-Neue, durchgängige Gestaltung mit bildschirmfüllenden Natur-, Garten-, Winter- und Buchungsabschnitten, geteilten Bildkapiteln und horizontalem Galerierundgang. Die mobile Navigation öffnet als Vollbildfläche; ein dezenter Fortschrittsbalken zeigt die Leseposition. CSS wurde vollständig konsolidiert.
-
-Geprüft in Safari: Desktop-Einstieg sowie Responsive Design Mode mit 390 × 844 px, Menü öffnen und Sprungziel auswählen, horizontaler Galerierundgang. Außerdem HTML-Struktur, lokale Assets, Sprungziele und JavaScript-Syntax geprüft. Dies ersetzt keinen Test auf einem physischen Mobilgerät.
+Keine Tracking-Skripte, extern geladenen Schriften oder eingebetteten Karten. Betreiberangaben für Impressum und Datenschutz wurden nicht erfunden und müssen vom Betreiber ergänzt werden.

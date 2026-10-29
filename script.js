@@ -71,16 +71,9 @@ document.addEventListener('keydown', event => {
     menuButton.focus();
   }
 });
-matchMedia('(min-width: 701px)').addEventListener('change', event => {
+matchMedia('(min-width: 1101px)').addEventListener('change', event => {
   if (event.matches) closeMenu();
 });
-const track = document.querySelector('.gallery-track');
-const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-for (const [selector, direction] of [['.strip-prev', -1], ['.strip-next', 1]]) {
-  document.querySelector(selector).addEventListener('click', () => {
-    track.scrollBy({ left: direction * track.clientWidth * 0.72, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
-  });
-}
 let progressQueued = false;
 function updateProgress() {
   const height = document.documentElement.scrollHeight - innerHeight;
@@ -95,3 +88,8 @@ addEventListener('scroll', () => {
 }, { passive: true });
 addEventListener('resize', updateProgress);
 updateProgress();
+
+document.querySelector('.language-select').addEventListener('change', event => {
+  const target = event.target.value;
+  if (/^\/(?:en|it|fr|sl|hu|cs|sk)?\/?$/.test(target)) location.assign(target + location.hash);
+});

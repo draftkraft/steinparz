@@ -1,0 +1,3 @@
+# Build and checks only; the published website has no Python dependencies.
+beautifulsoup4>=4.15,<5
+Pillow>=13,<14
