@@ -20,7 +20,7 @@ for lang in langs:
     assert alternatives == {**urls,'x-default':urls['de']}
     assert page.select_one('meta[name="robots"]')['content'].startswith('index,follow')
     assert page.select_one('meta[name="description"]')['content']
-    assert len(page.select('.faq details'))==4
+    assert len(page.select('.faq details'))==5
     assert len(page.select('[data-photo]'))==6
     assert not page.select('.gallery-tools,.strip-prev,.strip-next')
     for image in page.select('main img'):
