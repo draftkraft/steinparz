@@ -971,3 +971,25 @@ footer>a:last-child{
   transform:none}
 }
 
+/* Each chapter now has its own original photograph. */
+.intro { padding-top: 105px; padding-bottom: 105px; }
+.hero-photo { object-position: 62% center; }
+.nature-scene > img { object-position: center 62%; }
+.booking-photo { filter: brightness(.65); object-position: center 55%; }
+.booking::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, #0c201bbb, #0c201b20); }
+.booking-content { z-index: 1; }
+.together figure img { object-position: 55% center; }
+@media(max-width:700px) {
+  .intro { padding-top: 65px; padding-bottom: 65px; }
+  .hero-photo { object-position: 82% center; }
+  .nature-scene > img { object-position: 53% center; }
+  .booking-photo { object-position: 54% center; }
+}
+.wildlife { grid-template-columns: 1fr 1.1fr; align-items: center; gap: 8%; }
+.wildlife figure img { width: 100%; height: 620px; object-fit: cover; object-position: 48% center; }
+.wildlife figcaption { font-size: 9px; color: var(--muted); margin-top: 12px; }
+.wildlife .eyebrow { max-width: 280px; }
+@media(max-width:700px) {
+  .wildlife { grid-template-columns: 1fr; gap: 35px; }
+  .wildlife figure img { height: 420px; }
+}
