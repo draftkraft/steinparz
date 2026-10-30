@@ -1056,3 +1056,6 @@ footer { flex-wrap: wrap; }
   .scene-note { max-width: 280px; line-height: 1.8; }
   .language-select { width: 63px; }
 }
+
+.stay-booking { background: var(--ink); color: var(--paper); margin-top: 12px; max-width: 100%; }
+.stay-booking:hover { background: #3c5546; }
