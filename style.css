@@ -1059,3 +1059,5 @@ footer { flex-wrap: wrap; }
 
 .stay-booking { background: var(--ink); color: var(--paper); margin-top: 12px; max-width: 100%; }
 .stay-booking:hover { background: #3c5546; }
+
+.together-booking { margin-top: 12px; max-width: 100%; }
