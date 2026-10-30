@@ -1061,3 +1061,27 @@ footer { flex-wrap: wrap; }
 .stay-booking:hover { background: #3c5546; }
 
 .together-booking { margin-top: 12px; max-width: 100%; }
+
+/* A composed right-hand column rather than empty space around the winter photograph. */
+.gallery-moment { min-width: 0; display: flex; flex-direction: column; align-self: stretch; }
+.gallery-moment-copy { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 30px 5%; }
+.gallery-moment-copy .eyebrow { margin-bottom: 15px; }
+.gallery-moment-heading { font: clamp(25px,2.7vw,40px)/1.3 Georgia,serif; letter-spacing: -.8px; }
+.gallery-moment-heading em { color: #88947b; }
+.gallery-moment .photo-3 { flex: none; align-self: auto; }
+.source-link { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; white-space: nowrap; }
+.source-link:hover { color: #526448; }
+@media(max-width:700px) {
+  .gallery-moment { gap: 0; }
+  .gallery-moment-copy { padding: 30px 0; }
+  .gallery-moment-heading { font-size: 30px; }
+}
+
+.footer-legal { flex-basis: 100%; padding-top: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.legal-top { display: flex; justify-content: space-between; gap: 25px; align-items: center; padding: 40px 8%; border-bottom: 1px solid var(--line); }
+.legal-top > a:last-child { font-size: 13px; }
+.legal-content { max-width: 1000px; min-height: 75svh; }
+.legal-content h1 { font: 400 clamp(45px,7vw,80px)/1.1 Georgia,serif; letter-spacing: -2px; margin: 0 0 55px; }
+.legal-content section { margin-top: 40px; }
+.legal-content h2 { font-size: 25px; line-height: 1.3; letter-spacing: -.5px; margin-bottom: 18px; }
+.legal-content a { text-decoration: underline; text-underline-offset: 4px; }

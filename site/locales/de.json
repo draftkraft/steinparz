@@ -68,7 +68,7 @@
     "t065": "Zusammen genießen",
     "t066": "NICHT NUR EIN ORT FÜR DEN SOMMER",
     "t067": "Draußen wird es still.",
-    "t068": "Drinnen wird es Zeit.",
+    "t068": "Drinnen gibt es Zeit.",
     "t069": "Für lange Gespräche. Für ein gutes Buch.",
     "t070": "Für Tage, die keinen Plan brauchen.",
     "t071": "WAS BLEIBT, ERZÄHLEN UNSERE GÄSTE",
@@ -143,5 +143,11 @@
       "Wie kann ich buchen?",
       "Freie Termine, aktuelle Preise und die geltenden Hausregeln findet ihr auf Airbnb. Dort könnt ihr auch Fragen zum Aufenthalt und zu einer Familienfeier stellen."
     ]
-  ]
+  ],
+  "gallery_moment": [
+    "DAS GANZE JAHR",
+    "Die Jahreszeiten wechseln.",
+    "Das Gefühl bleibt."
+  ],
+  "legal_label": "Impressum"
 }

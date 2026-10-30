@@ -143,5 +143,11 @@
       "Comment réserver ?",
       "Les disponibilités, les prix actuels et le règlement sont sur Airbnb. Vous pouvez également y poser vos questions sur le séjour ou une réunion familiale."
     ]
-  ]
+  ],
+  "gallery_moment": [
+    "TOUTE L’ANNÉE",
+    "Les saisons changent.",
+    "Le sentiment demeure."
+  ],
+  "legal_label": "Mentions légales"
 }

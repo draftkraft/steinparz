@@ -5,6 +5,7 @@ import re
 import html
 from datetime import date
 from bs4 import BeautifulSoup
+from build_legal import legal_ready, render_legal
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,6 +20,11 @@ def make(soup, tag_name, **attrs):
     return soup.new_tag(tag_name, attrs=attrs)
 
 source = (ROOT / 'site/template.html').read_text()
+legal_data = json.loads((ROOT/'site/legal.json').read_text())
+if legal_ready(legal_data):
+    legal_target = ROOT/'impressum/index.html'
+    legal_target.parent.mkdir(exist_ok=True)
+    legal_target.write_text(render_legal(legal_data))
 master_keys = set(json.loads((ROOT / 'site/locales/de.json').read_text())['copy'])
 for lang, language in LANGUAGES.items():
     data = json.loads((ROOT / f'site/locales/{lang}.json').read_text())
@@ -57,6 +63,22 @@ for lang, language in LANGUAGES.items():
         button['aria-label'] = ui[3] + ': ' + button.img['alt']
         button['data-caption'] = button.span.get_text(' ',strip=True).replace('↗','').strip()
         button['class'] = ['gallery-item',f'photo-{i}']
+    # Pair the landscape winter photo with a short editorial note, bottom-aligned to the portrait beside it.
+    winter_photo = soup.select_one('.photo-3')
+    panel = make(soup, 'div', **{'class':'gallery-moment'})
+    winter_photo.wrap(panel)
+    text = make(soup, 'div', **{'class':'gallery-moment-copy'})
+    eyebrow = make(soup, 'p', **{'class':'eyebrow'})
+    eyebrow.string = data['gallery_moment'][0]
+    heading = make(soup, 'p', **{'class':'gallery-moment-heading'})
+    heading.append(data['gallery_moment'][1])
+    heading.append(make(soup, 'br'))
+    emphasis = make(soup, 'em')
+    emphasis.string = data['gallery_moment'][2]
+    heading.append(emphasis)
+    text.append(eyebrow)
+    text.append(heading)
+    panel.insert(0, text)
     dialog = soup.dialog
     dialog['aria-label'] = data['copy']['t003']
     dialog.select_one('.close')['aria-label'] = ui[6]
@@ -82,6 +104,10 @@ for lang, language in LANGUAGES.items():
         if code == lang: link['aria-current'] = 'page'
         nav.append(link)
     soup.footer.append(nav)
+    if legal_ready(legal_data):
+        legal_link = make(soup, 'a', href='/impressum/', **{'class':'footer-legal'})
+        legal_link.string = data['legal_label']
+        soup.footer.append(legal_link)
     # Helpful visible answers, with no promises about eligibility for search result enhancements.
     faq = make(soup,'section',id='fragen',**{'class':'faq section','aria-labelledby':'faq-title'})
     heading = make(soup,'h2',id='faq-title');heading.string=ui[7];faq.append(heading)
