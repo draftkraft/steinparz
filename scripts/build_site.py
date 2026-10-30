@@ -103,11 +103,13 @@ for lang, language in LANGUAGES.items():
         link.string = native
         if code == lang: link['aria-current'] = 'page'
         nav.append(link)
-    soup.footer.append(nav)
+    footer_bottom = make(soup, 'div', **{'class':'footer-bottom'})
+    footer_bottom.append(nav)
+    soup.footer.append(footer_bottom)
     if legal_ready(legal_data):
         legal_link = make(soup, 'a', href='/impressum/', **{'class':'footer-legal'})
         legal_link.string = data['legal_label']
-        soup.footer.append(legal_link)
+        footer_bottom.append(legal_link)
     # Helpful visible answers, with no promises about eligibility for search result enhancements.
     faq = make(soup,'section',id='fragen',**{'class':'faq section','aria-labelledby':'faq-title'})
     heading = make(soup,'h2',id='faq-title');heading.string=ui[7];faq.append(heading)
