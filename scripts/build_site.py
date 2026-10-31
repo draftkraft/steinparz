@@ -134,6 +134,10 @@ for lang, language in LANGUAGES.items():
         option.string = code.upper() + ' · ' + native
         if code == lang: option['selected'] = ''
         select.append(option)
+    current_language = make(soup, 'span', **{'class':'language-current','aria-hidden':'true'})
+    current_language.string = lang.upper()
+    label.append(current_language)
+    label.append(BeautifulSoup(arrow_svg('↓'), 'html.parser').svg)
     label.append(select)
     soup.select_one('.menu-toggle').insert_before(label)
     nav = make(soup,'nav',**{'class':'language-links','aria-label':ui[0]})

@@ -1127,3 +1127,30 @@ footer { flex-wrap: wrap; }
 .nature-grid { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .gallery-track .nature-photo { aspect-ratio: 4 / 3; }
 @media(max-width:700px) { .nature-grid { grid-template-columns: 1fr; gap: 20px; } }
+
+/* Readable 16px body, action and menu text; eyebrow typography stays as designed. */
+body { font-size: 16px; }
+body main p:not(.eyebrow):not(.gallery-moment-heading),
+body footer > p,
+body .booking-note, body .scene-note, body .wildlife small,
+body .stay-facts span,
+body .button, body .booking .button, body .text-link, body .source-link,
+body .close, body .dialog-bottom button,
+body #main-nav, body .menu-open #main-nav, body .menu-open header #main-nav,
+body .menu-toggle, body .language-links, body .footer-legal,
+body .legal-top > a:last-child { font-size: 16px; }
+body .menu-open #main-nav { line-height: 1.6; }
+/* The native select remains accessible and tappable, with a clear, untruncated display. */
+header .button.small { height: 54px; min-height: 54px; padding: 0 22px; }
+.language-label { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 12px; width: 88px; height: 54px; flex: 0 0 auto; border: 1px solid #ffffff80; background: #19332966; cursor: pointer; }
+.language-current { font: 16px/1 Arial,Helvetica,sans-serif; color: white; }
+.language-label > .arrow-icon { width: 17px; height: 17px; color: white; }
+.language-label .language-select { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; font-size: 16px; cursor: pointer; }
+.language-label:focus-within { outline: 2px solid #b89461; outline-offset: 5px; }
+@media(max-width:700px) {
+  .language-label { height: 44px; width: 78px; gap: 8px; }
+  .hero-copy { bottom: 21%; }
+  .hero-copy > p:not(.eyebrow) { max-width: 310px; }
+  .scene-note { max-width: 100%; letter-spacing: .2px; }
+  .stay-facts > div { gap: 10px; }
+}
