@@ -41,7 +41,7 @@ for lang, language in LANGUAGES.items():
     soup.select_one('link[rel="canonical"]')['href'] = url
     soup.select_one('[property="og:title"]')['content'] = data['title']
     soup.select_one('[property="og:description"]')['content'] = data['description']
-    for property, value in [('og:url',url),('og:type','website'),('og:site_name','Teichhof Steinparz'),('og:locale',OG_LOCALES[lang])]:
+    for property, value in [('og:url',url),('og:type','website'),('og:site_name','Teichhof'),('og:locale',OG_LOCALES[lang])]:
         soup.head.append(make(soup, 'meta', property=property, content=value))
     for other in LANGUAGES:
         soup.head.append(make(soup,'link',rel='alternate',hreflang=other,href=BASE+route(other)))
@@ -121,10 +121,10 @@ for lang, language in LANGUAGES.items():
     soup.select_one('.booking').insert_before(faq)
     # Stable entity ID across languages. No invented street address, prices, ratings or capacity.
     schema={'@context':'https://schema.org','@graph':[
-        {'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'Teichhof Steinparz','inLanguage':list(LANGUAGES)},
-        {'@type':'LodgingBusiness','@id':BASE+'/#teichhof','name':'Teichhof Steinparz','url':BASE+'/',
+        {'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'Teichhof','inLanguage':list(LANGUAGES)},
+        {'@type':'LodgingBusiness','@id':BASE+'/#teichhof','name':'Teichhof','url':BASE+'/',
          'description':data['description'],'image':[BASE+'/'+i['src'] for i in images],
-         'address':{'@type':'PostalAddress','addressLocality':'Steinparz','addressRegion':'Niederösterreich','addressCountry':'AT'},
+         'address':{'@type':'PostalAddress','addressRegion':'Niederösterreich','addressCountry':'AT'},
          'sameAs':['https://www.airbnb.de/rooms/1211640025110560668'],
          'containsPlace':{'@type':'Accommodation','numberOfRooms':7,'numberOfBathroomsTotal':3,
            'bed':[{'@type':'BedDetails','numberOfBeds':5,'typeOfBed':'Double'},{'@type':'BedDetails','numberOfBeds':2,'typeOfBed':'Single'}]}},

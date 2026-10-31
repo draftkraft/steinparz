@@ -13,13 +13,13 @@
     "t010": "Zaseben ribnik. Hiša ob gozdu.",
     "t011": "Kraj, ki pripada samo vam.",
     "t012": "Odkrijte",
-    "t013": "STEINPARZ, SPODNJA AVSTRIJA",
+    "t013": "V BLIŽINI MELKA, SPODNJA AVSTRIJA",
     "t014": "Pridite in zadihajte",
     "t015": "DOBRODOŠLI V TEICHHOFU",
     "t016": "Pridite skupaj.",
     "t017": "Ostanite skupaj.",
     "t018": "Opazovati vodo, dokler se kava ne ohladi. Skupaj kuhati, dolgo klepetati. In ugotoviti, da danes nihče ni pogledal na uro.",
-    "t019": "Teichhof je počitniška hiša z zasebnim ribnikom v kraju Steinparz v Spodnji Avstriji. Celotna hiša je vaša: za družinske počitnice, srečanje s prijatelji ali mirne dni ob gozdu.",
+    "t019": "Teichhof je počitniška hiša z zasebnim ribnikom v bližini Melka v Spodnji Avstriji. Celotna hiša je vaša: za družinske počitnice, srečanje s prijatelji ali mirne dni ob gozdu.",
     "t020": "Prvi pogled v zelenje",
     "t021": "01 / RITEM DOLOČA NARAVA",
     "t022": "Samo",
@@ -94,8 +94,8 @@
     "t091": "Stik in rezervacije ↗",
     "t092": "Zapri ×"
   },
-  "title": "Teichhof Steinparz – Počitniška hiša z zasebnim ribnikom v Avstriji",
-  "description": "Počitniška hiša ob gozdu v kraju Steinparz v Spodnji Avstriji. Zaseben ribnik, čoln na vesla, 7 sob, 5 zakonskih in 2 enojni postelji. Za družine in miren oddih.",
+  "title": "Teichhof – Počitniška hiša z zasebnim ribnikom v Avstriji",
+  "description": "Počitniška hiša ob gozdu v bližini Melka v Spodnji Avstriji. Zaseben ribnik, čoln na vesla, 7 sob, 5 zakonskih in 2 enojni postelji. Za družine in miren oddih.",
   "ui": [
     "Izberite jezik",
     "Glavna navigacija",
@@ -125,7 +125,7 @@
   "faq": [
     [
       "Kje je Teichhof?",
-      "Teichhof je v kraju Steinparz v Spodnji Avstriji, ob gozdu in zasebnem ribniku. Točen naslov prejmete ob rezervaciji."
+      "Teichhof je v bližini Melka v Spodnji Avstriji, ob gozdu in zasebnem ribniku. Točen naslov prejmete ob rezervaciji."
     ],
     [
       "Koliko je sob in postelj?",

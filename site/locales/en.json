@@ -13,13 +13,13 @@
     "t010": "A private pond. A house by the woods.",
     "t011": "A place just for you.",
     "t012": "Discover",
-    "t013": "STEINPARZ, LOWER AUSTRIA",
+    "t013": "Near Melk, Niederoesterreich",
     "t014": "Arrive & unwind",
     "t015": "WELCOME TO TEICHHOF",
     "t016": "Arrive together.",
     "t017": "Stay together.",
     "t018": "Watch the water until your coffee goes cold. Cook together, talk for hours. And realise that nobody has checked the time all day.",
-    "t019": "Teichhof is a holiday home with a private pond in Steinparz, Lower Austria. The entire house is yours: for a family holiday, a reunion with friends or peaceful days beside the forest.",
+    "t019": "Teichhof is a holiday home with a private pond near Melk in Lower Austria. The entire house is yours: for a family holiday, a reunion with friends or peaceful days beside the forest.",
     "t020": "A first glimpse of nature",
     "t021": "01 / LET NATURE SET THE PACE",
     "t022": "Just",
@@ -94,8 +94,8 @@
     "t091": "Contact & booking ↗",
     "t092": "Close ×"
   },
-  "title": "Teichhof Steinparz – Holiday home with a private pond in Austria",
-  "description": "Your private holiday home by the woods in Steinparz, Lower Austria. A private pond and rowing boat, 7 rooms, 5 double beds and 2 single beds. Time for family and peaceful escapes.",
+  "title": "Teichhof – Holiday home with a private pond in Austria",
+  "description": "Your private holiday home by the woods near Melk in Lower Austria. A private pond and rowing boat, 7 rooms, 5 double beds and 2 single beds. Time for family and peaceful escapes.",
   "ui": [
     "Choose language",
     "Main navigation",
@@ -125,7 +125,7 @@
   "faq": [
     [
       "Where is Teichhof?",
-      "Teichhof is in Steinparz, Lower Austria, Austria, beside woodland and a private pond. The exact address is provided with your booking."
+      "Teichhof is near Melk in Lower Austria, Austria, beside woodland and a private pond. The exact address is provided with your booking."
     ],
     [
       "How many rooms and beds are there?",

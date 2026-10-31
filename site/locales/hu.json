@@ -13,13 +13,13 @@
     "t010": "Saját tó. Ház az erdő szélén.",
     "t011": "Egy hely, amely csak az önöké.",
     "t012": "Fedezze fel",
-    "t013": "STEINPARZ, ALSÓ-AUSZTRIA",
+    "t013": "MELK KÖZELÉBEN, ALSÓ-AUSZTRIA",
     "t014": "Érkezzen meg és lélegezzen fel",
     "t015": "ÜDVÖZÖLJÜK A TEICHHOFNÁL",
     "t016": "Együtt megérkezni.",
     "t017": "Együtt maradni.",
     "t018": "Nézni a vizet, amíg kihűl a kávé. Együtt főzni, órákig beszélgetni. És egyszer csak észrevenni, hogy ma senki sem nézett az órájára.",
-    "t019": "A Teichhof saját tóval rendelkező nyaraló Steinparzban, Alsó-Ausztriában. Az egész ház az önöké: családi nyaraláshoz, baráti találkozóhoz vagy nyugodt napokhoz az erdő mellett.",
+    "t019": "A Teichhof saját tóval rendelkező nyaraló Melk közelében, Alsó-Ausztriában. Az egész ház az önöké: családi nyaraláshoz, baráti találkozóhoz vagy nyugodt napokhoz az erdő mellett.",
     "t020": "Az első pillantás a természetre",
     "t021": "01 / A TERMÉSZET ADJA A RITMUST",
     "t022": "Csak",
@@ -94,8 +94,8 @@
     "t091": "Kapcsolat és foglalás ↗",
     "t092": "Bezárás ×"
   },
-  "title": "Teichhof Steinparz – Nyaraló saját tóval Alsó-Ausztriában",
-  "description": "Nyaraló az erdő mellett Steinparzban, Alsó-Ausztriában. Saját tó és evezős csónak, 7 szoba, 5 franciaágy és 2 egyszemélyes ágy. Családi együttlét és nyugodt pihenés.",
+  "title": "Teichhof – Nyaraló saját tóval Alsó-Ausztriában",
+  "description": "Nyaraló az erdő mellett Melk közelében, Alsó-Ausztriában. Saját tó és evezős csónak, 7 szoba, 5 franciaágy és 2 egyszemélyes ágy. Családi együttlét és nyugodt pihenés.",
   "ui": [
     "Nyelv kiválasztása",
     "Fő navigáció",
@@ -125,7 +125,7 @@
   "faq": [
     [
       "Hol található a Teichhof?",
-      "A Teichhof Steinparzban, Alsó-Ausztriában található, az erdő szélén, saját tóval. A pontos címet a foglaláskor kapja meg."
+      "A Teichhof Melk közelében, Alsó-Ausztriában található, az erdő szélén, saját tóval. A pontos címet a foglaláskor kapja meg."
     ],
     [
       "Hány szoba és ágy van a házban?",

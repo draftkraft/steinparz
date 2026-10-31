@@ -13,13 +13,13 @@
     "t010": "Súkromný rybník. Dom pri lese.",
     "t011": "Miesto, ktoré patrí iba vám.",
     "t012": "Objavovať",
-    "t013": "STEINPARZ, DOLNÉ RAKÚSKO",
+    "t013": "NEĎALEKO MELKU, DOLNÉ RAKÚSKO",
     "t014": "Príďte a vydýchnite si",
     "t015": "VITAJTE V TEICHHOFE",
     "t016": "Prísť spoločne.",
     "t017": "Zostať spolu.",
     "t018": "Pozorovať vodu, až káva vychladne. Spoločne variť, dlho sa rozprávať. A uvedomiť si, že sa dnes nikto nepozrel na hodinky.",
-    "t019": "Teichhof je rekreačný dom so súkromným rybníkom v Steinparzi v Dolnom Rakúsku. Celý dom patrí vám: na rodinnú dovolenku, stretnutie s priateľmi alebo pokojné dni pri lese.",
+    "t019": "Teichhof je rekreačný dom so súkromným rybníkom neďaleko Melku v Dolnom Rakúsku. Celý dom patrí vám: na rodinnú dovolenku, stretnutie s priateľmi alebo pokojné dni pri lese.",
     "t020": "Prvý pohľad do zelene",
     "t021": "01 / RYTMUS UDÁVA PRÍRODA",
     "t022": "Iba",
@@ -94,8 +94,8 @@
     "t091": "Kontakt a rezervácia ↗",
     "t092": "Zavrieť ×"
   },
-  "title": "Teichhof Steinparz – Rekreačný dom so súkromným rybníkom v Rakúsku",
-  "description": "Rekreačný dom pri lese v Steinparzi v Dolnom Rakúsku. Súkromný rybník, veslica, 7 izieb, 5 manželských postelí a 2 jednolôžka. Pre rodiny a pokojný oddych.",
+  "title": "Teichhof – Rekreačný dom so súkromným rybníkom v Rakúsku",
+  "description": "Rekreačný dom pri lese neďaleko Melku v Dolnom Rakúsku. Súkromný rybník, veslica, 7 izieb, 5 manželských postelí a 2 jednolôžka. Pre rodiny a pokojný oddych.",
   "ui": [
     "Vybrať jazyk",
     "Hlavná navigácia",
@@ -125,7 +125,7 @@
   "faq": [
     [
       "Kde sa Teichhof nachádza?",
-      "Teichhof leží v Steinparzi v Dolnom Rakúsku na okraji lesa pri súkromnom rybníku. Presnú adresu dostanete s rezerváciou."
+      "Teichhof leží neďaleko Melku v Dolnom Rakúsku na okraji lesa pri súkromnom rybníku. Presnú adresu dostanete s rezerváciou."
     ],
     [
       "Koľko je v dome izieb a lôžok?",
