@@ -1171,3 +1171,10 @@ body .wildlife figcaption, body .together figcaption, body .story figcaption {
 .wildlife figure { position: relative; }
 .wildlife figure::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, #10251caa); pointer-events: none; }
 @media(max-width:700px) { :root { --caption-inset: 24px; } }
+
+/* Align full-screen captions with their section text. */
+.hero-bottom { left: 7%; right: 7%; }
+body .scene-note { left: 9%; right: 9%; }
+@media(max-width:700px) {
+  .hero-bottom, body .scene-note { left: 8%; right: 8%; }
+}
