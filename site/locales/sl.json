@@ -150,5 +150,38 @@
     "Občutek ostaja."
   ],
   "legal_label": "Pravno obvestilo",
-  "gallery_interior_title": "DOMA V HIŠI"
+  "gallery_interior_title": "DOMA V HIŠI",
+  "season_photos": [
+    [
+      "Pomladno prebujanje",
+      "Belo cvetoče drevo na vrtu pod modrim nebom"
+    ],
+    [
+      "Jesen na vrtu",
+      "Otrok se igra v jesenskem listju pod starim hrastom"
+    ],
+    [
+      "Zima ob ribniku",
+      "Zasnežen ribnik in hiša med zimskimi drevesi"
+    ]
+  ],
+  "gallery_nature_title": "NARAVA OD BLIZU",
+  "nature_photos": [
+    [
+      "Tih obiskovalec",
+      "Čaplja med lokvanji in drevesi na obali ribnika"
+    ],
+    [
+      "Po dežju",
+      "Mavrica nad ribnikom in drevesi"
+    ],
+    [
+      "Pod gladino",
+      "Riba plava v čisti vodi ob rastlinah na obali"
+    ],
+    [
+      "Tiho jutro",
+      "Megla nad ribnikom pred hišo ob gozdu"
+    ]
+  ]
 }

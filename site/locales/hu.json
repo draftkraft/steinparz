@@ -150,5 +150,38 @@
     "Az érzés megmarad."
   ],
   "legal_label": "Impresszum",
-  "gallery_interior_title": "OTTHON A HÁZBAN"
+  "gallery_interior_title": "OTTHON A HÁZBAN",
+  "season_photos": [
+    [
+      "Tavaszi ébredés",
+      "Fehéren virágzó fa a kertben a kék ég alatt"
+    ],
+    [
+      "Ősz a kertben",
+      "Egy gyermek az őszi levelekben játszik az öreg tölgy alatt"
+    ],
+    [
+      "Tél a tónál",
+      "Hóborította tó és ház a téli fák között"
+    ]
+  ],
+  "gallery_nature_title": "TERMÉSZET TESTKÖZELBŐL",
+  "nature_photos": [
+    [
+      "Egy csendes vendég",
+      "Egy gém a tavirózsák és fák között a tóparton"
+    ],
+    [
+      "Eső után",
+      "Szivárvány a tó és a fák felett"
+    ],
+    [
+      "A felszín alatt",
+      "Egy hal úszik a tiszta vízben a parti növények mellett"
+    ],
+    [
+      "Csendes reggel",
+      "Köd a tó felett az erdőszéli ház előtt"
+    ]
+  ]
 }

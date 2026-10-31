@@ -150,5 +150,38 @@
     "Das Gefühl bleibt."
   ],
   "legal_label": "Impressum",
-  "gallery_interior_title": "DRINNEN ZUHAUSE"
+  "gallery_interior_title": "DRINNEN ZUHAUSE",
+  "season_photos": [
+    [
+      "Frühlingserwachen",
+      "Weiß blühender Baum im Garten unter blauem Himmel"
+    ],
+    [
+      "Herbst im Garten",
+      "Ein Kind spielt im Herbstlaub unter der alten Eiche"
+    ],
+    [
+      "Winter am Teich",
+      "Verschneiter Teich und Haus zwischen winterlichen Bäumen"
+    ]
+  ],
+  "gallery_nature_title": "NATUR GANZ NAH",
+  "nature_photos": [
+    [
+      "Ein stiller Gast",
+      "Ein Reiher steht zwischen Seerosen und Bäumen am Teichufer"
+    ],
+    [
+      "Nach dem Regen",
+      "Ein Regenbogen spannt sich über den Teich und die Bäume"
+    ],
+    [
+      "Unter der Oberfläche",
+      "Ein Fisch schwimmt im klaren Wasser am bepflanzten Ufer"
+    ],
+    [
+      "Wenn der Morgen leise ist",
+      "Nebel liegt über dem Teich vor dem Haus am Wald"
+    ]
+  ]
 }

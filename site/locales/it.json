@@ -150,5 +150,38 @@
     "L’emozione resta."
   ],
   "legal_label": "Note legali",
-  "gallery_interior_title": "A CASA, DENTRO"
+  "gallery_interior_title": "A CASA, DENTRO",
+  "season_photos": [
+    [
+      "Risveglio di primavera",
+      "Albero in fiore nel giardino sotto il cielo azzurro"
+    ],
+    [
+      "Autunno in giardino",
+      "Un bambino gioca tra le foglie autunnali sotto la vecchia quercia"
+    ],
+    [
+      "Inverno al laghetto",
+      "Laghetto e casa innevati tra gli alberi invernali"
+    ]
+  ],
+  "gallery_nature_title": "LA NATURA DA VICINO",
+  "nature_photos": [
+    [
+      "Un ospite silenzioso",
+      "Un airone tra ninfee e alberi sulla riva del laghetto"
+    ],
+    [
+      "Dopo la pioggia",
+      "Un arcobaleno sopra il laghetto e gli alberi"
+    ],
+    [
+      "Sotto la superficie",
+      "Un pesce nuota nell’acqua limpida vicino alle piante sulla riva"
+    ],
+    [
+      "Un mattino silenzioso",
+      "Nebbia sul laghetto davanti alla casa ai margini del bosco"
+    ]
+  ]
 }

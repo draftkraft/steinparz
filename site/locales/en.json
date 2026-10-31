@@ -150,5 +150,38 @@
     "The feeling stays."
   ],
   "legal_label": "Legal notice",
-  "gallery_interior_title": "AT HOME INDOORS"
+  "gallery_interior_title": "AT HOME INDOORS",
+  "season_photos": [
+    [
+      "Spring awakening",
+      "White blossoms on a garden tree beneath a blue sky"
+    ],
+    [
+      "Autumn in the garden",
+      "A child playing in autumn leaves beneath the old oak"
+    ],
+    [
+      "Winter by the pond",
+      "Snow-covered pond and house among winter trees"
+    ]
+  ],
+  "gallery_nature_title": "NATURE UP CLOSE",
+  "nature_photos": [
+    [
+      "A quiet visitor",
+      "A heron beside water lilies and trees at the edge of the pond"
+    ],
+    [
+      "After the rain",
+      "A rainbow stretches over the pond and trees"
+    ],
+    [
+      "Beneath the surface",
+      "A fish swimming in clear water near plants at the shore"
+    ],
+    [
+      "A quiet morning",
+      "Mist over the pond in front of the house by the woods"
+    ]
+  ]
 }

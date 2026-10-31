@@ -150,5 +150,38 @@
     "Ten pocit zůstává."
   ],
   "legal_label": "Právní informace",
-  "gallery_interior_title": "UVNITŘ JAKO DOMA"
+  "gallery_interior_title": "UVNITŘ JAKO DOMA",
+  "season_photos": [
+    [
+      "Jarní probuzení",
+      "Bíle kvetoucí strom v zahradě pod modrou oblohou"
+    ],
+    [
+      "Podzim v zahradě",
+      "Dítě si hraje v podzimním listí pod starým dubem"
+    ],
+    [
+      "Zima u rybníka",
+      "Zasněžený rybník a dům mezi zimními stromy"
+    ]
+  ],
+  "gallery_nature_title": "PŘÍRODA ZBLÍZKA",
+  "nature_photos": [
+    [
+      "Tichý návštěvník",
+      "Volavka mezi lekníny a stromy na břehu rybníka"
+    ],
+    [
+      "Po dešti",
+      "Duha nad rybníkem a stromy"
+    ],
+    [
+      "Pod hladinou",
+      "Ryba plave v čisté vodě u rostlin na břehu"
+    ],
+    [
+      "Tiché ráno",
+      "Mlha nad rybníkem před domem u lesa"
+    ]
+  ]
 }

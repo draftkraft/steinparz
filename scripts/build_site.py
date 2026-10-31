@@ -80,6 +80,38 @@ for lang, language in LANGUAGES.items():
     text.append(eyebrow)
     text.append(heading)
     panel.insert(0, text)
+    # Original spring, autumn and winter photographs complete the year-round chapter.
+    seasonal_grid = make(soup, 'div', **{'class':'season-grid'})
+    season_files = [('fruehlingsbluete.webp',1536,2048), ('herbst-im-garten.webp',2048,1536), ('winterpanorama.webp',2048,1536)]
+    for index, ((filename, width, height), (caption, alt)) in enumerate(zip(season_files, data['season_photos'])):
+        button = make(soup, 'button', **{'class':f'gallery-item season-photo season-photo-{index+1}', 'data-photo':'assets/'+filename, 'data-caption':caption, 'aria-label':ui[3]+': '+alt})
+        image = make(soup, 'img', src='assets/'+filename, alt=alt, width=str(width), height=str(height), loading='lazy', decoding='async')
+        label = make(soup, 'span')
+        label.append(caption+' ')
+        arrow = make(soup, 'b')
+        arrow.string = '↗'
+        label.append(arrow)
+        button.append(image)
+        button.append(label)
+        seasonal_grid.append(button)
+    panel.insert_after(seasonal_grid)
+    nature_category = make(soup, 'p', **{'class':'eyebrow gallery-category'})
+    nature_category.string = data['gallery_nature_title']
+    nature_grid = make(soup, 'div', **{'class':'nature-grid'})
+    nature_files = ['reiher-am-ufer.webp','regenbogen-am-teich.webp','fisch-im-teich.webp','nebel-am-teich.webp']
+    for filename, (caption, alt) in zip(nature_files, data['nature_photos']):
+        button = make(soup, 'button', **{'class':'gallery-item nature-photo', 'data-photo':'assets/'+filename, 'data-caption':caption, 'aria-label':ui[3]+': '+alt})
+        image = make(soup, 'img', src='assets/'+filename, alt=alt, width=str(2049 if filename in ['fisch-im-teich.webp','nebel-am-teich.webp'] else 2048), height='1536', loading='lazy', decoding='async')
+        label = make(soup, 'span')
+        label.append(caption+' ')
+        arrow = make(soup, 'b')
+        arrow.string = '↗'
+        label.append(arrow)
+        button.append(image)
+        button.append(label)
+        nature_grid.append(button)
+    seasonal_grid.insert_after(nature_grid)
+    nature_grid.insert_before(nature_category)
     # Move the bathroom into the interior group, after the two bedroom photographs.
     bathroom = soup.select_one('.photo-2').extract()
     soup.select_one('.photo-5').insert_after(bathroom)
@@ -126,6 +158,7 @@ for lang, language in LANGUAGES.items():
         details.append(summary);details.append(paragraph);faq.append(details)
     soup.select_one('.booking').insert_before(faq)
     # Stable entity ID across languages. No invented street address, prices, ratings or capacity.
+    images = soup.select('main img')
     schema={'@context':'https://schema.org','@graph':[
         {'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'Teichhof','inLanguage':list(LANGUAGES)},
         {'@type':'LodgingBusiness','@id':BASE+'/#teichhof','name':'Teichhof','url':BASE+'/',

@@ -150,5 +150,38 @@
     "Le sentiment demeure."
   ],
   "legal_label": "Mentions légales",
-  "gallery_interior_title": "CHEZ SOI, À L’INTÉRIEUR"
+  "gallery_interior_title": "CHEZ SOI, À L’INTÉRIEUR",
+  "season_photos": [
+    [
+      "Le réveil du printemps",
+      "Arbre en fleurs blanches dans le jardin sous un ciel bleu"
+    ],
+    [
+      "L’automne au jardin",
+      "Un enfant joue dans les feuilles d’automne sous le vieux chêne"
+    ],
+    [
+      "L’hiver au bord de l’étang",
+      "Étang et maison enneigés parmi les arbres en hiver"
+    ]
+  ],
+  "gallery_nature_title": "LA NATURE DE TOUT PRÈS",
+  "nature_photos": [
+    [
+      "Un visiteur discret",
+      "Un héron entre les nénuphars et les arbres au bord de l’étang"
+    ],
+    [
+      "Après la pluie",
+      "Un arc-en-ciel au-dessus de l’étang et des arbres"
+    ],
+    [
+      "Sous la surface",
+      "Un poisson nage dans l’eau claire près des plantes de la rive"
+    ],
+    [
+      "Un matin paisible",
+      "La brume sur l’étang devant la maison à la lisière des bois"
+    ]
+  ]
 }

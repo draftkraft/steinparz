@@ -38,7 +38,7 @@ http://localhost:8080 öffnen. Die Sprachlinks brauchen einen Server mit diesem 
 
 ## Gestaltung
 
-Bildschirmfüllende Natur-, Garten-, Winter- und Buchungsabschnitte; geteilte Bildkapitel; mobile Vollbildnavigation. Die Galerie zeigt alle sechs Motive in einer vertikalen Bildfolge ohne seitliches Scrollen. Einzelbilder öffnen sich in einem Dialog mit Pfeiltastensteuerung, Escape, Fokus-Rückgabe und Bildzähler. Animationen respektieren reduzierte Bewegung; das Scrollen bleibt nativ.
+Bildschirmfüllende Natur-, Garten-, Winter- und Buchungsabschnitte; geteilte Bildkapitel; mobile Vollbildnavigation. Die Galerie zeigt alle Motive in einer vertikalen Bildfolge ohne seitliches Scrollen. Einzelbilder öffnen sich in einem Dialog mit Pfeiltastensteuerung, Escape, Fokus-Rückgabe und Bildzähler. Animationen respektieren reduzierte Bewegung; das Scrollen bleibt nativ.
 
 ## Quellen und bestätigte Angaben
 
