@@ -1178,3 +1178,14 @@ body .scene-note { left: 9%; right: 9%; }
 @media(max-width:700px) {
   .hero-bottom, body .scene-note { left: 8%; right: 8%; }
 }
+
+/* Overscan keeps photo edges covered while the image moves behind fixed copy. */
+.depth-active > img {
+  animation: none;
+  transition: none;
+  transform: scale(1.12);
+  transform-origin: center;
+}
+@media(prefers-reduced-motion:reduce) {
+  .depth-active > img { transform: none !important; }
+}
