@@ -1101,3 +1101,14 @@ footer { flex-wrap: wrap; }
 .source-link .arrow-icon { width: 15px; height: 15px; margin-left: 4px; }
 .dialog-bottom .arrow-icon { width: 20px; height: 20px; }
 .legal-top .arrow-icon { width: 18px; height: 18px; margin-right: 5px; }
+
+/* Nature first, followed by a clearly titled group of interior photographs. */
+.gallery-track .gallery-moment { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: end; }
+.gallery-track .gallery-moment-copy { padding: 45px 5%; align-self: center; }
+.gallery-category { grid-column: 1 / -1; margin: 30px 0 0; }
+.gallery-track .photo-2, .gallery-track .photo-6 { grid-column: auto; aspect-ratio: 4 / 3; }
+@media(max-width:700px) {
+  .gallery-track .gallery-moment { grid-template-columns: 1fr; gap: 0; }
+  .gallery-track .gallery-moment-copy { padding: 30px 0; }
+  .gallery-category { margin-top: 25px; }
+}

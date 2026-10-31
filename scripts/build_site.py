@@ -80,6 +80,12 @@ for lang, language in LANGUAGES.items():
     text.append(eyebrow)
     text.append(heading)
     panel.insert(0, text)
+    # Move the bathroom into the interior group, after the two bedroom photographs.
+    bathroom = soup.select_one('.photo-2').extract()
+    soup.select_one('.photo-5').insert_after(bathroom)
+    category = make(soup, 'p', **{'class':'eyebrow gallery-category'})
+    category.string = data['gallery_interior_title']
+    soup.select_one('.photo-4').insert_before(category)
     dialog = soup.dialog
     dialog['aria-label'] = data['copy']['t003']
     dialog.select_one('.close')['aria-label'] = ui[6]
