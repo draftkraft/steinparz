@@ -1090,3 +1090,14 @@ footer { flex-wrap: wrap; }
 .footer-bottom .language-links { flex: 1; min-width: 0; border: 0; padding: 0; margin: 0; }
 .footer-bottom .footer-legal { flex: 0 0 auto; padding: 0; margin-left: auto; text-align: right; }
 @media(max-width:700px) { .footer-bottom { gap: 20px; align-items: flex-start; } }
+
+/* One vector arrow style across buttons, photo captions and navigation. */
+.arrow-icon { display: inline-block; width: 24px; height: 24px; vertical-align: middle; flex: 0 0 auto; }
+.arrow-icon--up-right { transform: rotate(-45deg); }
+.arrow-icon--down-right { transform: rotate(45deg); }
+.arrow-icon--down { transform: rotate(90deg); }
+.arrow-icon--left { transform: rotate(180deg); }
+.gallery-item b { display: inline-flex; align-items: center; }
+.source-link .arrow-icon { width: 15px; height: 15px; margin-left: 4px; }
+.dialog-bottom .arrow-icon { width: 20px; height: 20px; }
+.legal-top .arrow-icon { width: 18px; height: 18px; margin-right: 5px; }

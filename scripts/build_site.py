@@ -6,6 +6,7 @@ import html
 from datetime import date
 from bs4 import BeautifulSoup
 from build_legal import legal_ready, render_legal
+from icons import arrow_svg, DIRECTIONS
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -130,6 +131,19 @@ for lang, language in LANGUAGES.items():
         {'@type':'WebPage','@id':url+'#webpage','url':url,'name':data['title'],'description':data['description'],'inLanguage':lang,
          'isPartOf':{'@id':BASE+'/#website'},'about':{'@id':BASE+'/#teichhof'}}]}
     tag=make(soup,'script',type='application/ld+json');tag.string=json.dumps(schema,ensure_ascii=False).replace('</','<\\/');soup.head.append(tag)
+    # Draw arrows as vectors rather than text characters, which iOS can render as emoji.
+    for node in list(soup.body.find_all(string=True)):
+        if node.parent.name in ('script', 'style'):
+            continue
+        if any(character in str(node) for character in DIRECTIONS):
+            for part in re.split(r'([↗↘↓←→])', str(node)):
+                if not part:
+                    continue
+                if part in DIRECTIONS:
+                    node.insert_before(BeautifulSoup(arrow_svg(part), 'html.parser').svg)
+                else:
+                    node.insert_before(part)
+            node.extract()
     # Ensure assets and lightbox images resolve from every language directory, including file previews.
     prefix = '' if lang=='de' else '../'
     for tag in soup.find_all(True):
