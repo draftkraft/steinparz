@@ -10,7 +10,7 @@ from icons import arrow_svg, DIRECTIONS
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = 'https://steinparz.com'
+BASE = 'https://teichhof.com'
 LANGUAGES = {'de':'Deutsch','en':'English','it':'Italiano','fr':'Français','sl':'Slovenščina','hu':'Magyar','cs':'Čeština','sk':'Slovenčina'}
 OG_LOCALES = {'de':'de_AT','en':'en_GB','it':'it_IT','fr':'fr_FR','sl':'sl_SI','hu':'hu_HU','cs':'cs_CZ','sk':'sk_SK'}
 

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /site/
 Disallow: /scripts/
-Sitemap: https://steinparz.com/sitemap.xml
+Sitemap: https://teichhof.com/sitemap.xml

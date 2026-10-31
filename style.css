@@ -1154,3 +1154,20 @@ header .button.small { height: 54px; min-height: 54px; padding: 0 22px; }
   .scene-note { max-width: 100%; letter-spacing: .2px; }
   .stay-facts > div { gap: 10px; }
 }
+
+/* Consistent supporting captions, anchored at the bottom-left of each photograph. */
+:root { --caption-inset: 32px; }
+.hero-bottom { left: var(--caption-inset); right: var(--caption-inset); bottom: var(--caption-inset); }
+body .hero-bottom > span, body .scene-note, body .image-caption,
+body .wildlife figcaption, body .together figcaption, body .story figcaption {
+  font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 400;
+  line-height: 1.6; letter-spacing: .3px; text-align: left;
+}
+body .scene-note, body .image-caption,
+body .wildlife figcaption, body .together figcaption, body .story figcaption {
+  position: absolute; left: var(--caption-inset); right: var(--caption-inset);
+  bottom: var(--caption-inset); margin: 0; max-width: none; color: #f3f0e8; z-index: 2;
+}
+.wildlife figure { position: relative; }
+.wildlife figure::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, #10251caa); pointer-events: none; }
+@media(max-width:700px) { :root { --caption-inset: 24px; } }

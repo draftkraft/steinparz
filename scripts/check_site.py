@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 langs = ['de','en','it','fr','sl','hu','cs','sk']
-urls = {lang:'https://steinparz.com/' + ('' if lang == 'de' else lang + '/') for lang in langs}
+urls = {lang:'https://teichhof.com/' + ('' if lang == 'de' else lang + '/') for lang in langs}
 for lang in langs:
     path = ROOT/'index.html' if lang=='de' else ROOT/lang/'index.html'
     content = path.read_text()
@@ -39,7 +39,7 @@ for lang in langs:
             for item in tag['srcset'].split(','):
                 assert (path.parent/item.strip().split()[0]).exists()
     schema=json.loads(page.select_one('script[type="application/ld+json"]').string)
-    assert schema['@graph'][1]['@id']=='https://steinparz.com/#teichhof'
+    assert schema['@graph'][1]['@id']=='https://teichhof.com/#teichhof'
     accommodation=schema['@graph'][1]['containsPlace']
     assert accommodation['numberOfRooms']==7
     assert [bed['numberOfBeds'] for bed in accommodation['bed']]==[5,2]

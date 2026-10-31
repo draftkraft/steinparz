@@ -1,6 +1,6 @@
 # Teichhof Steinparz
 
-Statische, mehrsprachige Website für das Ferienhaus Teichhof in Steinparz, Niederösterreich. Veröffentlicht über GitHub Pages mit der Custom Domain `steinparz.com`.
+Statische, mehrsprachige Website für das Ferienhaus Teichhof in Steinparz, Niederösterreich. Veröffentlicht über GitHub Pages mit der Custom Domain `teichhof.com`.
 
 ## Inhalte bearbeiten
 
@@ -33,7 +33,7 @@ http://localhost:8080 öffnen. Die Sprachlinks brauchen einen Server mit diesem 
 - `robots.txt` erlaubt die öffentlichen Seiten und Assets; Vorlage und Buildskripte sind vom Crawling ausgeschlossen.
 - JSON-LD beschreibt Website, Sprachseite und Unterkunft (`LodgingBusiness`/`Accommodation`). Keine erfundenen Preise, Straßenadressen, Sterne oder Belegungszahlen; keine Zusage von Google-Rich-Results.
 - Bilder haben übersetzte Beschreibungen, feste Abmessungen und verzögertes Laden unterhalb des Einstiegs. Das ursprüngliche Titelmotiv hat WebP-Varianten in 960, 1600 und 2560 Pixel Breite.
-- Sitemap nach Domain-Verifizierung in Google Search Console unter `https://steinparz.com/sitemap.xml` einreichen. Indexierung und Rankings hängen von Suchmaschinen ab.
+- Sitemap nach Domain-Verifizierung in Google Search Console unter `https://teichhof.com/sitemap.xml` einreichen. Indexierung und Rankings hängen von Suchmaschinen ab.
 - HTTPS muss auf der Domain ein gültiges Zertifikat ausliefern, bevor HTTPS-Canonicals von Suchmaschinen zuverlässig abgerufen werden können.
 
 ## Gestaltung
