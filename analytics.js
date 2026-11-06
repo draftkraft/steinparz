@@ -2,6 +2,7 @@
 (() => {
   const id = document.querySelector('meta[name="ga-measurement-id"]')?.content;
   if (!/^G-[A-Z0-9]+$/.test(id || '')) return;
+  const container = document.querySelector('meta[name="gtm-container-id"]')?.content;
   const language = document.documentElement.lang || 'de';
   const messages = {
     de: ['Besuchsstatistik', 'Mit deiner Zustimmung verwenden wir Google Analytics, um Seitenaufrufe und Aktionen wie Buchungsklicks, Galerie und Navigation zu verstehen. Dabei werden Cookies und Geräteinformationen verarbeitet. Die Datenverarbeitung erfolgt durch Google, gegebenenfalls auch in den USA. Du kannst deine Auswahl jederzeit unten über „Analytics“ ändern.', 'Zustimmen', 'Ablehnen', 'Google-Datenschutz'],
@@ -36,6 +37,14 @@
     tag.async = true;
     tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
     document.head.append(tag);
+    // The Google tag container (for Google Ads) loads only after opt-in, under the same default-denied consent state.
+    if (/^GTM-[A-Z0-9]+$/.test(container || '')) {
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      const manager = document.createElement('script');
+      manager.async = true;
+      manager.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(container);
+      document.head.append(manager);
+    }
   }
   function track(name, data = {}) {
     if (choice !== 'granted') return;
