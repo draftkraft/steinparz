@@ -102,7 +102,7 @@
       const url = new URL(control.href, location.href);
       if (/^(mailto:|tel:)$/.test(url.protocol)) {
         track('contact_click', { ...data, contact_type: url.protocol.slice(0, -1) });
-      } else if (url.hostname.endsWith('airbnb.de') || url.hostname.endsWith('airbnb.com')) {
+      } else if (url.hostname.endsWith('airbnb.de') || url.hostname.endsWith('airbnb.com') || url.hostname.endsWith('booking.com')) {
         track(url.hash === '#reviews' ? 'reviews_click' : 'booking_click', { ...data, link_domain: url.hostname });
       } else if (url.origin !== location.origin) {
         track('outbound_click', { ...data, link_domain: url.hostname });

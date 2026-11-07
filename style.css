@@ -1343,3 +1343,11 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
 .language-label:hover { background: var(--paper); }
 .language-label .language-current, .language-label > .arrow-icon { color: var(--ink); }
 .language-label:focus-within { outline: 3px solid #fff; outline-offset: 3px; }
+
+/* Booking channels: two matching buttons with a thin-line icon. */
+.booking-channels { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
+.booking-channels .button { margin-top: 0; }
+.channel-label { display: inline-flex; align-items: center; gap: 12px; font-style: normal; }
+.channel-icon { width: 22px; height: 22px; flex-shrink: 0; }
+.button .channel-label { font-size: inherit; }
+@media (max-width: 700px) { .booking-channels .button { flex: 1 1 150px; justify-content: space-between; } .channel-label { gap: 8px; } }
