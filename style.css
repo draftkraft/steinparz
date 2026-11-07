@@ -57,16 +57,6 @@ h2 em{
   padding:10px}
 .skip:focus{
   top:5px}
-.reading-progress{
-  position:fixed;
-  top:0;
-  left:0;
-  height:2px;
-  width:100%;
-  transform:scaleX(0);
-  transform-origin:left;
-  background:#bdc9a9;
-  z-index:25}
 header{
   position:absolute;
   z-index:10;
@@ -1348,3 +1338,13 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
 .channel-icon { width: 22px; height: 22px; flex-shrink: 0; }
 .button .channel-label { font-size: inherit; }
 @media (max-width: 700px) { .booking-channels .button { flex: 1 1 190px; justify-content: space-between; } .channel-label { gap: 8px; } }
+
+/* Mobile header: compact 34px language dropdown and Book button. */
+@media (max-width: 700px) {
+  header .language-label { height: 34px; min-height: 34px; }
+  body header > a.button.cream.header-cta { height: 34px; min-height: 34px; padding: 0 10px; font-size: 12px; }
+  header .language-label .language-current { font-size: 13px; }
+  header .language-label > .arrow-icon { width: 15px; height: 15px; }
+  body header > a.button.cream.header-cta .arrow-icon { width: 18px; height: 18px; }
+  header.is-scrolled { padding-top: 10px; padding-bottom: 10px; }
+}

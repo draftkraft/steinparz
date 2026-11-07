@@ -84,21 +84,6 @@ document.addEventListener('keydown', event => {
 matchMedia('(min-width: 1101px)').addEventListener('change', event => {
   if (event.matches) closeMenu();
 });
-let progressQueued = false;
-function updateProgress() {
-  const height = document.documentElement.scrollHeight - innerHeight;
-  document.querySelector('.reading-progress').style.transform = `scaleX(${height > 0 ? Math.min(1, Math.max(0, scrollY / height)) : 0})`;
-  progressQueued = false;
-}
-addEventListener('scroll', () => {
-  if (!progressQueued) {
-    progressQueued = true;
-    requestAnimationFrame(updateProgress);
-  }
-}, { passive: true });
-addEventListener('resize', updateProgress);
-updateProgress();
-
 document.querySelectorAll('.language-select').forEach(select => select.addEventListener('change', event => {
   const target = event.target.value;
   if (/^\/(?:en|it|fr|sl|hu|cs|sk)?\/?$/.test(target)) location.assign(target + location.hash);
