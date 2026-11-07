@@ -1314,8 +1314,8 @@ body { width: 100%; min-width: 0; }
 /* Sticky header with a prominent booking call to action. */
 header { position: fixed; transition: background-color .25s, padding .25s, box-shadow .25s; }
 header.is-scrolled { background: rgba(38, 59, 48, .97); box-shadow: 0 6px 24px #10251c55; padding-top: 14px; padding-bottom: 14px; }
-header > a.header-cta, .legal-top > a.header-cta { display: inline-flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 28px; padding: 18px 26px; background: #dbe0ce; color: var(--ink); border: 1px solid transparent; border-radius: 0; text-transform: none; font-weight: 400; white-space: nowrap; box-shadow: none; }
-header > a.header-cta:hover, .legal-top > a.header-cta:hover { background: var(--paper); transform: none; }
+header > a.button.cream.header-cta, .legal-top > a.button.cream.header-cta { display: inline-flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 28px; padding: 18px 26px; background: #dbe0ce; color: var(--ink); border: 1px solid transparent; border-radius: 0; text-transform: none; font-weight: 400; white-space: nowrap; box-shadow: none; }
+header > a.button.cream.header-cta:hover, .legal-top > a.button.cream.header-cta:hover { background: var(--paper); transform: none; }
 header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
 .legal-top { position: sticky; top: 0; z-index: 10; background: var(--paper); }
 .menu-open header > a.header-cta { position: relative; z-index: 13; }
@@ -1327,7 +1327,7 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
 }
 @media (max-width: 380px) { header > a.header-cta { padding: 11px 10px; gap: 6px; } header .language-label { width: 52px; } }
 @media (min-width: 1101px) { header nav a[href="#buchungswahl"] { display: none; } }
-.legal-top > a.header-cta { background: var(--ink); color: var(--paper); } .legal-top > a.header-cta:hover { background: #34503f; }
+.legal-top > a.button.cream.header-cta { background: var(--ink); color: var(--paper); } .legal-top > a.button.cream.header-cta:hover { background: #34503f; }
 
 /* All boxed buttons share one compact height (about 50px) with balanced side padding. */
 .button:not(.hero .button), header > a.header-cta, .legal-top > a.header-cta { box-sizing: border-box; height: 50px; min-height: 50px; padding: 0 24px; gap: 28px; align-items: center; line-height: 1; }
@@ -1337,3 +1337,9 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
   body header > a.button.cream.header-cta { gap: 8px; padding: 0 12px; font-size: 12.5px; }
 }
 @media (max-width: 380px) { body header > a.button.cream.header-cta { gap: 6px; padding: 0 9px; } }
+
+/* Language dropdown matches the booking button: sage fill, dark text, square, 50px high. */
+.language-label, .footer-language-select { box-sizing: border-box; height: 50px; background: #dbe0ce; border: 1px solid transparent; color: var(--ink); transition: background .3s; }
+.language-label:hover { background: var(--paper); }
+.language-label .language-current, .language-label > .arrow-icon { color: var(--ink); }
+.language-label:focus-within { outline: 3px solid #fff; outline-offset: 3px; }
