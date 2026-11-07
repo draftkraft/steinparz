@@ -1348,3 +1348,16 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
   body header > a.button.cream.header-cta .arrow-icon { width: 18px; height: 18px; }
   header.is-scrolled { padding-top: 10px; padding-bottom: 10px; }
 }
+
+/* Footer: Impressum and Analytics share one typographic style and alignment. */
+.footer-bottom .footer-legal, .footer-bottom .analytics-settings { font: 400 14.4px/1.6 Arial,Helvetica,sans-serif; letter-spacing: normal; text-transform: none; color: inherit; background: none; border: 0; padding: 0; margin: 0; text-decoration: underline; text-underline-offset: 4px; text-align: right; cursor: pointer; align-self: baseline; }
+.footer-bottom .footer-legal { margin-left: auto; }
+/* Footer language dropdown has the same size as the header one. */
+.footer-language-select { width: 88px; height: 50px; }
+@media (max-width: 700px) {
+  .footer-bottom { align-items: baseline; }
+  .footer-language-select { width: 64px; height: 34px; min-height: 34px; gap: 6px; }
+  .footer-language-select .language-current { font-size: 13px; }
+  .footer-language-select > .arrow-icon { width: 15px; height: 15px; }
+}
+@media (max-width: 380px) { .footer-language-select { width: 52px; } }
