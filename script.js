@@ -224,9 +224,8 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
   labelDates();
 })();
 
-// The floating booking button hides while the availability section itself is on screen.
-const bookButton = document.querySelector('.book-fab');
-const bookingSection = document.querySelector('#buchen');
-if (bookButton && bookingSection && 'IntersectionObserver' in window) {
-  new IntersectionObserver(entries => bookButton.classList.toggle('is-hidden', entries[0].isIntersecting), { threshold: 0.35 }).observe(bookingSection);
-}
+// Give the fixed header a solid background once the page is scrolled.
+const siteHeader = document.querySelector('header');
+function markScrolled() { if (siteHeader) siteHeader.classList.toggle('is-scrolled', scrollY > 40); }
+addEventListener('scroll', markScrolled, { passive: true });
+markScrolled();
