@@ -1338,11 +1338,8 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
 }
 @media (max-width: 380px) { body header > a.button.cream.header-cta { gap: 6px; padding: 0 9px; } }
 
-/* Language dropdown matches the booking button: sage fill, dark text, square, 50px high. */
-.language-label, .footer-language-select { box-sizing: border-box; height: 50px; background: #dbe0ce; border: 1px solid transparent; color: var(--ink); transition: background .3s; }
-.language-label:hover { background: var(--paper); }
-.language-label .language-current, .language-label > .arrow-icon { color: var(--ink); }
-.language-label:focus-within { outline: 3px solid #fff; outline-offset: 3px; }
+/* Language dropdown keeps its original look; only the height matches the 50px buttons. */
+.language-label, .footer-language-select { box-sizing: border-box; height: 50px; }
 
 /* Booking channels: two matching buttons with a thin-line icon. */
 .booking-channels { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
