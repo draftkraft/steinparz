@@ -1328,3 +1328,12 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
 @media (max-width: 380px) { header > a.header-cta { padding: 11px 10px; gap: 6px; } header .language-label { width: 52px; } }
 @media (min-width: 1101px) { header nav a[href="#buchungswahl"] { display: none; } }
 .legal-top > a.header-cta { background: var(--ink); color: var(--paper); } .legal-top > a.header-cta:hover { background: #34503f; }
+
+/* All boxed buttons share one compact height (about 50px) with balanced side padding. */
+.button:not(.hero .button), header > a.header-cta, .legal-top > a.header-cta { box-sizing: border-box; height: 50px; min-height: 50px; padding: 0 24px; gap: 28px; align-items: center; line-height: 1; }
+.button:not(.hero .button) span, header > a.header-cta span { display: inline-flex; align-items: center; line-height: 1; }
+@media (max-width: 700px) {
+  .button:not(.hero .button) { gap: 16px; padding: 0 18px; }
+  body header > a.button.cream.header-cta { gap: 8px; padding: 0 12px; font-size: 12.5px; }
+}
+@media (max-width: 380px) { body header > a.button.cream.header-cta { gap: 6px; padding: 0 9px; } }
