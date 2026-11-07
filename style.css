@@ -1314,16 +1314,17 @@ body { width: 100%; min-width: 0; }
 /* Sticky header with a prominent booking call to action. */
 header { position: fixed; transition: background-color .25s, padding .25s, box-shadow .25s; }
 header.is-scrolled { background: rgba(38, 59, 48, .97); box-shadow: 0 6px 24px #10251c55; padding-top: 14px; padding-bottom: 14px; }
-header > a.header-cta, .legal-top > a.header-cta { display: inline-flex; align-items: center; gap: 8px; flex-shrink: 0; padding: 14px 26px; background: #b89461; color: #10251c; border: 0; border-radius: 999px; font: 700 14px/1 Arial,sans-serif; letter-spacing: .07em; text-transform: uppercase; text-decoration: none; box-shadow: 0 4px 18px #10251c66; white-space: nowrap; }
-header > a.header-cta:hover, .legal-top > a.header-cta:hover { background: #cba974; transform: translateY(-1px); }
+header > a.header-cta, .legal-top > a.header-cta { display: inline-flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 28px; padding: 18px 26px; background: #dbe0ce; color: var(--ink); border: 1px solid transparent; border-radius: 0; text-transform: none; font-weight: 400; white-space: nowrap; box-shadow: none; }
+header > a.header-cta:hover, .legal-top > a.header-cta:hover { background: var(--paper); transform: none; }
 header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
 .legal-top { position: sticky; top: 0; z-index: 10; background: var(--paper); }
 .menu-open header > a.header-cta { position: relative; z-index: 13; }
 @media (max-width: 700px) {
   header { grid-template-columns: minmax(0, 1fr) auto auto auto; gap: 8px; }
-  header > a.header-cta { order: 1; padding: 11px 15px; font-size: 12.5px; }
+  header > a.header-cta { order: 1; padding: 12px 14px; gap: 10px; font-size: 11.7px; }
   header .brand span { display: none; }
   header.is-scrolled { padding-top: 10px; padding-bottom: 10px; }
 }
-@media (max-width: 380px) { header > a.header-cta { padding: 10px 12px; } header .language-label { width: 52px; } }
+@media (max-width: 380px) { header > a.header-cta { padding: 11px 10px; gap: 6px; } header .language-label { width: 52px; } }
 @media (min-width: 1101px) { header nav a[href="#buchungswahl"] { display: none; } }
+.legal-top > a.header-cta { background: var(--ink); color: var(--paper); } .legal-top > a.header-cta:hover { background: #34503f; }
