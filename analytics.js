@@ -94,7 +94,7 @@
     const control = event.target.closest('a, button');
     if (!control || panel.contains(control) || control === settings) return;
     const section = control.closest('section');
-    const position = section?.id || [...(section?.classList || [])][0] || (control.closest('header') ? 'header' : 'footer');
+    const position = control.matches('.book-fab') ? 'floating_cta' : section?.id || [...(section?.classList || [])][0] || (control.closest('header') ? 'header' : 'footer');
     const data = { action_location: position, action_name: control.id || [...control.classList][0] || control.tagName.toLowerCase() };
     if (control.matches('[data-photo]')) {
       track('gallery_open', { ...data, image_name: control.dataset.photo.split('/').pop() });

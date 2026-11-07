@@ -1310,3 +1310,10 @@ body { width: 100%; min-width: 0; }
 .landing-grid h3{font:400 19px/1.35 Georgia,serif;margin:0 0 8px}
 .landing-grid p{font-size:14.4px;color:var(--muted);margin:0}
 .landing .faq{padding:0;margin-top:40px}
+
+/* Always-reachable booking call to action. */
+.book-fab { position: fixed; z-index: 900; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); padding: 15px 30px; background: #b89461; color: #10251c; font: 700 15px/1 Arial,sans-serif; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; border-radius: 999px; box-shadow: 0 8px 30px #10251c55; transition: opacity .25s, transform .25s, visibility .25s; }
+.book-fab:hover { background: #cba974; }
+.book-fab:focus-visible { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 6px #10251c; }
+.book-fab.is-hidden { opacity: 0; visibility: hidden; transform: translateY(12px); pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .book-fab { transition: none; } }

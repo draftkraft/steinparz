@@ -223,3 +223,10 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
   new MutationObserver(labelDates).observe(widget, { childList: true, subtree: true });
   labelDates();
 })();
+
+// The floating booking button hides while the availability section itself is on screen.
+const bookButton = document.querySelector('.book-fab');
+const bookingSection = document.querySelector('#buchen');
+if (bookButton && bookingSection && 'IntersectionObserver' in window) {
+  new IntersectionObserver(entries => bookButton.classList.toggle('is-hidden', entries[0].isIntersecting), { threshold: 0.35 }).observe(bookingSection);
+}
