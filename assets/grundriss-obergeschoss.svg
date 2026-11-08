@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1580" height="871" viewBox="0 0 1580 871">
+  <defs>
+    <clipPath id="clip-path-1">
+      <path d="M0 0 L30 0 L30 30 L0 30 Z"/>
+    </clipPath>
+    <pattern id="pattern-1" patternUnits="userSpaceOnUse" width="30" height="30" patternTransform="matrix(0.707 0.707 -0.707 0.707 0 0)">
+      <g clip-path="url(#clip-path-1)">
+        <rect x="0" y="0" width="30" height="30" fill="#ece7dc"/>
+        <rect x="0" y="0" width="30" height="30" fill="none" stroke="#b9b2a2"/>
+      </g>
+    </pattern>
+    <clipPath id="clip-path-2">
+      <path d="M0 0 L20 0 L20 20 L0 20 Z"/>
+    </clipPath>
+    <pattern id="pattern-2" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="matrix(1 0 0 1 0 0)">
+      <g clip-path="url(#clip-path-2)">
+        <rect x="0" y="0" width="20" height="20" fill="#cfe3f1"/>
+        <polyline points="0,0 20,0 20,20" fill="none" stroke="#9db8c9"/>
+      </g>
+    </pattern>
+  </defs>
+  <title>grundriss-obergeschoss.svg</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <rect x="1268.6" y="130" width="162" height="571.8" fill="url(#pattern-1)" stroke="#808080" stroke-width="3"/>
+    <text transform="matrix(1 0 0 1 1349.6 415.9)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">BALKON</tspan></text>
+    <text transform="matrix(1 0 0 1 1349.6 431.9)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">12,60 m²</tspan></text>
+    <rect x="110" y="130" width="1158.6" height="571.8" fill="#808080"/>
+    <rect x="128.6" y="412.54" width="380.97" height="270.66" fill="#fbe8a6"/>
+    <polyline points="391.19,398.01 128.6,398.01 128.6,148.6 391.19,148.6" fill="#fbe8a6"/>
+    <polygon points="748.282,399.427 528.95,399.427 528.95,148.6 857.19,148.6 857.19,405.83 857.19,472.94 857.19,683.2 749.707,683.2" fill="#fbe8a6"/>
+    <rect x="857.19" y="405.83" width="392.81" height="67.11" fill="#fbe8a6"/>
+    <polygon points="878.71,683.2 878.71,487.48 956.938,487.48 956.938,530.432 963.62,530.432 963.62,487.48 1022.04,487.48 1022.04,526.62 1069.48,526.18 1069.48,682.76" fill="#fbe8a6"/>
+    <polyline points="1148.12,526.62 1148.12,495.31 1250,495.31 1250,683.2 1078.42,683.2 1078.42,526.62" fill="#fbe8a6"/>
+    <rect x="1036.91" y="171.371" width="213.09" height="209.859" fill="#fbe8a6"/>
+    <polygon points="401.95,278.34 401.95,224.65 455.322,224.65 455.49,214.086 401.95,214.086 401.95,148.6 509.57,148.6 509.57,278.34" fill="url(#pattern-2)"/>
+    <rect x="878.71" y="148.6" width="145.29" height="238.22" fill="url(#pattern-2)"/>
+    <rect x="509.57" y="409.19" width="38.75" height="63.75" fill="#808080"/>
+    <circle cx="528.945" cy="455.268" r="9.989" fill="#ffffff" stroke="#222222"/>
+    <circle cx="528.945" cy="428.856" r="9.989" fill="#ffffff" stroke="#222222"/>
+    <rect x="401.95" y="224.65" width="53.372" height="53.69" fill="#ffffff" stroke="#222222"/>
+    <rect x="486.73" y="172.869" width="21.52" height="38.361" fill="#ffffff" stroke="#222222"/>
+    <rect x="422.548" y="398.01" width="63.352" height="14.53" fill="#fbe8a6"/>
+    <line x1="485.9" y1="405.28" x2="485.9" y2="469.223" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M422.548 405.28 C422.573 440.584 450.922 469.198 485.9 469.223" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="387.087" y="323.23" width="17.583" height="63.1" fill="#fbe8a6"/>
+    <line x1="331.29" y1="386.33" x2="392.141" y2="386.33" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M392.141 323.23 C358.537 323.239 331.298 351.484 331.29 386.33" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="455.322" y="279.187" width="52.968" height="11.008" fill="#cfe3f1"/>
+    <line x1="508.29" y1="284.691" x2="508.29" y2="231.715" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M455.322 284.691 C455.331 255.44 479.039 231.728 508.29 231.715" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="965.62" y="472.94" width="48.43" height="14.54" fill="#fbe8a6"/>
+    <line x1="965.62" y1="534.64" x2="965.62" y2="486.21" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M1014.05 486.21 C1014.058 499.057 1008.958 511.38 999.874 520.464 C990.79 529.548 978.467 534.648 965.62 534.64" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="937.9" y="386.82" width="48.43" height="19.01" fill="#fbe8a6"/>
+    <line x1="986.33" y1="387.55" x2="986.33" y2="339.12" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M937.9 386.33 C937.892 373.483 942.992 361.16 952.076 352.076 C961.16 342.992 973.483 337.892 986.33 337.9" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="1069.48" y="381.23" width="43.04" height="24.6" fill="#fbe8a6"/>
+    <line x1="1069.48" y1="382.53" x2="1069.48" y2="339.48" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M1112.52 382.53 C1112.533 371.11 1108.003 360.154 1099.929 352.078 C1091.855 344.002 1080.9 339.469 1069.48 339.48" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="1153.034" y="472.94" width="43.05" height="22.057" fill="#fbe8a6"/>
+    <line x1="1153.034" y1="494.287" x2="1153.034" y2="537.327" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M1196.084 494.287 C1196.094 505.707 1191.562 516.662 1183.486 524.736 C1175.41 532.81 1164.454 537.34 1153.034 537.327" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="1250" y="412.54" width="19.859" height="50.235" fill="#ffffff"/>
+    <line x1="1250.3" y1="412.54" x2="1200.065" y2="412.54" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M1250.3 462.775 C1236.974 462.785 1224.19 457.496 1214.767 448.073 C1205.344 438.65 1200.055 425.866 1200.065 412.54" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="110" y="421.52" width="18.6" height="73.79" fill="#ffffff" stroke="#222222"/>
+    <rect x="1251" y="542.77" width="18.6" height="67.1" fill="#ffffff" stroke="#222222"/>
+    <rect x="1250" y="268.555" width="19.6" height="73.525" fill="#ffffff" stroke="#222222"/>
+    <line x1="119.3" y1="495.31" x2="119.3" y2="421.52" fill="#000000" stroke="#222222" stroke-width="0.8"/>
+    <line x1="1259.3" y1="609.87" x2="1259.3" y2="542.77" fill="#000000" stroke="#222222" stroke-width="0.8"/>
+    <line x1="1259.3" y1="342.08" x2="1259.3" y2="268.555" fill="#000000" stroke="#222222" stroke-width="0.8"/>
+    <text transform="matrix(1 0 0 1 642.09 297.017)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">EMPORE</tspan></text>
+    <text transform="matrix(1 0 0 1 642.09 313.017)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">28,74 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 1043.79 436.563)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">GANG</tspan></text>
+    <text transform="matrix(1 0 0 1 1043.79 452.563)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">9,39 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 986.33 550.845)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
+    <text transform="matrix(1 0 0 1 986.33 566.845)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">8,93 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 1159.474 326.549)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
+    <text transform="matrix(1 0 0 1 1159.474 342.549)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">13,77 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 458.966 169.252)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">DU./WC</tspan></text>
+    <text transform="matrix(1 0 0 1 462.04 183.626)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">3,88 m²</tspan></text>
+    <line x1="110" y1="94" x2="1268.6" y2="94" fill="#000000" stroke="#222222"/>
+    <line x1="110" y1="87" x2="110" y2="101" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <line x1="1268.6" y1="87" x2="1268.6" y2="101" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <text transform="matrix(1 0 0 1 689.3 86)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">19,31</tspan></text>
+    <line x1="74" y1="130" x2="74" y2="701.8" fill="#000000" stroke="#222222"/>
+    <line x1="67" y1="130" x2="81" y2="130" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <line x1="67" y1="701.8" x2="81" y2="701.8" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <text transform="matrix(0 -1 1 0 66 415.9)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">9,53</tspan></text>
+    <line x1="1268.6" y1="737.8" x2="1430.6" y2="737.8" fill="#000000" stroke="#222222"/>
+    <line x1="1268.6" y1="730.8" x2="1268.6" y2="744.8" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <line x1="1430.6" y1="730.8" x2="1430.6" y2="744.8" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <text transform="matrix(1 0 0 1 1349.6 729.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">1,40</tspan></text>
+    <text transform="matrix(1 0 0 1 110 801.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#222222"><tspan x="0" y="0">OBERGESCHOSS</tspan></text>
+    <text transform="matrix(1 0 0 1 110 821.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="16" fill="#222222"><tspan x="0" y="0">FERIENHAUS „TEICHHOF“</tspan></text>
+    <rect x="1076.814" y="548.168" width="124.476" height="98.174" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <ellipse cx="1006.29" cy="296.247" rx="14.4" ry="10.2" fill="#ffffff" stroke="#222222"/>
+    <rect x="879.29" y="200.69" width="55" height="109.757" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <ellipse cx="1006.29" cy="246.431" rx="14.4" ry="10.2" fill="#ffffff" stroke="#222222"/>
+    <text transform="matrix(1 0 0 1 970.219 273.062)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">BAD / WC</tspan></text>
+    <text transform="matrix(1 0 0 1 970.219 289.062)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">9,61 m²</tspan></text>
+    <rect x="879.285" y="323.23" width="31.836" height="55.145" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <rect x="879.29" y="190.321" width="55" height="10.369" fill="#808080" stroke="#808080" stroke-width="1.2"/>
+    <rect x="404.67" y="291.76" width="124.521" height="107.667" fill="#fbe8a6"/>
+    <ellipse cx="428.636" cy="195.505" rx="12" ry="15" fill="#ffffff" stroke="#222222"/>
+    <polygon points="523.95,683.2 523.95,474.398 546.377,474.398 546.377,412.325 737.04,412.325 737.04,683.2" fill="#cccccc"/>
+    <rect x="1101.179" y="170.869" width="98.174" height="124.476" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <rect x="1101.179" y="170.869" width="98.174" height="22.2" fill="#eeeeee" stroke="#222222"/>
+    <rect x="1076.848" y="548.168" width="22.2" height="98.174" fill="#eeeeee" stroke="#222222"/>
+    <text transform="matrix(1 0 0 1 1157.295 662.719)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
+    <text transform="matrix(1 0 0 1 1157.295 678.719)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">7,66 m²</tspan></text>
+    <rect x="385.094" y="494.287" width="124.476" height="98.174" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <rect x="205.433" y="274.951" width="98.174" height="124.476" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <rect x="205.433" y="377.227" width="98.174" height="22.2" fill="#eeeeee" stroke="#222222"/>
+    <rect x="487.336" y="494.287" width="22.2" height="98.174" fill="#eeeeee" stroke="#222222"/>
+    <text transform="matrix(1 0 0 1 256.775 232.95)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
+    <text transform="matrix(1 0 0 1 256.775 248.95)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">21,69 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 297.56 548.99)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
+    <text transform="matrix(1 0 0 1 297.56 564.99)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">28,64 m²</tspan></text>
+    <rect x="148.29" y="413.252" width="86.781" height="48" fill="#ffffff" stroke="#222222"/>
+    <rect x="172.89" y="469.223" width="27" height="24" fill="#ffffff" stroke="#222222"/>
+    <rect x="128.509" y="512.845" width="63.171" height="140.909" fill="#ffffff" stroke="#222222"/>
+    <rect x="879.795" y="556.221" width="54.495" height="112.738" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <rect x="879.795" y="648.852" width="54.495" height="20.107" fill="#eeeeee" stroke="#222222"/>
+    <rect x="1014.05" y="556.221" width="54.495" height="112.738" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <polygon points="690.3,147.58 808.462,147.58 808.462,313.78 740.864,313.78 740.864,218.273 690.3,218.273" fill="#f4f0e6" stroke="#000000" stroke-miterlimit="10"/>
+    <line x1="704.862" y1="150.98" x2="704.862" y2="216.98" fill="#000000" stroke="#888888"/>
+    <line x1="719.261" y1="150.98" x2="719.261" y2="216.98" fill="#000000" stroke="#888888"/>
+    <line x1="733.661" y1="150.98" x2="733.661" y2="216.98" fill="#000000" stroke="#888888"/>
+    <line x1="806.859" y1="148.237" x2="743.639" y2="217.326" fill="#000000" stroke="#888888"/>
+    <line x1="810.727" y1="177.005" x2="743.811" y2="220.932" fill="#000000" stroke="#888888"/>
+    <line x1="806.344" y1="203.225" x2="743.588" y2="223.661" fill="#000000" stroke="#888888"/>
+    <text transform="matrix(1 0 0 1 733.661 188.78)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">STGH.</tspan></text>
+    <line x1="807.966" y1="225.946" x2="741.966" y2="225.946" fill="#000000" stroke="#888888"/>
+    <line x1="780.801" y1="146.173" x2="741.966" y2="216.167" fill="#000000" stroke="#888888"/>
+    <line x1="757.654" y1="147.662" x2="737.618" y2="216.672" fill="#000000" stroke="#888888"/>
+    <line x1="807.859" y1="240.68" x2="741.859" y2="240.68" fill="#000000" stroke="#888888"/>
+    <line x1="808.249" y1="256.071" x2="742.249" y2="256.071" fill="#000000" stroke="#888888"/>
+    <line x1="807.966" y1="272.38" x2="741.966" y2="272.38" fill="#000000" stroke="#888888"/>
+    <line x1="808.811" y1="287.688" x2="742.811" y2="287.688" fill="#000000" stroke="#888888"/>
+    <line x1="808.588" y1="302.927" x2="742.588" y2="302.927" fill="#000000" stroke="#888888"/>
+    <rect x="528.945" y="196.014" width="46.345" height="96.587" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <rect x="575.29" y="149.161" width="111.623" height="46.344" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
+    <text transform="matrix(1 0 0 1 629.024 554.133)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">GALLERIE</tspan></text>
+    <line x1="128.6" y1="274.511" x2="1250" y2="271.555" fill="#cccccc" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="5 5"/>
+    <line x1="129.6" y1="559.64" x2="1251" y2="556.684" fill="#cccccc" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="5 5"/>
+    <text transform="matrix(1 0 0 1 1063.002 288.303)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">RH 2m</tspan></text>
+    <text transform="matrix(1 0 0 1 1225.183 548.765)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">RH 2m</tspan></text>
+  </g>
+</svg>

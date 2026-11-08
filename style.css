@@ -1363,3 +1363,14 @@ header > a.header-cta:focus-visible, .legal-top > a.header-cta:focus-visible { o
 /* Anchor jumps leave room for the fixed header (about 78px desktop, 54px mobile) plus breathing space. */
 html { scroll-padding-top: 108px; }
 @media (max-width: 700px) { html { scroll-padding-top: 80px; } }
+
+/* Floor plan page for guests. */
+.plans-content { max-width: 1280px; }
+.plans-content h1 { margin-bottom: 25px; }
+.plans-intro { max-width: 640px; margin: 0 0 20px; }
+.plan { margin-top: 55px; }
+.plan > p { max-width: 640px; margin: 0 0 22px; }
+.plan-link { display: block; background: #fff; border: 1px solid var(--line); text-decoration: none; }
+.plan-link img { display: block; width: 100%; height: auto; }
+.plan .plan-actions { margin: 14px 0 0; font-size: 14.4px; }
+.plans-note { margin-top: 45px; max-width: 640px; color: var(--muted); font-size: 14.4px; }
