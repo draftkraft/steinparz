@@ -1188,11 +1188,13 @@ body .garden-scene .image-caption { left: 8%; right: 8%; }
   to { scale: 1; }
 }
 
-.analytics-consent { position: fixed; z-index: 1000; bottom: 20px; left: 20px; width: min(520px, calc(100% - 40px)); padding: 26px; background: var(--paper); color: var(--ink); border: 1px solid #929d87; box-shadow: 0 8px 40px #10251c33; }
+.analytics-consent { max-height: calc(100svh - 40px); overflow-y: auto; position: fixed; z-index: 1000; bottom: 20px; left: 20px; width: min(520px, calc(100% - 40px)); padding: 26px; background: var(--paper); color: var(--ink); border: 1px solid #929d87; box-shadow: 0 8px 40px #10251c33; }
 .analytics-consent[hidden] { display: none; }
 .analytics-consent h2 { font: 27px/1.2 Georgia,serif; margin: 0 0 14px; }
 .analytics-consent p { font: 14.4px/1.6 Arial,sans-serif; margin: 0 0 12px; }
 .analytics-consent a { font-size: 11.7px; text-decoration: underline; }
+.analytics-consent-ads { display: flex; align-items: flex-start; gap: 10px; margin: 14px 0 0; font: 14.4px/1.5 Arial,sans-serif; cursor: pointer; }
+.analytics-consent-ads input { flex: none; width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--ink); }
 .analytics-consent > div { display: flex; gap: 12px; margin-top: 20px; }
 .analytics-consent button { flex: 1; padding: 12px 16px; border: 1px solid var(--ink); color: var(--ink); background: transparent; font: 14.4px/1.4 Arial,sans-serif; cursor: pointer; }
 .analytics-consent button:first-child { background: var(--ink); color: var(--paper); }
