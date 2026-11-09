@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1641.785" height="871" viewBox="0 0 1641.785 871">
   <title>grundriss-erdgeschoss.svg</title>
   <g id="Layer_1" data-name="Layer 1">
-    <rect x="42.336" y="110" width="1490.31" height="571.8" fill="#808080"/>
+    <rect x="74.737" y="110" width="1457.909" height="571.8" fill="#808080"/>
     <rect x="392.646" y="128.6" width="354.6" height="534.6" fill="#fbe8a6"/>
     <polygon points="767.046,128.6 901.446,128.6 901.446,200.2 894.246,200.2 894.246,312.8 767.046,312.8" fill="#fbe8a6"/>
     <rect x="901.446" y="128.6" width="152.4" height="166.2" fill="#f4f0e6"/>
@@ -130,7 +130,7 @@
     <text transform="matrix(1 0 0 1 1323.846 77)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">0,12</tspan></text>
     <text transform="matrix(1 0 0 1 1421.346 77)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">3,13</tspan></text>
     <text transform="matrix(1 0 0 1 1524.546 77)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">0,31</tspan></text>
-    <line x1="42.336" y1="708.8" x2="1533.246" y2="708.8" fill="#000000" stroke="#222222"/>
+    <line x1="74.737" y1="708.8" x2="1533.246" y2="708.8" fill="#000000" stroke="#222222"/>
     <line x1="374.046" y1="701.6" x2="374.046" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <line x1="392.646" y1="701.6" x2="392.646" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <line x1="747.246" y1="701.6" x2="747.246" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
@@ -194,28 +194,28 @@
     <circle cx="767.51" cy="423.699" r="9.989" fill="#ffffff" stroke="#222222"/>
     <ellipse cx="1497.546" cy="230.3" rx="11.358" ry="12.775" fill="#ffffff" stroke="#222222"/>
     <ellipse cx="1497.546" cy="270.8" rx="11.358" ry="12.775" fill="#ffffff" stroke="#222222"/>
-    <rect x="72.737" y="146.6" width="301.309" height="534.6" fill="#fff4e8"/>
+    <rect x="101.281" y="131" width="272.765" height="550.2" fill="#fff4e8"/>
     <rect x="309.846" y="110" width="60" height="35.793" fill="#fff4e8"/>
-    <line x1="369.846" y1="145.681" x2="369.846" y2="205.681" fill="#000000" stroke="#222222" stroke-width="1.5"/>
-    <path d="M309.846 145.681 C309.846 178.818 336.709 205.681 369.846 205.681" fill="none" stroke="#222222" stroke-width="0.8"/>
-    <rect x="42.336" y="190.3" width="30.11" height="97.8" fill="#ffffff" stroke="#222222"/>
-    <line x1="57.391" y1="190.3" x2="57.391" y2="288.1" fill="#000000" stroke="#222222" stroke-width="0.8"/>
-    <rect x="42.336" y="387.23" width="32.401" height="191.276" fill="#fff4e8"/>
-    <rect x="180.049" y="493.9" width="72" height="154.2" fill="#f6c38b" stroke="#222222" stroke-width="1.2"/>
-    <rect x="153.049" y="612.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="255.049" y="612.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="153.049" y="576.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="255.049" y="576.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="153.049" y="540.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="255.049" y="540.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="153.049" y="504.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="255.049" y="504.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
-    <rect x="204.049" y="651.631" width="27" height="24" fill="#f6c38b" stroke="#222222"/>
-    <rect x="202.549" y="466.369" width="27" height="24" fill="#f6c38b" stroke="#222222"/>
-    <rect x="166.648" y="202.331" width="109.401" height="187.944" fill="#caec9c" stroke="#222222" stroke-width="1.2"/>
+    <line x1="369.846" y1="130.681" x2="369.846" y2="190.681" fill="#000000" stroke="#222222" stroke-width="1.5"/>
+    <path d="M309.846 130.681 C309.846 163.818 336.709 190.681 369.846 190.681" fill="none" stroke="#222222" stroke-width="0.8"/>
+    <rect x="75.336" y="190.3" width="25.945" height="97.8" fill="#ffffff" stroke="#222222"/>
+    <line x1="88.308" y1="190.3" x2="88.308" y2="288.1" fill="#000000" stroke="#222222" stroke-width="0.8"/>
+    <rect x="75.336" y="387.23" width="25.945" height="191.276" fill="#fff4e8"/>
+    <rect x="199.049" y="493.9" width="72" height="154.2" fill="#f6c38b" stroke="#222222" stroke-width="1.2"/>
+    <rect x="172.049" y="612.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="274.049" y="612.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="172.049" y="576.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="274.049" y="576.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="172.049" y="540.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="274.049" y="540.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="172.049" y="504.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="274.049" y="504.1" width="24" height="27" fill="#f6c38b" stroke="#222222"/>
+    <rect x="223.049" y="651.631" width="27" height="24" fill="#f6c38b" stroke="#222222"/>
+    <rect x="221.549" y="466.369" width="27" height="24" fill="#f6c38b" stroke="#222222"/>
+    <rect x="187.648" y="202.331" width="109.401" height="187.944" fill="#caec9c" stroke="#222222" stroke-width="1.2"/>
     <line x1="139.648" y1="293.558" x2="249.049" y2="293.395" fill="#caec9c"/>
-    <text transform="matrix(1 0 0 1 217.552 428.669)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">VERANDA</tspan></text>
-    <text transform="matrix(1 0 0 1 217.552 446.669)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">42,97 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 242.552 428.669)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">VERANDA</tspan></text>
+    <text transform="matrix(1 0 0 1 242.552 446.669)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">36,30 m²</tspan></text>
     <path d="M980.046 159.362 C1023.654 159.362 1021.244 167.815 1021.351 208.228 C1021.364 213.108 1021.244 243.575 1021.244 243.575" fill="none" stroke="#000000" stroke-miterlimit="10"/>
     <polyline points="1013.845,238.354 1021.381,249.907 1029.394,238.354" fill="none" stroke="#000000" stroke-miterlimit="10"/>
     <path d="M961.509 271.4 C953.224 271.4 946.509 266.027 946.509 259.4 C946.509 252.773 953.224 247.4 961.509 247.4 C966.078 247.4 970.171 249.035 972.922 251.613 L972.922 247.941 L979.446 247.941 L979.446 270.859 L972.922 270.859 L972.922 267.187 C970.171 269.765 966.078 271.4 961.509 271.4 Z" fill="#ffffff" stroke="#222222"/>
@@ -232,9 +232,9 @@
     <circle cx="584.129" cy="153.934" r="4.855" fill="none" stroke="#222222"/>
     <circle cx="553.692" cy="153.934" r="4.855" fill="none" stroke="#222222"/>
     <circle cx="569.192" cy="140.826" r="4.855" fill="none" stroke="#222222"/>
-    <line x1="221.185" y1="203.325" x2="220.271" y2="388.967" fill="#caec9c" stroke="#ffffff" stroke-miterlimit="10"/>
-    <line x1="166.648" y1="293.558" x2="276.049" y2="293.395" fill="#caec9c" stroke="#000000" stroke-width="3" stroke-miterlimit="10"/>
-    <text transform="matrix(1 0 0 1 221.348 281.569)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">Tischtennis</tspan></text>
+    <line x1="242.185" y1="203.325" x2="241.271" y2="388.967" fill="#caec9c" stroke="#ffffff" stroke-miterlimit="10"/>
+    <line x1="187.648" y1="293.558" x2="297.049" y2="293.395" fill="#caec9c" stroke="#000000" stroke-width="3" stroke-miterlimit="10"/>
+    <text transform="matrix(1 0 0 1 242.348 281.569)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">Tischtennis</tspan></text>
     <path d="M982.922 491.711 L1013.186 491.711 C1019.813 491.711 1025.186 497.084 1025.186 503.711 L1025.186 536.506 C1025.186 543.133 1019.813 548.506 1013.186 548.506 L982.922 548.506 C976.295 548.506 970.922 543.133 970.922 536.506 L970.922 503.711 C970.922 497.084 976.295 491.711 982.922 491.711 Z" fill="#e6e6e6" stroke="#000000" stroke-miterlimit="10"/>
     <path d="M1016.535 539.881 C1004.2 538.693 979.883 540.233 979.883 540.233 C979.883 540.233 984.291 537.557 985.651 534.221 C988.505 527.224 986.611 519.286 986.611 512.156 C986.611 505.681 980.826 503.067 979.883 503 C986.597 503.789 995.359 504.555 1001.994 503.823 C1005.995 503.382 1011.994 503.022 1016.535 503.022 L1016.535 503.022" fill="none" stroke="#000000" stroke-miterlimit="10"/>
     <rect x="1305.405" y="450.507" width="22.492" height="19.993" fill="#f6c38b" stroke="#222222"/>
@@ -243,10 +243,10 @@
     <line x1="1515.788" y1="194" x2="1433.664" y2="194" fill="#000000" stroke="#888888"/>
     <rect x="1471.726" y="140" width="11.462" height="10.701" fill="none" stroke="#000000" stroke-miterlimit="10"/>
     <line x1="1477.457" y1="145.35" x2="1477.795" y2="127.551" fill="none" stroke="#000000" stroke-miterlimit="10"/>
-    <line x1="42.336" y1="701.6" x2="42.336" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
-    <line x1="72.446" y1="701.6" x2="72.446" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
-    <text transform="matrix(1 0 0 1 211.307 703.224)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">4,64</tspan></text>
-    <text transform="matrix(1 0 0 1 58.536 703.224)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">0,52</tspan></text>
+    <line x1="74.336" y1="701.6" x2="74.336" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <line x1="101.446" y1="701.6" x2="101.446" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <text transform="matrix(1 0 0 1 224.307 703.224)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">3,98</tspan></text>
+    <text transform="matrix(1 0 0 1 88.536 703.224)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">0,44</tspan></text>
     <rect x="1398.242" y="268.8" width="26.168" height="24.5" fill="#f6c38b" stroke="#222222"/>
   </g>
 </svg>
