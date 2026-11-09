@@ -23,8 +23,7 @@
     <line x1="1057.112" y1="157.024" x2="990.196" y2="200.952" fill="#000000" stroke="#888888"/>
     <line x1="1052.729" y1="183.244" x2="989.973" y2="203.681" fill="#000000" stroke="#888888"/>
     <text transform="matrix(1 0 0 1 951.246 167.813)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">STGH.</tspan></text>
-    <rect x="767.046" y="128.6" width="29.066" height="166.2" fill="#c78a14" stroke="#222222"/>
-    <text transform="matrix(0 -1 1 0 784.646 212)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" text-anchor="middle"><tspan x="0" y="0">GARDEROBE</tspan></text>
+    <rect x="767.046" y="128.6" width="29.066" height="166.2" fill="#f6c38b" stroke="#222222"/>
     <rect x="392.646" y="128.6" width="354.6" height="36" fill="#f3f0e8" stroke="#222222"/>
     <rect x="392.646" y="164.6" width="36" height="131.4" fill="#f3f0e8" stroke="#222222"/>
     <rect x="711.246" y="164.6" width="36" height="148.2" fill="#f3f0e8" stroke="#222222"/>
@@ -52,7 +51,7 @@
     <rect x="1241.04" y="462.207" width="51" height="86.377" fill="#e6e6e6" stroke="#222222" stroke-width="1.2"/>
     <rect x="1106.046" y="484" width="66" height="48" fill="#f6c38b" stroke="#222222"/>
     <rect x="1037.646" y="657.433" width="146.4" height="5.767" fill="#000000" stroke="#222222"/>
-    <rect x="1305.246" y="311.9" width="87.362" height="43.247" fill="#d9d2c0" stroke="#222222"/>
+    <rect x="1305.246" y="311.9" width="87.362" height="43.247" fill="#f6c38b" stroke="#222222"/>
     <text transform="matrix(1 0 0 1 1190.046 182)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">KINDERZIMMER</tspan></text>
     <text transform="matrix(1 0 0 1 1190.046 200)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">11,88 m²</tspan></text>
     <rect x="1203.546" y="243.395" width="117" height="51" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
