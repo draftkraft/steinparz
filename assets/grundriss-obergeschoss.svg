@@ -74,13 +74,13 @@
     <text transform="matrix(1 0 0 1 642.09 354.017)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">28,74 m²</tspan></text>
     <text transform="matrix(1 0 0 1 1043.79 436.563)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">GANG</tspan></text>
     <text transform="matrix(1 0 0 1 1043.79 452.563)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">9,39 m²</tspan></text>
-    <text transform="matrix(1 0 0 1 986.33 550.845)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
-    <text transform="matrix(1 0 0 1 986.33 566.845)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">8,93 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 974.33 550.845)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
+    <text transform="matrix(1 0 0 1 974.33 566.845)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">8,93 m²</tspan></text>
     <text transform="matrix(1 0 0 1 1159.474 326.549)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
     <text transform="matrix(1 0 0 1 1159.474 342.549)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">13,77 m²</tspan></text>
     <text transform="matrix(1 0 0 1 458.966 169.252)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">DU./WC</tspan></text>
     <text transform="matrix(1 0 0 1 462.04 183.626)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">3,88 m²</tspan></text>
-    <line x1="110" y1="94" x2="1268.6" y2="94" fill="#000000" stroke="#222222"/>
+    <line x1="110" y1="94" x2="1430.6" y2="94" fill="#000000" stroke="#222222"/>
     <line x1="110" y1="87" x2="110" y2="101" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <line x1="1268.6" y1="87" x2="1268.6" y2="101" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <text transform="matrix(1 0 0 1 689.3 86)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">19,31</tspan></text>
@@ -88,10 +88,7 @@
     <line x1="67" y1="130" x2="81" y2="130" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <line x1="67" y1="701.8" x2="81" y2="701.8" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <text transform="matrix(0 -1 1 0 66 415.9)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">9,53</tspan></text>
-    <line x1="1268.6" y1="737.8" x2="1430.6" y2="737.8" fill="#000000" stroke="#222222"/>
-    <line x1="1268.6" y1="730.8" x2="1268.6" y2="744.8" fill="#000000" stroke="#222222" stroke-width="1.2"/>
-    <line x1="1430.6" y1="730.8" x2="1430.6" y2="744.8" fill="#000000" stroke="#222222" stroke-width="1.2"/>
-    <text transform="matrix(1 0 0 1 1349.6 729.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">1,40</tspan></text>
+    <text transform="matrix(1 0 0 1 1349.6 84.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">1,32</tspan></text>
     <text transform="matrix(1 0 0 1 110 801.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#222222"><tspan x="0" y="0">OBERGESCHOSS</tspan></text>
     <text transform="matrix(1 0 0 1 110 821.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="16" fill="#222222"><tspan x="0" y="0">FERIENHAUS „TEICHHOF“</tspan></text>
     <rect x="1078.814" y="548.168" width="124.476" height="98.174" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
@@ -111,8 +108,8 @@
     <rect x="205.433" y="272.951" width="98.174" height="124.476" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
     <rect x="205.433" y="377.434" width="98.174" height="19.993" fill="#eeeeee" stroke="#222222"/>
     <rect x="487.336" y="494.287" width="22.2" height="98.174" fill="#eeeeee" stroke="#222222"/>
-    <text transform="matrix(1 0 0 1 257.427 221.369)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
-    <text transform="matrix(1 0 0 1 257.427 237.369)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">21,69 m²</tspan></text>
+    <text transform="matrix(1 0 0 1 257.427 249.369)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
+    <text transform="matrix(1 0 0 1 257.427 265.369)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">21,69 m²</tspan></text>
     <text transform="matrix(1 0 0 1 303.607 504.992)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">SCHLAFZIMMER</tspan></text>
     <text transform="matrix(1 0 0 1 303.607 520.992)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">28,64 m²</tspan></text>
     <rect x="148.29" y="413.252" width="79.749" height="42.016" fill="#f6c38b" stroke="#222222"/>
@@ -139,12 +136,12 @@
     <line x1="808.588" y1="302.927" x2="742.588" y2="302.927" fill="#000000" stroke="#888888"/>
     <rect x="528.945" y="210.014" width="46.345" height="80.287" fill="#c69c6d" stroke="#222222" stroke-width="1.2"/>
     <rect x="575.29" y="163.161" width="111.623" height="46.344" fill="#c69c6d" stroke="#222222" stroke-width="1.2"/>
-    <text transform="matrix(1 0 0 1 629.024 554.133)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">GALLERIE</tspan></text>
+    <text transform="matrix(1 0 0 1 629.024 554.133)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">GALERIE</tspan></text>
     <text transform="matrix(1 0 0 1 1063.002 288.303)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">RH 2m</tspan></text>
     <text transform="matrix(1 0 0 1 1225.183 548.765)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">RH 2m</tspan></text>
     <path d="M733.661 177.079 C777.269 177.079 774.859 185.533 774.966 225.946 C774.979 230.825 774.859 261.293 774.859 261.293" fill="none" stroke="#000000" stroke-miterlimit="10"/>
     <polyline points="767.461,256.071 774.996,267.625 783.009,256.071" fill="none" stroke="#000000" stroke-miterlimit="10"/>
-    <text transform="matrix(1 0 0 1 344.603 287.864)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">RH 2m</tspan></text>
+    <text transform="matrix(1 0 0 1 331.603 287.864)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">RH 2m</tspan></text>
     <text transform="matrix(1 0 0 1 227.112 549.989)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">RH 2m</tspan></text>
     <rect x="487.336" y="474.23" width="22.492" height="19.993" fill="#f6c38b" stroke="#222222"/>
     <rect x="487.336" y="592.597" width="22.492" height="19.993" fill="#f6c38b" stroke="#222222"/>
@@ -198,5 +195,6 @@
     <g>
       <path d="M748.881 151.18 L748.881 148.6 L748.881 148.1 L749.381 148.1 L752.128 148.1 L752.128 149.1 L749.381 149.1 L749.381 148.6 L749.881 148.6 L749.881 151.18 Z M757.621 148.1 L763.115 148.1 L763.115 149.1 L757.621 149.1 Z M768.608 148.1 L774.101 148.1 L774.101 149.1 L768.608 149.1 Z M779.595 148.1 L785.088 148.1 L785.088 149.1 L779.595 149.1 Z M790.582 148.1 L793.329 148.1 L793.829 148.1 L793.829 148.6 L793.829 151.18 L792.829 151.18 L792.829 148.6 L793.329 148.6 L793.329 149.1 L790.582 149.1 Z M793.829 156.339 L793.829 161.499 L792.829 161.499 L792.829 156.339 Z M793.829 166.659 L793.829 171.818 L792.829 171.818 L792.829 166.659 Z M793.829 176.978 L793.829 182.138 L792.829 182.138 L792.829 176.978 Z M793.829 187.297 L793.829 192.457 L792.829 192.457 L792.829 187.297 Z M793.829 197.616 L793.829 202.776 L792.829 202.776 L792.829 197.616 Z M793.829 207.936 L793.829 213.095 L792.829 213.095 L792.829 207.936 Z M793.829 218.255 L793.829 223.415 L792.829 223.415 L792.829 218.255 Z M793.829 228.574 L793.829 231.154 L793.829 231.654 L793.329 231.654 L790.582 231.654 L790.582 230.654 L793.329 230.654 L793.329 231.154 L792.829 231.154 L792.829 228.574 Z M785.088 231.654 L779.595 231.654 L779.595 230.654 L785.088 230.654 Z M774.101 231.654 L768.608 231.654 L768.608 230.654 L774.101 230.654 Z M763.115 231.654 L757.621 231.654 L757.621 230.654 L763.115 230.654 Z M752.128 231.654 L749.381 231.654 L748.881 231.654 L748.881 231.154 L748.881 228.574 L749.881 228.574 L749.881 231.154 L749.381 231.154 L749.381 230.654 L752.128 230.654 Z M748.881 223.415 L748.881 218.255 L749.881 218.255 L749.881 223.415 Z M748.881 213.095 L748.881 207.936 L749.881 207.936 L749.881 213.095 Z M748.881 202.776 L748.881 197.616 L749.881 197.616 L749.881 202.776 Z M748.881 192.457 L748.881 187.297 L749.881 187.297 L749.881 192.457 Z M748.881 182.138 L748.881 176.978 L749.881 176.978 L749.881 182.138 Z M748.881 171.818 L748.881 166.659 L749.881 166.659 L749.881 171.818 Z M748.881 161.499 L748.881 156.339 L749.881 156.339 L749.881 161.499 Z" fill="#000000"/>
     </g>
+    <line x1="1430.762" y1="87.018" x2="1430.762" y2="101.018" fill="#000000" stroke="#222222" stroke-width="1.2"/>
   </g>
 </svg>
