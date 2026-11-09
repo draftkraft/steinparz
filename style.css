@@ -1369,7 +1369,7 @@ html { scroll-padding-top: 108px; }
 .plans-content h1 { margin-bottom: 25px; }
 .plans-intro { max-width: 640px; margin: 0 0 20px; }
 .plan { margin-top: 55px; }
-.plan > p { max-width: 640px; margin: 0 0 22px; }
+.plan > p { max-width: none; margin: 0 0 22px; }
 .plan-link { display: block; background: #fff; border: 1px solid var(--line); text-decoration: none; }
 .plan-link img { display: block; width: 100%; height: auto; }
 .plan .plan-actions { margin: 14px 0 0; font-size: 14.4px; }
