@@ -130,7 +130,7 @@
     <text transform="matrix(1 0 0 1 1323.846 77)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">0,12</tspan></text>
     <text transform="matrix(1 0 0 1 1421.346 77)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">3,13</tspan></text>
     <text transform="matrix(1 0 0 1 1524.546 77)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">0,31</tspan></text>
-    <line x1="374.046" y1="708.8" x2="1533.246" y2="708.8" fill="#000000" stroke="#222222"/>
+    <line x1="42.336" y1="708.8" x2="1533.246" y2="708.8" fill="#000000" stroke="#222222"/>
     <line x1="374.046" y1="701.6" x2="374.046" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <line x1="392.646" y1="701.6" x2="392.646" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
     <line x1="747.246" y1="701.6" x2="747.246" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
@@ -169,11 +169,10 @@
     <text transform="matrix(1 0 0 1 374.046 801.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#222222"><tspan x="0" y="0">ERDGESCHOSS</tspan></text>
     <text transform="matrix(1 0 0 1 374.046 821.8)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="16" fill="#222222"><tspan x="0" y="0">FERIENHAUS „TEICHHOF“</tspan></text>
     <line x1="1198.846" y1="672.5" x2="1241.599" y2="672.5" fill="#000000" stroke="#222222" stroke-width="0.8"/>
-    <rect x="1514.105" y="130" width="18.6" height="66" fill="#ffffff" stroke="#222222"/>
-    <line x1="1523.405" y1="130" x2="1523.405" y2="196" fill="#000000" stroke="#222222" stroke-width="0.8"/>
+    <rect x="1514.105" y="131" width="18.6" height="60" fill="#ffffff" stroke="#222222"/>
+    <line x1="1523.405" y1="131" x2="1523.405" y2="191" fill="#000000" stroke="#222222" stroke-width="0.8"/>
     <rect x="1327.446" y="127.551" width="54.557" height="15.449" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
-    <rect x="1361.755" y="195.131" width="54.557" height="99.669" fill="#cfe3f1"/>
-    <rect x="1389.034" y="127.551" width="125.612" height="167.249" fill="#cfe3f1"/>
+    <rect x="1382.003" y="194.551" width="132.643" height="100.249" fill="#cfe3f1"/>
     <text transform="matrix(1 0 0 1 1428.246 215.76)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#222222" text-anchor="middle"><tspan x="0" y="0">BAD</tspan></text>
     <text transform="matrix(1 0 0 1 1428.246 233.76)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="11" fill="#222222" text-anchor="middle"><tspan x="0" y="0">8,61 m²</tspan></text>
     <rect x="1481.046" y="212" width="33" height="78" fill="#ffffff" stroke="#222222" stroke-width="1.2"/>
@@ -191,7 +190,6 @@
     <line x1="1054.351" y1="252.4" x2="988.351" y2="252.4" fill="#000000" stroke="#888888"/>
     <line x1="1055.196" y1="267.707" x2="989.196" y2="267.707" fill="#000000" stroke="#888888"/>
     <line x1="1054.973" y1="282.946" x2="988.973" y2="282.946" fill="#000000" stroke="#888888"/>
-    <line x1="1515.788" y1="198" x2="1433.664" y2="198" fill="#000000" stroke="#888888"/>
     <circle cx="767.51" cy="450.111" r="9.989" fill="#ffffff" stroke="#222222"/>
     <circle cx="767.51" cy="423.699" r="9.989" fill="#ffffff" stroke="#222222"/>
     <ellipse cx="1497.546" cy="230.3" rx="11.358" ry="12.775" fill="#ffffff" stroke="#222222"/>
@@ -241,5 +239,13 @@
     <path d="M1016.535 539.881 C1004.2 538.693 979.883 540.233 979.883 540.233 C979.883 540.233 984.291 537.557 985.651 534.221 C988.505 527.224 986.611 519.286 986.611 512.156 C986.611 505.681 980.826 503.067 979.883 503 C986.597 503.789 995.359 504.555 1001.994 503.823 C1005.995 503.382 1011.994 503.022 1016.535 503.022 L1016.535 503.022" fill="none" stroke="#000000" stroke-miterlimit="10"/>
     <rect x="1305.405" y="450.507" width="22.492" height="19.993" fill="#f6c38b" stroke="#222222"/>
     <rect x="1305.405" y="597.604" width="22.492" height="19.993" fill="#f6c38b" stroke="#222222"/>
+    <rect x="1387.392" y="127.551" width="126.654" height="67" fill="#ffffff"/>
+    <line x1="1515.788" y1="194" x2="1433.664" y2="194" fill="#000000" stroke="#888888"/>
+    <rect x="1471.726" y="140" width="11.462" height="10.701" fill="none" stroke="#000000" stroke-miterlimit="10"/>
+    <line x1="1477.457" y1="145.35" x2="1477.795" y2="127.551" fill="none" stroke="#000000" stroke-miterlimit="10"/>
+    <line x1="42.336" y1="701.6" x2="42.336" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <line x1="72.446" y1="701.6" x2="72.446" y2="716" fill="#000000" stroke="#222222" stroke-width="1.2"/>
+    <text transform="matrix(1 0 0 1 211.307 703.224)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">4,64</tspan></text>
+    <text transform="matrix(1 0 0 1 58.536 703.224)" x="0" y="0" xml:space="preserve" font-family="Arial, sans-serif" font-size="9" fill="#222222" text-anchor="middle"><tspan x="0" y="0">0,52</tspan></text>
   </g>
 </svg>
