@@ -1246,6 +1246,9 @@ body .garden-scene .image-caption { left: 8%; right: 8%; }
 .contact-form label { display: flex; flex-direction: column; gap: 10px; font-size: 14.4px; }
 .contact-form input, .contact-form textarea { width: 100%; min-width: 0; padding: 14px; border: 1px solid #6a7569; border-radius: 0; background: #fff; color: var(--ink); font: 14.4px/1.5 Arial,sans-serif; }
 .contact-form textarea { resize: vertical; }
+/* iOS Safari gives date inputs an intrinsic width and lets them overflow the column. */
+.contact-form input[type="date"] { display: block; box-sizing: border-box; width: 100%; max-width: 100%; min-width: 0; min-height: 50px; -webkit-appearance: none; appearance: none; text-align: left; }
+.contact-form input[type="date"]::-webkit-date-and-time-value { text-align: left; min-height: 1.5em; }
 .contact-form :is(input,textarea,button):focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 .contact-form .button { background: var(--ink); color: var(--paper); margin-top: 24px; }
 .contact-form .contact-privacy { margin-top: 24px; }
