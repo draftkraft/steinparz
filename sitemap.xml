@@ -117,6 +117,12 @@
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
   </url>
   <url>
@@ -124,6 +130,90 @@
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/it/come-arrivare/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/fr/acces/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/sl/kako-do-nas/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/hu/megkozelites/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/cs/jak-k-nam/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/sk/ako-k-nam/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://teichhof.com/it/come-arrivare/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://teichhof.com/fr/acces/" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://teichhof.com/sl/kako-do-nas/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://teichhof.com/hu/megkozelites/" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://teichhof.com/cs/jak-k-nam/" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://teichhof.com/sk/ako-k-nam/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
   </url>
 </urlset>
