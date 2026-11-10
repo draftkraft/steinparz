@@ -112,4 +112,18 @@
     <loc>https://teichhof.com/ferienhaus-familienfeier/</loc>
     <lastmod>2026-11-10</lastmod>
   </url>
+  <url>
+    <loc>https://teichhof.com/anfahrt/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/en/directions/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/anfahrt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/directions/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/anfahrt/" />
+  </url>
 </urlset>
