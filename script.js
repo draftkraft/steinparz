@@ -182,31 +182,33 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
   updateFooterLanguages();
 })();
 
-// The external widget renders asynchronously and may rebuild its date inputs.
-// Associate its visible field titles with the inputs without reading their values.
+// The booking search sends the chosen stay to the freetobook booking page in the
+// page language. Dates and guest count are translated into the page's own query
+// parameters on submit; without JavaScript the form still opens the booking page.
 (() => {
-  const widget = document.querySelector('.ftb-widget');
-  if (!widget) return;
-  function labelDates() {
-    for (const name of ['checkInDatePicker', 'checkOutDatePicker']) {
-      const input = widget.querySelector(`input[name="${name}"]`);
-      const title = input?.parentElement.querySelector('.ftb-bookingWidget__dateSearch__title');
-      if (!input || !title) continue;
-      input.id = `booking-${name}`;
-      if (title.tagName === 'LABEL') {
-        title.htmlFor = input.id;
-      } else {
-        const label = document.createElement('label');
-        label.className = title.className;
-        label.style.cssText = title.style.cssText;
-        label.textContent = title.textContent;
-        label.htmlFor = input.id;
-        title.replaceWith(label);
-      }
-    }
-  }
-  new MutationObserver(labelDates).observe(widget, { childList: true, subtree: true });
-  labelDates();
+  const form = document.querySelector('.booking-search');
+  if (!form) return;
+  const checkin = form.querySelector('[name="checkin"]');
+  const checkout = form.querySelector('[name="checkout"]');
+  const adults = form.querySelector('[name="adults"]');
+  const isoDate = date => date.toISOString().slice(0, 10);
+  const shift = (value, days) => { const date = new Date(`${value}T12:00:00Z`); date.setUTCDate(date.getUTCDate() + days); return isoDate(date); };
+  checkin.min = isoDate(new Date());
+  checkout.min = shift(checkin.min, 1);
+  checkin.addEventListener('change', () => {
+    if (!checkin.value) return;
+    checkout.min = shift(checkin.value, 1);
+    if (!checkout.value || checkout.value <= checkin.value) checkout.value = shift(checkin.value, 4);
+  });
+  form.addEventListener('submit', () => {
+    const hidden = (name, value) => {
+      const input = form.querySelector(`input[name="${name}"]`) || form.appendChild(Object.assign(document.createElement('input'), { type: 'hidden', name }));
+      input.value = value;
+    };
+    hidden('search_stay_dates', JSON.stringify({ checkInDate: checkin.value, checkOutDate: checkout.value }));
+    hidden('search_occupancies', JSON.stringify([{ numberOfAdults: Number(adults.value), children: [] }]));
+    for (const field of [checkin, checkout, adults]) field.removeAttribute('name');
+  });
 })();
 
 // Give the fixed header a solid background once the page is scrolled.

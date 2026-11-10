@@ -136,12 +136,12 @@
   });
   document.addEventListener('change', event => {
     if (event.target.closest('.contact-form')) track('contact_form_change', { action_location: 'kontakt' });
-    if (event.target.closest('.ftb-widget')) track('booking_widget_change', { action_location: 'buchen', action_name: 'availability_change' });
+    if (event.target.closest('.booking-search')) track('booking_widget_change', { action_location: 'buchen', action_name: 'availability_change' });
     if (event.target.matches('.language-select')) track('language_change', { destination: event.target.value });
   }, true);
   document.addEventListener('submit', event => {
     if (event.target.matches('.contact-form')) track('contact_submit', { action_location: 'kontakt', contact_type: 'form' });
-    if (event.target.closest('.ftb-widget')) track('booking_search', { action_location: 'buchen', booking_provider: 'freetobook' });
+    if (event.target.closest('.booking-search')) track('booking_search', { action_location: 'buchen', booking_provider: 'freetobook' });
   }, true);
   document.querySelectorAll('.faq details').forEach((details, index) => {
     details.addEventListener('toggle', () => track('faq_toggle', { question_index: index + 1, expanded: details.open }));
