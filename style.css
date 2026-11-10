@@ -1070,6 +1070,9 @@ footer { flex-wrap: wrap; }
 .footer-legal { flex-basis: 100%; padding-top: 12px; text-decoration: underline; text-underline-offset: 4px; }
 .legal-top { display: flex; justify-content: space-between; gap: 25px; align-items: center; padding: 40px 8%; border-bottom: 1px solid var(--line); }
 .legal-top > a:last-child { font-size: 11.7px; }
+.legal-top .brand { color: var(--ink); }
+.legal-top .brand svg { flex-shrink: 0; }
+@media (max-width: 700px) { .legal-top { padding: 20px 5%; } .legal-top .brand { gap: 6px; font-size: 15px; letter-spacing: 1px; } .legal-top .brand svg { width: 30px; } }
 .legal-content { max-width: 1000px; min-height: 75svh; }
 .legal-content h1 { font: 400 clamp(40.5px,6.3vw,72px)/1.1 Georgia,serif; letter-spacing: -2px; margin: 0 0 55px; }
 .legal-content section { margin-top: 40px; }
@@ -1378,3 +1381,4 @@ html { scroll-padding-top: 108px; }
 .plan-link img { display: block; width: 100%; height: auto; }
 .plan .plan-actions { margin: 14px 0 0; font-size: 14.4px; }
 .plans-note { margin-top: 45px; max-width: 640px; color: var(--muted); font-size: 14.4px; }
+@media (max-width: 700px) { .legal-top { gap: 12px; } .legal-top > a.header-cta { padding: 0 16px; gap: 12px; font-size: 14px; } }
