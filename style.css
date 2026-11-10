@@ -1215,6 +1215,8 @@ body .garden-scene .image-caption { left: 8%; right: 8%; }
 .booking-search input, .booking-search select { display: block; width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; min-height: 50px; padding: 12px 14px; border: 1px solid #6a7569; border-radius: 0; background: #fff; color: var(--ink); font: 14.4px/1.5 Arial,sans-serif; }
 /* iOS Safari gives date inputs an intrinsic width and lets them overflow the column. */
 .booking-search input[type="date"] { -webkit-appearance: none; appearance: none; text-align: left; }
+/* Draw the select arrow ourselves so it sits inside the padding like the calendar icon. */
+.booking-search select { -webkit-appearance: none; appearance: none; padding-right: 40px; background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27none%27 stroke=%27%23243a31%27 stroke-width=%271.5%27%3E%3Cpath d=%27M3 6l5 5 5-5%27/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-size: 16px; }
 .booking-search input[type="date"]::-webkit-date-and-time-value { text-align: left; min-height: 1.5em; }
 .booking-search :is(input,select,button):focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
 .booking-search .button { grid-column: 1 / -1; justify-content: center; margin: 4px 0 0; min-height: 50px; background: var(--ink); color: var(--paper); }
