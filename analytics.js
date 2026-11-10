@@ -5,14 +5,14 @@
   const container = document.querySelector('meta[name="gtm-container-id"]')?.content;
   const language = document.documentElement.lang || 'de';
   const messages = {
-    de: ['Besuchsstatistik', 'Mit deiner Zustimmung verwenden wir Google Analytics, um Seitenaufrufe und Aktionen wie Buchungsklicks, Galerie und Navigation zu verstehen. Dabei werden Cookies und Geräteinformationen verarbeitet. Die Datenverarbeitung erfolgt durch Google, gegebenenfalls auch in den USA. Du kannst deine Auswahl jederzeit unten über „Analytics“ ändern.', 'Zustimmen', 'Ablehnen', 'Google-Datenschutz', 'Zusätzlich: Google Ads darf messen, ob Besuche aus unseren Anzeigen zu Anfragen führen (Werbe-Cookies, Daten gehen an Google). Keine Anzeigenpersonalisierung.'],
-    en: ['Visitor analytics', 'With your permission, we use Google Analytics to understand page views and actions such as booking clicks, gallery use and navigation. Cookies and device information are processed by Google, potentially in the USA. Change your choice anytime via “Analytics” below.', 'Accept', 'Decline', 'Google privacy', 'Also: allow Google Ads to measure whether visits from our ads lead to enquiries (advertising cookies, data is sent to Google). No ad personalization.'],
-    it: ['Statistiche delle visite', 'Con il tuo consenso utilizziamo Google Analytics per analizzare visite, clic di prenotazione, galleria e navigazione. Google tratta cookie e informazioni sul dispositivo, anche negli USA. Puoi modificare la scelta in qualsiasi momento tramite “Analytics” in basso.', 'Accetta', 'Rifiuta', 'Privacy Google', 'Inoltre: consenti a Google Ads di misurare se le visite dai nostri annunci portano a richieste (cookie pubblicitari, dati inviati a Google). Nessuna personalizzazione degli annunci.'],
-    fr: ['Statistiques de visite', 'Avec votre accord, Google Analytics mesure les visites, clics de réservation, la galerie et la navigation. Google traite des cookies et informations sur votre appareil, éventuellement aux États-Unis. Modifiez votre choix à tout moment via « Analytics » en bas de page.', 'Accepter', 'Refuser', 'Confidentialité Google', 'En plus : autoriser Google Ads à mesurer si les visites issues de nos annonces mènent à des demandes (cookies publicitaires, données transmises à Google). Pas de personnalisation des annonces.'],
-    sl: ['Statistika obiskov', 'Z vašim soglasjem Google Analytics meri obiske, klike za rezervacije, galerijo in navigacijo. Google obdeluje piškotke in podatke o napravi, lahko tudi v ZDA. Izbiro lahko kadar koli spremenite prek možnosti »Analytics« na dnu strani.', 'Sprejmi', 'Zavrni', 'Zasebnost Google', 'Dodatno: dovolite Google Ads merjenje, ali obiski iz naših oglasov vodijo do povpraševanj (oglasni piškotki, podatki se pošljejo Googlu). Brez personalizacije oglasov.'],
-    hu: ['Látogatási statisztikák', 'Hozzájárulásoddal a Google Analytics méri az oldalmegtekintéseket, foglalási kattintásokat, a galéria használatát és a navigációt. A Google sütiket és eszközadatokat kezel, esetleg az USA-ban is. A döntésedet bármikor módosíthatod az oldal alján az „Analytics” gombbal.', 'Elfogadom', 'Elutasítom', 'Google adatvédelem', 'Emellett: engedélyezem, hogy a Google Ads mérje, hogy a hirdetéseinkből érkező látogatások ajánlatkéréshez vezetnek-e (hirdetési sütik, az adatok a Google-hoz kerülnek). Hirdetésszemélyre szabás nélkül.'],
-    cs: ['Statistiky návštěv', 'S vaším souhlasem Google Analytics měří návštěvy, kliknutí na rezervaci, galerii a navigaci. Google zpracovává cookies a údaje o zařízení, případně i v USA. Volbu můžete kdykoli změnit pomocí „Analytics“ v zápatí.', 'Přijmout', 'Odmítnout', 'Soukromí Google', 'Navíc: povolit službě Google Ads měřit, zda návštěvy z našich reklam vedou k poptávkám (reklamní cookies, data se odesílají Googlu). Bez personalizace reklam.'],
-    sk: ['Štatistiky návštev', 'S vaším súhlasom Google Analytics meria návštevy, kliknutia na rezerváciu, galériu a navigáciu. Google spracúva cookies a údaje o zariadení, prípadne aj v USA. Voľbu môžete kedykoľvek zmeniť cez „Analytics“ v päte.', 'Prijať', 'Odmietnuť', 'Súkromie Google', 'Navyše: povoliť službe Google Ads merať, či návštevy z našich reklám vedú k dopytom (reklamné cookies, dáta sa odosielajú Googlu). Bez personalizácie reklám.'],
+    de: ['Besuchsstatistik', 'Mit deiner Zustimmung verwenden wir Google Analytics, um Seitenaufrufe und Aktionen wie Buchungsklicks, Galerie und Navigation zu verstehen. Dabei werden Cookies und Geräteinformationen verarbeitet. Die Datenverarbeitung erfolgt durch Google, gegebenenfalls auch in den USA. Du kannst deine Auswahl jederzeit unten über „Analytics“ ändern.', 'Alle akzeptieren', 'Nur notwendige', 'Google-Datenschutz', 'Mit „Alle akzeptieren“ erlaubst du zusätzlich, dass Google Ads misst, ob Besuche aus unseren Anzeigen zu Anfragen führen (Werbe-Cookies, Daten gehen an Google). Keine Anzeigenpersonalisierung.'],
+    en: ['Visitor analytics', 'With your permission, we use Google Analytics to understand page views and actions such as booking clicks, gallery use and navigation. Cookies and device information are processed by Google, potentially in the USA. Change your choice anytime via “Analytics” below.', 'Accept all', 'Necessary only', 'Google privacy', 'With “Accept all” you also allow Google Ads to measure whether visits from our ads lead to enquiries (advertising cookies, data is sent to Google). No ad personalization.'],
+    it: ['Statistiche delle visite', 'Con il tuo consenso utilizziamo Google Analytics per analizzare visite, clic di prenotazione, galleria e navigazione. Google tratta cookie e informazioni sul dispositivo, anche negli USA. Puoi modificare la scelta in qualsiasi momento tramite “Analytics” in basso.', 'Accetta tutto', 'Solo necessari', 'Privacy Google', 'Con «Accetta tutto» consenti inoltre a Google Ads di misurare se le visite dai nostri annunci portano a richieste (cookie pubblicitari, dati inviati a Google). Nessuna personalizzazione degli annunci.'],
+    fr: ['Statistiques de visite', 'Avec votre accord, Google Analytics mesure les visites, clics de réservation, la galerie et la navigation. Google traite des cookies et informations sur votre appareil, éventuellement aux États-Unis. Modifiez votre choix à tout moment via « Analytics » en bas de page.', 'Tout accepter', 'Nécessaires uniquement', 'Confidentialité Google', 'Avec « Tout accepter », vous autorisez en plus Google Ads à mesurer si les visites issues de nos annonces mènent à des demandes (cookies publicitaires, données transmises à Google). Pas de personnalisation des annonces.'],
+    sl: ['Statistika obiskov', 'Z vašim soglasjem Google Analytics meri obiske, klike za rezervacije, galerijo in navigacijo. Google obdeluje piškotke in podatke o napravi, lahko tudi v ZDA. Izbiro lahko kadar koli spremenite prek možnosti »Analytics« na dnu strani.', 'Sprejmi vse', 'Samo nujno', 'Zasebnost Google', 'Z »Sprejmi vse« dodatno dovolite Google Ads merjenje, ali obiski iz naših oglasov vodijo do povpraševanj (oglasni piškotki, podatki se pošljejo Googlu). Brez personalizacije oglasov.'],
+    hu: ['Látogatási statisztikák', 'Hozzájárulásoddal a Google Analytics méri az oldalmegtekintéseket, foglalási kattintásokat, a galéria használatát és a navigációt. A Google sütiket és eszközadatokat kezel, esetleg az USA-ban is. A döntésedet bármikor módosíthatod az oldal alján az „Analytics” gombbal.', 'Mindet elfogadom', 'Csak a szükségesek', 'Google adatvédelem', 'A „Mindet elfogadom” gombbal engedélyezed azt is, hogy a Google Ads mérje, hogy a hirdetéseinkből érkező látogatások ajánlatkéréshez vezetnek-e (hirdetési sütik, az adatok a Google-hoz kerülnek). Hirdetésszemélyre szabás nélkül.'],
+    cs: ['Statistiky návštěv', 'S vaším souhlasem Google Analytics měří návštěvy, kliknutí na rezervaci, galerii a navigaci. Google zpracovává cookies a údaje o zařízení, případně i v USA. Volbu můžete kdykoli změnit pomocí „Analytics“ v zápatí.', 'Přijmout vše', 'Pouze nezbytné', 'Soukromí Google', 'Tlačítkem „Přijmout vše“ navíc povolujete službě Google Ads měřit, zda návštěvy z našich reklam vedou k poptávkám (reklamní cookies, data se odesílají Googlu). Bez personalizace reklam.'],
+    sk: ['Štatistiky návštev', 'S vaším súhlasom Google Analytics meria návštevy, kliknutia na rezerváciu, galériu a navigáciu. Google spracúva cookies a údaje o zariadení, prípadne aj v USA. Voľbu môžete kedykoľvek zmeniť cez „Analytics“ v päte.', 'Prijať všetko', 'Iba nevyhnutné', 'Súkromie Google', 'Tlačidlom „Prijať všetko“ navyše povoľujete službe Google Ads merať, či návštevy z našich reklám vedú k dopytom (reklamné cookies, dáta sa odosielajú Googlu). Bez personalizácie reklám.'],
   };
   const copy = messages[language] || messages.en;
   const key = 'teichhof-analytics-consent-v1';
@@ -25,7 +25,7 @@
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
   gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-  // Ads measurement is a separate, unticked-by-default opt-in. Personalization stays denied.
+  // Ads measurement is only granted by the explicit "Accept all" click. Personalization stays denied.
   function applyAds() {
     if (adsChoice === 'granted') gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted' });
   }
@@ -65,17 +65,15 @@
   const title = document.createElement('h2'); title.id = 'analytics-title'; title.textContent = copy[0];
   const description = document.createElement('p'); description.textContent = copy[1];
   const privacy = document.createElement('a'); privacy.href = 'https://policies.google.com/privacy'; privacy.textContent = copy[4]; privacy.target = '_blank'; privacy.rel = 'noopener';
-  const adsOption = document.createElement('label'); adsOption.className = 'analytics-consent-ads';
-  const adsBox = document.createElement('input'); adsBox.type = 'checkbox'; adsBox.checked = adsChoice === 'granted';
-  const adsText = document.createElement('span'); adsText.textContent = copy[5] || messages.en[5];
-  adsOption.append(adsBox, adsText);
+  // "Accept all" is one explicit, unticked-by-default choice: the text names the Ads measurement and both buttons look the same.
+  const adsOption = document.createElement('p'); adsOption.className = 'analytics-consent-ads'; adsOption.textContent = copy[5] || messages.en[5];
   const actions = document.createElement('div');
   const accept = document.createElement('button'); accept.textContent = copy[2];
   const decline = document.createElement('button'); decline.textContent = copy[3];
   actions.append(accept, decline); panel.append(title, description, privacy, adsOption, actions); document.body.append(panel);
   const settings = document.createElement('button'); settings.className = 'analytics-settings'; settings.textContent = 'Analytics';
   (document.querySelector('footer .footer-bottom') || document.querySelector('footer') || document.body).append(settings);
-  settings.addEventListener('click', () => { adsBox.checked = adsChoice === 'granted'; panel.hidden = false; accept.focus(); });
+  settings.addEventListener('click', () => { panel.hidden = false; accept.focus(); });
   function clearCookies(pattern) {
     document.cookie.split(';').forEach(cookie => {
       const name = cookie.split('=')[0].trim();
@@ -86,7 +84,7 @@
     });
   }
   function choose(value) {
-    const nextAds = value === 'granted' && adsBox.checked ? 'granted' : 'denied';
+    const nextAds = value === 'granted' ? 'granted' : 'denied';
     const withdrawing = choice === 'granted' && value === 'denied';
     const withdrawingAds = adsChoice === 'granted' && nextAds === 'denied';
     choice = value;
