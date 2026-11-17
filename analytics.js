@@ -2,6 +2,13 @@
 (() => {
   const id = document.querySelector('meta[name="ga-measurement-id"]')?.content;
   if (!/^G-[A-Z0-9]+$/.test(id || '')) return;
+  // Owner devices opt out with /?internal=1 (undo with /?internal=0): no consent banner, no requests, no events.
+  try {
+    const flag = new URLSearchParams(location.search || '').get('internal');
+    if (flag === '1') localStorage.setItem('teichhof-internal', '1');
+    if (flag === '0') localStorage.removeItem('teichhof-internal');
+    if (localStorage.getItem('teichhof-internal') === '1') return;
+  } catch (_) { /* Without storage the opt-out cannot apply. */ }
   const container = document.querySelector('meta[name="gtm-container-id"]')?.content;
   const language = document.documentElement.lang || 'de';
   const messages = {
@@ -29,6 +36,19 @@
   function applyAds() {
     if (adsChoice === 'granted') gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted' });
   }
+  // Only campaign parameters are kept in the reported URL, so paid and tagged visits are attributed correctly.
+  // The Google Ads click ID is added only after the explicit Ads measurement consent. Nothing else from the query string is sent.
+  function reportedLocation() {
+    const source = new URLSearchParams(location.search || ''), kept = new URLSearchParams();
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(name => {
+      const value = source.get(name);
+      if (value && /^[\w.\-{}%+ ]{1,100}$/.test(value)) kept.set(name, value);
+    });
+    const click = source.get('gclid');
+    if (adsChoice === 'granted' && click && /^[\w-]{10,200}$/.test(click)) kept.set('gclid', click);
+    const query = kept.toString();
+    return location.origin + location.pathname + (query ? '?' + query : '');
+  }
   function start() {
     gtag('consent', 'update', { analytics_storage: 'granted' });
     applyAds();
@@ -36,7 +56,7 @@
     started = true;
     gtag('js', new Date());
     gtag('config', id, {
-      page_location: location.origin + location.pathname,
+      page_location: reportedLocation(),
       page_referrer: document.referrer ? new URL(document.referrer).origin : '',
       allow_google_signals: false, allow_ad_personalization_signals: false,
       language,

@@ -1,0 +1,25 @@
+/* Extra blocks for the Google Ads landing pages only (facts strip, prices). The home page does not load this file. */
+.landing-facts { max-width: 1440px; margin: auto; padding: 34px 8% 10px; }
+.landing-facts ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0 28px; border-top: 1px solid var(--line); }
+.landing-facts li { padding: 15px 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.5; }
+.landing-facts strong { display: block; font: 400 21px/1.3 Georgia,'Times New Roman',serif; letter-spacing: -.02em; }
+.landing-facts span { color: var(--muted); }
+.landing-price { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; padding-top: 70px; padding-bottom: 80px; }
+.landing-price h2 { font-size: clamp(34.2px,3.42vw,52.2px); }
+.landing-price p { color: var(--muted); margin-bottom: 18px; }
+.landing-price table { width: 100%; border-collapse: collapse; font-size: 14.5px; margin-bottom: 24px; }
+.landing-price th, .landing-price td { text-align: left; padding: 9px 0; border-top: 1px solid var(--line); font-weight: 400; }
+.landing-price td:last-child { text-align: right; font: 400 19px/1.3 Georgia,serif; white-space: nowrap; }
+.landing-price tbody tr:last-child th, .landing-price tbody tr:last-child td { border-bottom: 1px solid var(--line); }
+.landing-price ul { margin: 0 0 22px; padding-left: 18px; color: var(--muted); }
+.landing-price li { margin-bottom: 6px; }
+.landing-price .price-example { border-left: 2px solid #b89461; padding-left: 16px; color: var(--ink); }
+.landing-price .price-small { font-size: 12px; }
+.landing-note { max-width: 1440px; margin: auto; padding: 0 8% 60px; }
+.landing-note p { max-width: 720px; color: var(--muted); border-left: 2px solid var(--sage); padding-left: 16px; }
+@media (max-width: 800px) {
+  .landing-price { grid-template-columns: 1fr; gap: 34px; padding-top: 50px; padding-bottom: 60px; }
+  .landing-facts ul { grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  .landing-facts strong { font-size: 18px; }
+}
+.landing-price .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
