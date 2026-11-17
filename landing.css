@@ -9,7 +9,7 @@
 .landing-facts li:first-child small { color: #b9c4aa; }
 .landing-facts li:first-child span { color: #c9d1bd; }
 .landing-price { display: grid; grid-template-columns: 1.1fr 1fr; gap: 100px; padding-top: 70px; padding-bottom: 80px; }
-.landing-price h2 { font-size: clamp(34.2px,3.42vw,52.2px); }
+.landing-price h2 { font-size: var(--h2-size); }
 .landing-price p { color: var(--muted); margin-bottom: 18px; }
 .landing-price table { width: 100%; border-collapse: collapse; font-size: 14.5px; margin-bottom: 24px; }
 .landing-price th, .landing-price td { text-align: left; padding: 9px 0; border-top: 1px solid var(--line); font-weight: 400; }
