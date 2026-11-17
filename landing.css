@@ -29,14 +29,4 @@
   .landing-facts strong { font-size: 19px; }
 }
 .landing-price .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.landing-rooms.section { padding-top: 40px; padding-bottom: 60px; }
-.landing-rooms .rooms-head h2 { font-size: clamp(34.2px,3.42vw,52.2px); margin-bottom: 30px; }
-.rooms-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; }
-.rooms-card { display: flex; flex-direction: column; gap: 10px; padding: 24px; background: #f8f6f0; border: 1px solid var(--line); border-radius: 4px; color: inherit; text-decoration: none; }
-.rooms-card img { width: 100%; height: auto; background: #fff; }
-.rooms-card strong { font: 400 clamp(21px,1.9vw,27px)/1.2 Georgia,'Times New Roman',serif; }
-.rooms-card span { color: var(--muted); font-size: 14.5px; }
-.rooms-card:hover strong { text-decoration: underline; }
-.rooms-text { justify-content: center; }
-@media (max-width: 800px) { .rooms-grid { grid-template-columns: 1fr; } .rooms-card { padding: 16px; } }
 .faq p a { text-decoration: underline; }
