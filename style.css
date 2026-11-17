@@ -1121,7 +1121,7 @@ footer { flex-wrap: wrap; }
 
 /* Readable 16px body, action and menu text; eyebrow typography stays as designed. */
 body { font-size: 14.4px; }
-body main p:not(.eyebrow),
+body main p:not(.eyebrow):not(.gallery-moment-heading), /* the extra :not() keeps the specificity high enough to beat the scene and section text rules */
 body footer > p,
 body .booking-note, body .scene-note, body .wildlife small,
 body .stay-facts span,
@@ -1394,13 +1394,13 @@ html { scroll-padding-top: 108px; }
 
 .stay-plans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 26px; }
 .plan-thumb { display: block; padding: 0; border: 1px solid #bdc5b2; background: #fff; cursor: zoom-in; text-align: left; font: inherit; color: inherit; }
-.plan-thumb img { display: block; width: 100%; height: auto; }
+.plan-thumb img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: contain; background: #fff; }
 .plan-thumb span { display: block; padding: 7px 10px; font-size: 10.8px; color: var(--muted); background: #f8f6f0; border-top: 1px solid #bdc5b2; }
 .plan-thumb:hover span { color: var(--ink); text-decoration: underline; }
 @media (max-width: 700px) { .stay-plans { gap: 14px; } }
 dialog img[src$=".svg"] { background: #fff; min-width: min(87vw, 900px); }
 
-/* One size for all section headings (the full-photo scene headings stay large on purpose). */
+/* One size for the plain section headings. Headings next to or over photos (scenes, wildlife, family, rooms, booking) keep their larger sizes. */
 :root { --h2-size: clamp(36px,3.9vw,56px); }
-.intro h2, .together h2, .story h2, .wildlife h2, .gallery-section h2, .testimonials h2, .faq h2, .landing-price h2, .gallery-moment h2 { font-size: var(--h2-size); }
+.intro h2, .gallery-section h2, .testimonials h2, .faq h2, .landing-price h2, .contact h2, .gallery-moment h2 { font-size: var(--h2-size); }
 @media (max-width: 700px) { :root { --h2-size: 36px; } }
