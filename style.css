@@ -1404,3 +1404,6 @@ dialog img[src$=".svg"] { background: #fff; min-width: min(87vw, 900px); }
 :root { --h2-size: clamp(36px,3.9vw,56px); }
 .intro h2, .gallery-section h2, .testimonials h2, .faq h2, .landing-price h2, .contact h2, .gallery-moment h2 { font-size: var(--h2-size); }
 @media (max-width: 700px) { :root { --h2-size: 36px; } }
+
+/* Gallery tiles show the photo only; the caption appears in the enlarged view. */
+.gallery-item:after { display: none; }
