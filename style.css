@@ -1394,3 +1394,11 @@ html { scroll-padding-top: 108px; }
 .footer-offers { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 24px; }
 .footer-offers a { font-size: 14.4px; line-height: 1.6; color: inherit; opacity: .85; text-decoration: underline; text-underline-offset: 4px; }
 .footer-offers a:hover, .footer-offers a:focus-visible { opacity: 1; }
+
+.stay-plans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 26px; }
+.plan-thumb { display: block; padding: 0; border: 1px solid #bdc5b2; background: #fff; cursor: zoom-in; text-align: left; font: inherit; color: inherit; }
+.plan-thumb img { display: block; width: 100%; height: auto; }
+.plan-thumb span { display: block; padding: 7px 10px; font-size: 10.8px; color: var(--muted); background: #f8f6f0; border-top: 1px solid #bdc5b2; }
+.plan-thumb:hover span { color: var(--ink); text-decoration: underline; }
+@media (max-width: 700px) { .stay-plans { gap: 14px; } }
+dialog img[src$=".svg"] { background: #fff; min-width: min(87vw, 900px); }

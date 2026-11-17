@@ -10,7 +10,8 @@ window.addEventListener('orientationchange', () => requestAnimationFrame(alignPa
 
 const dialog = document.querySelector('dialog');
 const photo = dialog.querySelector('img');
-const gallery = [...document.querySelectorAll('[data-photo]')];
+const allPhotos = [...document.querySelectorAll('[data-photo]')];
+let gallery = allPhotos;
 let opener;
 let current = 0;
 function showPhoto(index) {
@@ -21,10 +22,12 @@ function showPhoto(index) {
   dialog.querySelector('p').textContent = item.dataset.caption;
   dialog.querySelector('.photo-count').textContent = `${current + 1} / ${gallery.length}`;
 }
-gallery.forEach((button, index) => {
+allPhotos.forEach(button => {
   button.addEventListener('click', () => {
     opener = button;
-    showPhoto(index);
+    // Arrows only switch within the group of the clicked image (photos or floor plans).
+    gallery = allPhotos.filter(item => item.dataset.group === button.dataset.group);
+    showPhoto(gallery.indexOf(button));
     dialog.showModal();
     document.body.style.overflow = 'hidden';
   });
