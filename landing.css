@@ -30,3 +30,5 @@
 }
 .landing-price .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .faq p a { text-decoration: underline; }
+/* The tile for what only starts in February 2027: the date is a clearly visible badge. */
+.landing-facts li.soon small { align-self: flex-start; background: #b89461; color: #fff; font-weight: 700; padding: 5px 11px; border-radius: 2px; letter-spacing: 2px; margin-bottom: 10px; }
