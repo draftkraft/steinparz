@@ -1388,9 +1388,11 @@ html { scroll-padding-top: 108px; }
   .legal-top > a.header-cta span { display: none; }
 }
 /* German footer: links to the landing pages (also reachable for search engines without the sitemap). */
-.footer-offers { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 24px; }
-.footer-offers a { font-size: 14.4px; line-height: 1.6; color: inherit; opacity: .85; text-decoration: underline; text-underline-offset: 4px; }
-.footer-offers a:hover, .footer-offers a:focus-visible { opacity: 1; }
+/* Discreet: small, muted, separated by dots; still real links for visitors and search engines. */
+.footer-offers { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; margin-top: 14px; }
+body .footer-offers a { font-size: 12px; line-height: 1.6; color: inherit; opacity: .5; text-decoration: none; }
+body .footer-offers a + a::before { content: '·'; display: inline-block; margin: 0 12px; opacity: .8; }
+body .footer-offers a:hover, body .footer-offers a:focus-visible { opacity: .9; text-decoration: underline; text-underline-offset: 3px; }
 
 .stay-plans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 26px; }
 .plan-thumb { display: block; padding: 0; border: 1px solid #bdc5b2; background: #fff; cursor: zoom-in; text-align: left; font: inherit; color: inherit; }
