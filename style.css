@@ -1451,3 +1451,6 @@ dialog img[src$=".svg"] { background: #fff; min-width: min(87vw, 900px); }
 .booking-search label[hidden] { display: none; }
 /* Beats the readable-text rule `body main p:not(.eyebrow):not(.gallery-moment-heading)`. */
 body main p.booking-facts:not(.eyebrow):not(.gallery-moment-heading) { font-size: 11px; line-height: 1.5; color: var(--muted); }
+.plan .plan-points { list-style: disc; margin: 0 0 26px; padding: 0; max-width: none; }
+.plan .plan-points li { margin: 0 0 12px; padding: 0; line-height: 1.55; list-style-position: outside; }
+.plan .plan-points li:last-child { margin-bottom: 0; }
