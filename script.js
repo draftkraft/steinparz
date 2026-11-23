@@ -194,15 +194,154 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
   const checkin = form.querySelector('[name="checkin"]');
   const checkout = form.querySelector('[name="checkout"]');
   const adults = form.querySelector('[name="adults"]');
-  const isoDate = date => date.toISOString().slice(0, 10);
-  const shift = (value, days) => { const date = new Date(`${value}T12:00:00Z`); date.setUTCDate(date.getUTCDate() + days); return isoDate(date); };
-  checkin.min = isoDate(new Date());
-  checkout.min = shift(checkin.min, 1);
-  checkin.addEventListener('change', () => {
-    if (!checkin.value) return;
-    checkout.min = shift(checkin.value, 1);
-    if (!checkout.value || checkout.value <= checkin.value) checkout.value = shift(checkin.value, 4);
+  // Range calendar: one popover with two months (one on phones). A stay must be booked
+  // at least 7 days before arrival; earlier days are struck through and cannot be chosen.
+  const lang = document.documentElement.lang || 'de';
+  const parse = value => { const [y, m, d] = value.split('-').map(Number); return new Date(y, m - 1, d, 12); };
+  const iso = date => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  const addDays = (date, days) => { const next = new Date(date); next.setDate(next.getDate() + days); return next; };
+  const now = new Date(); now.setHours(12, 0, 0, 0);
+  const earliest = iso(addDays(now, 7));
+  const latest = iso(addDays(now, 730));
+  const nightsBetween = (from, to) => Math.round((parse(to) - parse(from)) / 86400000);
+  const monthTitle = new Intl.DateTimeFormat(lang, { month: 'long', year: 'numeric' });
+  const shortDate = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'short', year: 'numeric' });
+  const dayMonth = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'short' });
+  const weekday = new Intl.DateTimeFormat(lang, { weekday: 'narrow' });
+  const labels = [checkin, checkout].map(input => input.closest('label'));
+  const word = label => label.firstChild.textContent.trim();
+  const placeholders = [word(labels[0]), word(labels[1])];
+  for (const input of [checkin, checkout]) input.removeAttribute('required');
+  labels.forEach(label => { label.hidden = true; });
+
+  const field = document.createElement('div');
+  field.className = 'range-field';
+  const trigger = document.createElement('button');
+  trigger.type = 'button';
+  trigger.className = 'range-trigger';
+  trigger.setAttribute('aria-expanded', 'false');
+  trigger.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="range-text"></span>';
+  const caption = document.createElement('span');
+  caption.textContent = `${placeholders[0]} / ${placeholders[1]}`;
+  field.append(caption, trigger);
+  form.insertBefore(field, form.firstChild);
+
+  const pop = document.createElement('div');
+  pop.className = 'range-popover';
+  pop.hidden = true;
+  const guests = adults.closest('label');
+  guests.after(pop);
+
+  let start = null, end = null, view = earliest.slice(0, 7) + '-01';
+  const text = trigger.querySelector('.range-text');
+  function updateTrigger() {
+    const from = start ? shortDate.format(parse(start)) : placeholders[0];
+    const to = end ? shortDate.format(parse(end)) : placeholders[1];
+    text.textContent = `${from} → ${to}`;
+    text.classList.toggle('is-empty', !start);
+  }
+  function commit() {
+    checkin.value = start && end ? start : '';
+    checkout.value = start && end ? end : '';
+    if (start && end) for (const input of [checkin, checkout]) input.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+  const monthsShown = () => (matchMedia('(min-width: 700px)').matches ? 2 : 1);
+  function render() {
+    pop.textContent = '';
+    const first = parse(view);
+    const months = document.createElement('div');
+    months.className = 'range-months';
+    for (let offset = 0; offset < monthsShown(); offset++) {
+      const month = new Date(first.getFullYear(), first.getMonth() + offset, 1, 12);
+      const box = document.createElement('div');
+      box.className = 'range-month';
+      const title = document.createElement('p');
+      title.className = 'range-title';
+      title.textContent = monthTitle.format(month);
+      box.append(title);
+      const grid = document.createElement('div');
+      grid.className = 'range-grid';
+      // Monday first: 2024-01-01 is a Monday.
+      for (let i = 0; i < 7; i++) { const w = document.createElement('span'); w.className = 'range-weekday'; w.textContent = weekday.format(new Date(2024, 0, 1 + i, 12)); grid.append(w); }
+      const lead = (month.getDay() + 6) % 7;
+      for (let i = 0; i < lead; i++) grid.append(document.createElement('span'));
+      const days = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate();
+      for (let day = 1; day <= days; day++) {
+        const value = iso(new Date(month.getFullYear(), month.getMonth(), day, 12));
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'range-day';
+        button.textContent = day;
+        button.dataset.date = value;
+        button.setAttribute('aria-label', new Intl.DateTimeFormat(lang, { dateStyle: 'full' }).format(parse(value)));
+        if (value < earliest || value > latest) button.disabled = true;
+        // The stay is at least 4 nights: while choosing the departure, the 3 days after the arrival are not available.
+        if (start && !end && value > start && nightsBetween(start, value) < 4) button.disabled = true;
+        if (value === start) button.classList.add('is-start');
+        if (value === end) button.classList.add('is-end');
+        if (start && end && value > start && value < end) button.classList.add('in-range');
+        if (start && end && (value === start || value === end)) button.classList.add('in-range');
+        grid.append(button);
+      }
+      box.append(grid);
+      months.append(box);
+    }
+    const prev = document.createElement('button');
+    prev.type = 'button'; prev.className = 'range-nav range-prev'; prev.textContent = '‹';
+    prev.setAttribute('aria-label', monthTitle.format(new Date(first.getFullYear(), first.getMonth() - 1, 1, 12)));
+    prev.disabled = view <= earliest.slice(0, 7) + '-01';
+    const next = document.createElement('button');
+    next.type = 'button'; next.className = 'range-nav range-next'; next.textContent = '›';
+    next.setAttribute('aria-label', monthTitle.format(new Date(first.getFullYear(), first.getMonth() + monthsShown(), 1, 12)));
+    next.disabled = iso(new Date(first.getFullYear(), first.getMonth() + monthsShown(), 1, 12)) > latest;
+    prev.addEventListener('click', () => { view = iso(new Date(first.getFullYear(), first.getMonth() - 1, 1, 12)); render(); pop.querySelector('.range-day:not(:disabled)')?.focus({ preventScroll: true }); });
+    next.addEventListener('click', () => { view = iso(new Date(first.getFullYear(), first.getMonth() + 1, 1, 12)); render(); pop.querySelector('.range-day:not(:disabled)')?.focus({ preventScroll: true }); });
+    const stage = document.createElement('div');
+    stage.className = 'range-stage';
+    stage.append(prev, months, next);
+    const foot = document.createElement('div');
+    foot.className = 'range-foot';
+    const clear = document.createElement('button');
+    clear.type = 'button'; clear.className = 'range-clear'; clear.textContent = form.dataset.clear;
+    clear.addEventListener('click', () => { start = end = null; commit(); updateTrigger(); render(); });
+    const summary = document.createElement('p');
+    summary.className = 'range-summary';
+    if (start && end) summary.innerHTML = `<strong></strong><span></span>`;
+    if (start && end) {
+      summary.firstChild.textContent = `${form.dataset.nights}: ${nightsBetween(start, end)}`;
+      summary.lastChild.textContent = `${dayMonth.format(parse(start))} – ${dayMonth.format(parse(end))}`;
+    }
+    const search = document.createElement('button');
+    search.type = 'button'; search.className = 'range-search'; search.textContent = form.dataset.search;
+    search.disabled = !(start && end);
+    search.addEventListener('click', () => form.requestSubmit());
+    foot.append(clear, summary, search);
+    pop.append(stage, foot);
+  }
+  pop.addEventListener('click', event => {
+    const day = event.target.closest('.range-day');
+    if (!day) return;
+    const value = day.dataset.date;
+    if (!start || end || value <= start) { start = value; end = null; } else { end = value; }
+    commit(); updateTrigger(); render();
+    pop.querySelector(`.range-day[data-date="${value}"]`)?.focus({ preventScroll: true });
   });
+  function setOpen(open) {
+    pop.hidden = !open;
+    trigger.setAttribute('aria-expanded', String(open));
+    if (open) { if (start) view = start.slice(0, 7) + '-01'; render(); }
+  }
+  trigger.addEventListener('click', () => setOpen(pop.hidden));
+  document.addEventListener('click', event => { if (!pop.hidden && !event.composedPath().includes(form)) setOpen(false); });
+  form.addEventListener('keydown', event => { if (event.key === 'Escape' && !pop.hidden) { setOpen(false); trigger.focus({ preventScroll: true }); } });
+  matchMedia('(min-width: 700px)').addEventListener('change', () => { if (!pop.hidden) render(); });
+  // Without dates the main button opens the calendar instead of submitting.
+  form.querySelector('button.button[type="submit"]').addEventListener('click', event => {
+    if (checkin.value && checkout.value) return;
+    event.preventDefault();
+    setOpen(true);
+  });
+  updateTrigger();
   form.addEventListener('submit', () => {
     const hidden = (name, value) => {
       const input = form.querySelector(`input[name="${name}"]`) || form.appendChild(Object.assign(document.createElement('input'), { type: 'hidden', name }));

@@ -93,7 +93,7 @@
   actions.append(accept, decline); panel.append(title, description, privacy, adsOption, actions); document.body.append(panel);
   const settings = document.createElement('button'); settings.className = 'analytics-settings'; settings.textContent = 'Analytics';
   (document.querySelector('footer .footer-bottom') || document.querySelector('footer') || document.body).append(settings);
-  settings.addEventListener('click', () => { panel.hidden = false; accept.focus(); });
+  settings.addEventListener('click', () => { panel.hidden = false; accept.focus({ preventScroll: true }); });
   function clearCookies(pattern) {
     document.cookie.split(';').forEach(cookie => {
       const name = cookie.split('=')[0].trim();
@@ -120,7 +120,7 @@
     }
     if (value === 'denied') clearCookies(/^_ga(?:_|$)/);
     if (withdrawing || withdrawingAds) location.reload();
-    settings.focus();
+    settings.focus({ preventScroll: true });
   }
   accept.addEventListener('click', () => choose('granted'));
   decline.addEventListener('click', () => choose('denied'));
