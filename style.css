@@ -329,10 +329,10 @@ nav a:hover:after{
   color:var(--muted);
   margin-bottom:20px}
 .wildlife small{
-  font-size:10.8px;
+  font-size:11.8px;
   color:var(--muted);
   display:block;
-  margin-top:28px}
+  margin-top:-11px}
 .together,.story{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -1123,7 +1123,7 @@ footer { flex-wrap: wrap; }
 body { font-size: 14.4px; }
 body main p:not(.eyebrow):not(.gallery-moment-heading), /* the extra :not() keeps the specificity high enough to beat the scene and section text rules */
 body footer > p,
-body .booking-note, body .scene-note, body .wildlife small,
+body .booking-note, body .scene-note,
 body .stay-facts span,
 body .button, body .booking .button, body .text-link, body .source-link,
 body .close, body .dialog-bottom button,
@@ -1454,3 +1454,9 @@ body main p.booking-facts:not(.eyebrow):not(.gallery-moment-heading) { font-size
 .plan .plan-points { list-style: disc; margin: 0 0 26px; padding: 0; max-width: none; }
 .plan .plan-points li { margin: 0 0 12px; padding: 0; line-height: 1.55; list-style-position: outside; }
 .plan .plan-points li:last-child { margin-bottom: 0; }
+/* Full-bleed picture sections reached from the menu: land flush under the fixed header (no paper-coloured strip above the photo). */
+#natur, #familie { scroll-margin-top: -32px; }
+@media (max-width: 700px) { #natur, #familie { scroll-margin-top: -4px; } }
+/* Site plan card in the wildlife text column: same card as the floor plans (.plan-thumb). */
+.site-plan-thumb { display: block; width: 100%; max-width: 260px; margin-top: 38px; }
+.site-plan-thumb img { aspect-ratio: 13 / 10; }
