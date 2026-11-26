@@ -1551,3 +1551,6 @@ body main .landing-reviews p.source-note:not(.eyebrow), body main .landing-revie
 .intro + .landing-facts.section { padding-top: 0; padding-bottom: 30px; }
 /* Footer links underline their own text on hover; the sliding menu line (nav a:after) would add a second one. */
 .footer-offers a:after, .language-links a[aria-current]:after { display: none; }
+/* Hero link on hover: the cream button hover used to put a pale background behind pale text. It stays white on the photo,
+   only the line below turns solid. */
+.hero .button.cream:hover, .hero .button.cream:focus-visible { background: none; color: #fff; border-bottom-color: #fff; }
