@@ -314,11 +314,7 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
       summary.firstChild.textContent = `${form.dataset.nights}: ${nightsBetween(start, end)}`;
       summary.lastChild.textContent = `${dayMonth.format(parse(start))} – ${dayMonth.format(parse(end))}`;
     }
-    const search = document.createElement('button');
-    search.type = 'button'; search.className = 'range-search'; search.textContent = form.dataset.search;
-    search.disabled = !(start && end);
-    search.addEventListener('click', () => form.requestSubmit());
-    foot.append(clear, summary, search);
+    foot.append(clear, summary);
     pop.append(stage, foot);
   }
   pop.addEventListener('click', event => {

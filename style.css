@@ -1439,8 +1439,6 @@ dialog img[src$=".svg"] { background: #fff; min-width: min(87vw, 900px); }
 .booking-search .range-clear { padding: 0; border: 0; background: transparent; color: var(--ink); font: 14.4px/1.4 Arial,sans-serif; text-decoration: underline; cursor: pointer; }
 .range-summary { flex: 1; margin: 0; display: flex; flex-direction: column; align-items: flex-end; font: 12.5px/1.4 Arial,sans-serif; color: var(--muted); }
 .range-summary strong { font-size: 14.4px; color: var(--ink); }
-.booking-search .range-search { min-height: 44px; padding: 10px 22px; border: 0; border-radius: 4px; background: var(--ink); color: var(--paper); font: 700 14.4px/1.4 Arial,sans-serif; cursor: pointer; }
-.booking-search .range-search:disabled { opacity: .35; cursor: default; }
 @media (max-width: 699px) {
   .range-months { grid-template-columns: 1fr; }
   .range-foot { flex-wrap: wrap; }
