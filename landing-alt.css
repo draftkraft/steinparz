@@ -84,6 +84,12 @@
 .ff-moment:nth-child(2) picture, .ff-moment:nth-child(3) picture { aspect-ratio: 5 / 4; }
 .ff-moment img { width: 100%; height: 100%; object-fit: cover; }
 .ff-moments-note { margin-top: 18px; font-size: 11.7px; color: var(--muted); }
+/* Five tiles (yoga places): two rows of two and one wide picture below. */
+.ff-moments-five .ff-moment:nth-child(n) { grid-column: auto; grid-row: auto; }
+.ff-moments-five .ff-moment:nth-child(odd) picture { aspect-ratio: 4 / 3; }
+.ff-moments-five .ff-moment:nth-child(even) picture { aspect-ratio: 5 / 4; }
+.ff-moments-five .ff-moment:nth-child(5) { grid-column: 1 / -1; }
+.ff-moments-five .ff-moment:nth-child(5) picture { aspect-ratio: 16 / 9; }
 /* Six tiles (activities): plain rows of two, wide tile left, narrower one right. */
 .ff-moments-six .ff-moment:nth-child(n) { grid-column: auto; grid-row: auto; }
 .ff-moments-six .ff-moment:nth-child(odd) picture { aspect-ratio: 4 / 3; }
@@ -119,8 +125,8 @@
   .ff-included { grid-template-columns: 1fr; }
   .ff-receipt { padding: 32px 24px 28px; transform: none; }
   .ff-moments { grid-template-columns: 1fr; gap: 34px; }
-  .ff-moment:nth-child(n) { grid-column: auto; grid-row: auto; }
-  .ff-moment:nth-child(n) picture { aspect-ratio: 4 / 3; }
+  .ff-moments .ff-moment:nth-child(n) { grid-column: auto; grid-row: auto; }
+  .ff-moments .ff-moment:nth-child(n) picture { aspect-ratio: 4 / 3; }
 }
 @media (prefers-reduced-motion: reduce) {
   .ff-reveal, .ff-day img { transition: none; }
