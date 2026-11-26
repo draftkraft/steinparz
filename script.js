@@ -204,6 +204,9 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
   const earliest = iso(addDays(now, 7));
   const latest = iso(addDays(now, 730));
   const nightsBetween = (from, to) => Math.round((parse(to) - parse(from)) / 86400000);
+  // Minimum stay per arrival day, written into the form at build time from site/booking-rules.json.
+  const stayRules = JSON.parse(form.dataset.minNights || '{"default":1,"periods":[]}');
+  const minNights = arrival => (stayRules.periods.find(([from, to]) => arrival >= from && arrival <= to) || [0, 0, stayRules.default])[2];
   const monthTitle = new Intl.DateTimeFormat(lang, { month: 'long', year: 'numeric' });
   const shortDate = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'short', year: 'numeric' });
   const dayMonth = new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'short' });
@@ -275,8 +278,8 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
         button.dataset.date = value;
         button.setAttribute('aria-label', new Intl.DateTimeFormat(lang, { dateStyle: 'full' }).format(parse(value)));
         if (value < earliest || value > latest) button.disabled = true;
-        // The stay is at least 4 nights: while choosing the departure, the 3 days after the arrival are not available.
-        if (start && !end && value > start && nightsBetween(start, value) < 4) button.disabled = true;
+        // While choosing the departure, days that would make the stay shorter than the minimum for this arrival are not available.
+        if (start && !end && value > start && nightsBetween(start, value) < minNights(start)) button.disabled = true;
         if (value === start) button.classList.add('is-start');
         if (value === end) button.classList.add('is-end');
         if (start && end && value > start && value < end) button.classList.add('in-range');
@@ -335,20 +338,19 @@ document.querySelectorAll('.language-select').forEach(select => select.addEventL
   document.addEventListener('click', event => { if (!pop.hidden && !event.composedPath().includes(form)) setOpen(false); });
   form.addEventListener('keydown', event => { if (event.key === 'Escape' && !pop.hidden) { setOpen(false); trigger.focus({ preventScroll: true }); } });
   matchMedia('(min-width: 700px)').addEventListener('change', () => { if (!pop.hidden) render(); });
-  // Without dates the main button opens the calendar instead of submitting.
-  form.querySelector('button.button[type="submit"]').addEventListener('click', event => {
-    if (checkin.value && checkout.value) return;
-    event.preventDefault();
-    setOpen(true);
-  });
   updateTrigger();
   form.addEventListener('submit', () => {
     const hidden = (name, value) => {
       const input = form.querySelector(`input[name="${name}"]`) || form.appendChild(Object.assign(document.createElement('input'), { type: 'hidden', name }));
       input.value = value;
     };
-    hidden('search_stay_dates', JSON.stringify({ checkInDate: checkin.value, checkOutDate: checkout.value }));
-    hidden('search_occupancies', JSON.stringify([{ numberOfAdults: Number(adults.value), children: [] }]));
+    // Without a complete stay the booking page opens with its own calendar and no preselection.
+    if (checkin.value && checkout.value) {
+      hidden('search_stay_dates', JSON.stringify({ checkInDate: checkin.value, checkOutDate: checkout.value }));
+      hidden('search_occupancies', JSON.stringify([{ numberOfAdults: Number(adults.value), children: [] }]));
+    } else {
+      for (const name of ['search_stay_dates', 'search_occupancies']) form.querySelector(`input[name="${name}"]`)?.remove();
+    }
     for (const field of [checkin, checkout, adults]) field.removeAttribute('name');
   });
 })();
