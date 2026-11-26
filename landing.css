@@ -1,13 +1,4 @@
 /* Extra blocks for the Google Ads landing pages only (facts strip, prices). The home page does not load this file. */
-.landing-facts.section { padding-top: 40px; padding-bottom: 20px; }
-.landing-facts ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
-.landing-facts li { display: flex; flex-direction: column; gap: 4px; padding: 26px 28px 24px; background: #f8f6f0; font-size: 13.5px; line-height: 1.5; }
-.landing-facts small { font-size: 10.5px; letter-spacing: 2.2px; text-transform: uppercase; color: #88947b; margin-bottom: 6px; }
-.landing-facts strong { font: 400 clamp(21px,1.9vw,27px)/1.2 Georgia,'Times New Roman',serif; letter-spacing: -.02em; }
-.landing-facts span { color: var(--muted); }
-.landing-facts li:first-child { background: var(--ink); color: #f3f0e8; }
-.landing-facts li:first-child small { color: #b9c4aa; }
-.landing-facts li:first-child span { color: #c9d1bd; }
 .landing-price { display: grid; grid-template-columns: 1.1fr 1fr; gap: 100px; padding-top: 70px; padding-bottom: 80px; }
 .landing-price h2 { font-size: var(--h2-size); }
 .landing-price p { color: var(--muted); margin-bottom: 18px; }
@@ -23,12 +14,6 @@
 .landing-note p { max-width: 720px; color: var(--muted); border-left: 2px solid var(--sage); padding-left: 16px; }
 @media (max-width: 800px) {
   .landing-price { grid-template-columns: 1fr; gap: 34px; padding-top: 50px; padding-bottom: 60px; }
-  .landing-facts.section { padding-top: 28px; padding-bottom: 10px; }
-  .landing-facts ul { grid-template-columns: 1fr 1fr; }
-  .landing-facts li { padding: 18px 16px; }
-  .landing-facts strong { font-size: 19px; }
 }
 .landing-price .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .faq p a { text-decoration: underline; }
-/* The tile for what only starts in February 2027: the date is a clearly visible badge. */
-.landing-facts li.soon small { align-self: flex-start; background: #b89461; color: #fff; font-weight: 700; padding: 5px 11px; border-radius: 2px; letter-spacing: 2px; margin: -5px 0 1px; line-height: 1.5; }

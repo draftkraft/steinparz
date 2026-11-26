@@ -1,0 +1,126 @@
+/* Alternative family celebration page (/ferienhaus-familienfeier-neu/). Loaded after style.css; every rule is prefixed .ff-. */
+.ff-reveal { transition: opacity .9s ease, transform .9s ease; }
+.ff-motion .ff-reveal { opacity: 0; transform: translateY(26px); }
+.ff-motion .ff-reveal.is-visible { opacity: 1; transform: none; }
+.ff-heading { max-width: 760px; margin-bottom: 60px; }
+.ff-heading p:not(.eyebrow) { color: var(--muted); margin-top: 26px; max-width: 560px; }
+
+/* Lead: one sentence and four numbers */
+.ff-lead { display: grid; grid-template-columns: 1fr 1.1fr; gap: 90px; align-items: end; padding-top: 90px; padding-bottom: 100px; }
+.ff-lead h2 { font-size: clamp(46px,6.2vw,96px); }
+.ff-lead-text > p { color: var(--muted); font-size: 15px; line-height: 1.9; max-width: 520px; }
+.ff-keys { list-style: none; margin: 38px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, auto); justify-content: start; gap: 0 38px; }
+.ff-keys li { display: flex; flex-direction: column; gap: 2px; padding-left: 16px; border-left: 1px solid var(--line); }
+.ff-keys strong { font: 400 clamp(19px,1.7vw,25px)/1.2 Georgia,'Times New Roman',serif; letter-spacing: -.02em; white-space: nowrap; }
+.ff-keys span { color: var(--muted); font-size: 11.7px; line-height: 1.5; }
+
+/* Full-height photo scene with copy on top */
+.ff-scene { --ff-p: 0; position: relative; min-height: 100svh; overflow: hidden; color: #fff; display: flex; align-items: flex-start; background: #1b2c25; }
+.ff-scene > picture img { position: absolute; inset: -4% 0; width: 100%; height: 108%; object-fit: cover; transform: translate3d(0, calc(var(--ff-p) * 26px), 0); will-change: transform; }
+.ff-scene-shade { position: absolute; inset: 0; background: linear-gradient(180deg,#0d2018c4,#0d201850 42%,transparent 62%),linear-gradient(90deg,#0d201870,transparent 60%); }
+.ff-scene-copy { position: relative; z-index: 2; padding: 15svh 9% 0; max-width: 1100px; }
+.ff-scene-copy h2 { font-size: clamp(50px,6.7vw,108px); }
+.ff-scene-copy h2 em { color: #e1e7d7; }
+.ff-scene-copy p:not(.eyebrow) { margin-top: 30px; max-width: 470px; font-size: 13.5px; line-height: 2; }
+.ff-scene-note { position: absolute; z-index: 2; left: 9%; bottom: 28px; font-size: 10.8px; letter-spacing: .5px; color: #ffffffcc; }
+
+/* Three steps of a stay */
+.ff-days { padding-top: 120px; padding-bottom: 120px; }
+.ff-day-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 46px; }
+.ff-day:nth-child(2) { margin-top: 70px; }
+.ff-day:nth-child(3) { margin-top: 140px; }
+.ff-day figure { overflow: hidden; border-radius: 3px; aspect-ratio: 4 / 5; background: var(--line); }
+.ff-day img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s ease; }
+.ff-day:hover img { transform: scale(1.04); }
+.ff-day-number { margin-top: 26px; font-size: 10.8px; letter-spacing: 2.5px; color: #88947b; }
+.ff-day h3, .ff-floor h3 { margin: 6px 0 12px; font: 400 clamp(25px,2.2vw,33px)/1.15 Georgia,'Times New Roman',serif; letter-spacing: -.03em; }
+.ff-day p:not(.ff-day-number) { color: var(--muted); max-width: 360px; }
+.ff-day p.ff-day-note { margin-top: 10px; font-size: 11.7px; }
+
+/* Rooms as a list per floor */
+.ff-rooms { display: grid; grid-template-columns: 1.05fr 1fr; gap: 90px; align-items: center; padding-top: 110px; padding-bottom: 120px; }
+.ff-rooms h2 { font-size: clamp(36px,4vw,60px); margin-bottom: 28px; }
+.ff-rooms-copy > p:not(.eyebrow) { color: var(--muted); max-width: 500px; }
+.ff-floors { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; margin: 42px 0 34px; }
+.ff-floor h3 { font-size: 21px; margin: 0 0 14px; }
+.ff-floor ul { list-style: none; margin: 0; padding: 0; }
+.ff-floor li { padding: 12px 0; border-top: 1px solid var(--line); line-height: 1.55; }
+.ff-floor li:last-child { border-bottom: 1px solid var(--line); }
+.ff-rooms figure { position: relative; }
+.ff-rooms figure img { width: 100%; height: auto; border-radius: 3px; }
+.ff-rooms figcaption, .ff-moment figcaption { margin-top: 12px; font-size: 11.7px; color: var(--muted); }
+
+/* Prices: the from-price, the per-person figure and a receipt */
+.ff-price { background: var(--ink); color: var(--paper); }
+.ff-price-inner { max-width: 1440px; margin: auto; padding: 120px 8%; display: grid; grid-template-columns: 1.1fr .9fr; gap: 90px; align-items: center; }
+.ff-price h2 { font-size: clamp(54px,7vw,112px); }
+.ff-price h2 em { display: block; margin-top: 14px; font-size: .34em; letter-spacing: -.02em; line-height: 1.2; color: #bdc7a9; }
+.ff-price-lead { margin: 34px 0 30px; max-width: 480px; font: 400 clamp(18px,1.6vw,23px)/1.55 Georgia,'Times New Roman',serif; color: #dfe4d6; }
+.ff-price-lead strong { font-weight: 400; color: #fff; border-bottom: 1px solid #88947b; }
+.ff-included { list-style: none; margin: 0 0 40px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; max-width: 560px; color: #d1d7c7; font-size: 12.6px; }
+.ff-included li { position: relative; padding-left: 22px; line-height: 1.6; }
+.ff-included li:before { content: ''; position: absolute; left: 0; top: .5em; width: 10px; height: 5px; border-left: 1.5px solid #bdc7a9; border-bottom: 1.5px solid #bdc7a9; transform: rotate(-45deg); }
+.ff-receipt { background: var(--paper); color: var(--ink); padding: 44px 44px 36px; border-radius: 3px; box-shadow: 0 30px 60px #0000002e; transform: rotate(.6deg); }
+.ff-receipt-title { font: 400 27px/1.2 Georgia,'Times New Roman',serif; letter-spacing: -.03em; }
+.ff-receipt-sub { margin-top: 4px; font-size: 10.8px; letter-spacing: 2px; text-transform: uppercase; color: #88947b; }
+.ff-receipt dl { margin: 26px 0 22px; }
+.ff-row { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 13px 0; border-top: 1px dashed #c3c6b6; }
+.ff-row dt { display: flex; flex-direction: column; line-height: 1.45; }
+.ff-row small { font-size: 11.7px; color: var(--muted); }
+.ff-row dd { margin: 0; font: 400 19px/1.2 Georgia,'Times New Roman',serif; white-space: nowrap; }
+.ff-total { border-top: 1px solid var(--ink); padding-top: 18px; margin-top: 4px; }
+.ff-total dt { font: 400 21px/1.3 Georgia,'Times New Roman',serif; }
+.ff-total small { font: 12.6px/1.6 Arial,Helvetica,sans-serif; }
+.ff-total dd { font-size: clamp(30px,2.8vw,40px); letter-spacing: -.03em; }
+.ff-receipt-note { font-size: 11.2px; line-height: 1.7; color: var(--muted); }
+.ff-receipt-note + .ff-receipt-note { margin-top: 8px; }
+
+/* Occasions through the year */
+.ff-seasons { padding-top: 120px; padding-bottom: 110px; }
+.ff-moments { display: grid; grid-template-columns: 1.25fr 1fr; gap: 44px 30px; align-items: end; }
+.ff-moment:nth-child(3) { grid-column: 2; grid-row: 2; }
+.ff-moment:nth-child(4) { grid-column: 1; grid-row: 2; }
+.ff-moment picture { display: block; overflow: hidden; border-radius: 3px; aspect-ratio: 4 / 3; }
+.ff-moment:nth-child(2) picture, .ff-moment:nth-child(3) picture { aspect-ratio: 5 / 4; }
+.ff-moment img { width: 100%; height: 100%; object-fit: cover; }
+
+@media (max-width: 1000px) {
+  .ff-lead, .ff-rooms, .ff-price-inner { grid-template-columns: 1fr; gap: 50px; }
+  .ff-lead { align-items: start; }
+  .ff-keys { grid-template-columns: repeat(2, auto); gap: 26px 38px; }
+  .ff-day-list { gap: 28px; }
+  .ff-day:nth-child(2) { margin-top: 40px; }
+  .ff-day:nth-child(3) { margin-top: 80px; }
+  .ff-receipt { max-width: 560px; }
+}
+@media (max-width: 700px) {
+  .ff-lead { padding-top: 60px; padding-bottom: 70px; }
+  .ff-lead h2 { font-size: clamp(44px,13vw,64px); }
+  .ff-heading { margin-bottom: 40px; }
+  .ff-scene { min-height: 92svh; }
+  .ff-scene-copy { padding: 13svh 8% 0; }
+  .ff-scene-copy h2 { font-size: clamp(42px,11.6vw,64px); }
+  .ff-scene-copy p:not(.eyebrow) { font-size: 12.6px; margin-top: 24px; }
+  .ff-scene-note { left: 8%; bottom: 18px; }
+  .ff-days, .ff-seasons { padding-top: 80px; padding-bottom: 80px; }
+  .ff-day-list { grid-template-columns: 1fr; gap: 54px; }
+  .ff-day:nth-child(n) { margin-top: 0; }
+  .ff-day figure { aspect-ratio: 4 / 3; }
+  .ff-rooms { padding-top: 70px; padding-bottom: 80px; }
+  .ff-floors { grid-template-columns: 1fr; gap: 30px; }
+  .ff-price-inner { padding: 80px 8%; }
+  .ff-price h2 { font-size: clamp(52px,16vw,76px); }
+  .ff-price h2 em { font-size: .36em; }
+  .ff-included { grid-template-columns: 1fr; }
+  .ff-receipt { padding: 32px 24px 28px; transform: none; }
+  .ff-moments { grid-template-columns: 1fr; gap: 34px; }
+  .ff-moment:nth-child(n) { grid-column: auto; grid-row: auto; }
+  .ff-moment:nth-child(n) picture { aspect-ratio: 4 / 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ff-reveal, .ff-day img { transition: none; }
+  .ff-scene > picture img { transform: none !important; }
+}
+
+/* Dining table block taken over from the home page: here the photograph shows the family in the room. */
+.together figure img { object-position: 46% center; }

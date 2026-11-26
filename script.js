@@ -68,6 +68,20 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   document.documentElement.classList.add('motion-ready');
 }
 
+// Arriving from another page with a section link (for example /#natur from a landing page): the browser's own jump
+// starts before the page has its final layout and stops short. Jump again, without animation, until the visitor scrolls.
+if (location.hash.length > 1) {
+  let target = null;
+  try { target = document.querySelector(location.hash); } catch {}
+  if (target) {
+    let moved = false;
+    const jump = () => { if (!moved) target.scrollIntoView({ behavior: 'instant', block: 'start' }); };
+    ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach(type => addEventListener(type, () => { moved = true; }, { once: true, passive: true }));
+    jump();
+    addEventListener('load', () => { jump(); setTimeout(jump, 400); });
+  }
+}
+
 const menuButton = document.querySelector('.menu-toggle');
 function closeMenu() {
   document.body.classList.remove('menu-open');
@@ -78,6 +92,21 @@ menuButton.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', String(open));
 });
 document.querySelectorAll('#main-nav a').forEach(link => link.addEventListener('click', closeMenu));
+// "Angebote" dropdown (German pages): opens on hover and keyboard focus through CSS, on click and touch through this toggle.
+const offersButton = document.querySelector('.nav-more');
+if (offersButton) {
+  const setOffers = open => {
+    offersButton.parentElement.classList.toggle('is-open', open);
+    offersButton.setAttribute('aria-expanded', String(open));
+  };
+  offersButton.addEventListener('click', () => setOffers(offersButton.getAttribute('aria-expanded') !== 'true'));
+  document.addEventListener('click', event => { if (!offersButton.parentElement.contains(event.target)) setOffers(false); });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || offersButton.getAttribute('aria-expanded') !== 'true') return;
+    setOffers(false);
+    offersButton.focus();
+  });
+}
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && document.body.classList.contains('menu-open')) {
     closeMenu();

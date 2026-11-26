@@ -1458,3 +1458,96 @@ body main p.booking-facts:not(.eyebrow):not(.gallery-moment-heading) { font-size
 /* Site plan card in the wildlife text column: same card as the floor plans (.plan-thumb). */
 .site-plan-thumb { display: block; width: 100%; max-width: 260px; margin-top: 38px; }
 .site-plan-thumb img { aspect-ratio: 13 / 10; }
+
+/* Guest reviews on the landing pages: directly after the hero, with rating, photos, short quotes and a link to the booking search. */
+.landing-reviews.section { padding-top: 90px; padding-bottom: 80px; }
+.reviews-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; }
+.reviews-trust { display: flex; align-items: stretch; gap: 20px; margin: 0; padding: 20px 26px; border: 1px solid var(--line); border-radius: 4px; background: #f8f6f0; font-size: 12.6px; color: var(--muted); }
+/* Georgia sets 4,9 with old-style figures that hang below the baseline. The offsets centre the visible digits in the box
+   and line the two text lines up with their top and bottom edge. */
+.reviews-trust strong { display: flex; align-items: center; gap: 10px; font: 400 44px/34px Georgia,'Times New Roman',serif; letter-spacing: -.02em; color: var(--ink); white-space: nowrap; transform: translateY(-7px); }
+.reviews-trust strong span { font-size: 24px; line-height: 34px; color: #b89461; transform: translateY(7px); }
+.reviews-trust > span { display: flex; flex-direction: column; justify-content: space-between; line-height: 1; padding: 0 0 2px; white-space: nowrap; }
+@media (max-width: 700px) {
+  .reviews-trust { gap: 14px; padding: 16px 18px; }
+  .reviews-trust strong { font-size: 34px; line-height: 26px; gap: 8px; transform: translateY(-5px); }
+  .reviews-trust strong span { font-size: 19px; line-height: 26px; transform: translateY(5px); }
+  body main .reviews-trust > span { font-size: 10.8px; padding: 0 0 1px; }
+}
+@media (max-width: 340px) { .reviews-trust > span { white-space: normal; line-height: 1.3; justify-content: center; gap: 3px; } }
+.landing-reviews .quotes { margin-top: 50px; }
+.reviews-short { list-style: none; margin: 50px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; }
+.reviews-short li { display: flex; flex-direction: column; gap: 10px; padding-top: 22px; border-top: 1px solid var(--line); }
+.reviews-short { quotes: '„' '“'; } /* other languages set their own marks on the list */
+.reviews-short q { font: 400 17px/1.45 Georgia,'Times New Roman',serif; letter-spacing: -.01em; }
+.reviews-short span { font-size: 10.8px; line-height: 1.5; color: var(--muted); }
+.reviews-foot { display: flex; align-items: center; justify-content: space-between; gap: 30px; margin-top: 50px; padding: 26px 30px; background: #e9ece1; border-radius: 4px; }
+.reviews-foot p { margin: 0; font: 400 clamp(18px,1.6vw,22px)/1.4 Georgia,'Times New Roman',serif; letter-spacing: -.01em; }
+.landing-reviews .source-note { margin-top: 26px; line-height: 1.6; }
+/* As small as the guest names and dates; the selectors outrank the general 14.4px text rule. */
+body main .landing-reviews p.source-note:not(.eyebrow), body main .landing-reviews .source-note .source-link { font-size: 10.8px; }
+@media (max-width: 900px) {
+  .landing-reviews.section { padding-top: 60px; padding-bottom: 60px; }
+  .reviews-head { display: block; }
+  .reviews-trust { margin-top: 26px; }
+  .landing-reviews .quotes { margin-top: 34px; }
+  .reviews-short { grid-template-columns: 1fr; gap: 0; margin-top: 40px; }
+  .reviews-short li { padding: 20px 0; }
+  .reviews-foot { flex-direction: column; align-items: flex-start; padding: 24px; }
+}
+.reviews-foot .button { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+@media (max-width: 700px) {
+  /* On phones the three large quotes are one row to swipe through, so the key facts follow sooner. */
+  .landing-reviews .quotes { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; margin-right: -8%; padding-right: 8%; scrollbar-width: none; }
+  .landing-reviews .quotes::-webkit-scrollbar { display: none; }
+  .landing-reviews .quotes figure { flex: 0 0 84%; scroll-snap-align: start; }
+  .landing-reviews .quotes blockquote { font-size: 21px; }
+}
+
+/* "Angebote" dropdown in the header menu (German pages): the landing pages. */
+.nav-group { position: relative; }
+.nav-more { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; padding: 0; margin: 0; font: inherit; letter-spacing: inherit; color: inherit; cursor: pointer; }
+.nav-more span { font-size: .8em; transition: transform .2s; }
+.nav-more:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.nav-menu a[aria-current] { color: #bdc7a9; }
+@media (min-width: 1101px) {
+  /* The transparent top padding bridges the gap to the button, so the menu stays open while the pointer moves down. */
+  .nav-menu { position: absolute; top: 100%; left: -22px; padding-top: 16px; display: none; z-index: 12; }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu, .nav-group.is-open .nav-menu { display: block; }
+  .nav-group:hover .nav-more span, .nav-group:focus-within .nav-more span, .nav-group.is-open .nav-more span { transform: rotate(180deg); }
+  .nav-menu:before { content: ''; position: absolute; inset: 16px 0 0; background: rgba(38, 59, 48, .97); border-radius: 3px; box-shadow: 0 12px 30px #10251c55; z-index: -1; }
+  .nav-menu a { display: block; width: max-content; margin: 0 22px; padding: 9px 0; white-space: nowrap; color: #fff; }
+  .nav-menu a:first-child { margin-top: 12px; } .nav-menu a:last-child { margin-bottom: 14px; }
+  .nav-menu a:after { bottom: 4px; }
+}
+@media (max-width: 1100px) {
+  /* In the full-screen menu the landing pages are listed below their heading; nothing has to be opened. */
+  .menu-open header nav { overflow-y: auto; justify-content: safe center; }
+  .nav-group { display: flex; flex-direction: column; align-items: flex-start; }
+  .nav-more { cursor: default; }
+  .nav-more span { display: none; }
+  body.menu-open #main-nav .nav-menu { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin: 12px 0 2px; padding-left: 16px; border-left: 1px solid #ffffff40; font: 13.5px/1.5 Arial,Helvetica,sans-serif; }
+}
+
+/* Key facts box: after the intro on the German home page, under the hero on the landing pages. */
+.landing-facts.section { padding-top: 40px; padding-bottom: 20px; }
+.landing-facts ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.landing-facts li { display: flex; flex-direction: column; gap: 4px; padding: 26px 28px 24px; background: #f8f6f0; font-size: 13.5px; line-height: 1.5; }
+.landing-facts small { font-size: 10.5px; letter-spacing: 2.2px; text-transform: uppercase; color: #88947b; margin-bottom: 6px; }
+.landing-facts strong { font: 400 clamp(21px,1.9vw,27px)/1.2 Georgia,'Times New Roman',serif; letter-spacing: -.02em; }
+.landing-facts span { color: var(--muted); }
+.landing-facts li:first-child { background: var(--ink); color: #f3f0e8; }
+.landing-facts li:first-child small { color: #b9c4aa; }
+.landing-facts li:first-child span { color: #c9d1bd; }
+/* The tile for what only starts in February 2027: the date is a clearly visible badge. */
+.landing-facts li.soon small { align-self: flex-start; background: #b89461; color: #fff; font-weight: 700; padding: 5px 11px; border-radius: 2px; letter-spacing: 2px; margin: -5px 0 1px; line-height: 1.5; }
+@media (max-width: 800px) {
+  .landing-facts.section { padding-top: 28px; padding-bottom: 10px; }
+  .landing-facts ul { grid-template-columns: 1fr 1fr; }
+  .landing-facts li { padding: 18px 16px; }
+  .landing-facts strong { font-size: 19px; }
+}
+/* On the home page the box closes the intro section. */
+.intro + .landing-facts.section { padding-top: 0; padding-bottom: 30px; }
+/* Footer links underline their own text on hover; the sliding menu line (nav a:after) would add a second one. */
+.footer-offers a:after, .language-links a[aria-current]:after { display: none; }
