@@ -385,3 +385,19 @@ const siteHeader = document.querySelector('header');
 function markScrolled() { if (siteHeader) siteHeader.classList.toggle('is-scrolled', scrollY > 40); }
 addEventListener('scroll', markScrolled, { passive: true });
 markScrolled();
+
+// Inquiry origin: the page the form was sent from and campaign labels in the current address go
+// into the inquiry e-mail itself. Nothing is stored on the device and no click ID is passed on.
+document.querySelectorAll('.contact-form').forEach(form => {
+  form.addEventListener('submit', () => {
+    const query = new URLSearchParams(location.search);
+    const parts = [location.pathname];
+    for (const name of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term']) {
+      const value = (query.get(name) || '').replace(/[^\w .+-]/g, '').slice(0, 60);
+      if (value) parts.push(`${name.slice(4)}: ${value}`);
+    }
+    if (query.has('gclid')) parts.push('Google-Anzeige');
+    const input = form.querySelector('input[name="Anfrage von Seite"]') || form.appendChild(Object.assign(document.createElement('input'), { type: 'hidden', name: 'Anfrage von Seite' }));
+    input.value = parts.join(' | ');
+  });
+});
