@@ -118,7 +118,11 @@ matchMedia('(min-width: 1101px)').addEventListener('change', event => {
 });
 document.querySelectorAll('.language-select').forEach(select => select.addEventListener('change', event => {
   const target = event.target.value;
-  if (/^\/(?:en|it|fr|sl|hu|cs|sk)?\/?$/.test(target)) location.assign(target + location.hash);
+  // Only this site's own addresses: a language home page or one page below it, such as an offer page.
+  if (!/^\/(?:(?:en|it|fr|sl|hu|cs|sk)\/)?(?:[a-z0-9-]+\/)?$/.test(target)) return;
+  // Section anchors exist only on the home pages, and their names match across languages.
+  const home = /^\/(?:(?:en|it|fr|sl|hu|cs|sk)\/)?$/;
+  location.assign(target + (home.test(target) && home.test(location.pathname) ? location.hash : ''));
 }));
 
 // Move only photographs; copy and controls stay anchored and scrolling stays native.
