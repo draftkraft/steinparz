@@ -135,3 +135,17 @@
 
 /* Dining table block taken over from the home page: here the photograph shows the family in the room. */
 .together figure img { object-position: 46% center; }
+
+/* Pages with snow photographs (body.ff-bright): the dark green overlays would turn the snow grey. Only a light veil stays
+   where the copy sits, and the copy carries a soft shadow so it remains readable on white. */
+.ff-bright .hero-shade { background: linear-gradient(90deg,#0d201866,#0d201814 55%,transparent 75%),linear-gradient(0deg,#0d20184d,transparent 38%); }
+.ff-bright .ff-scene { background: #dfe5e3; }
+.ff-bright .ff-scene-shade { background: linear-gradient(180deg,#0d20185c,#0d20181f 40%,transparent 60%),linear-gradient(90deg,#0d201840,transparent 55%); }
+.ff-bright .hero-copy, .ff-bright .hero-bottom, .ff-bright .ff-scene-copy, .ff-bright .ff-scene-note { text-shadow: 0 1px 2px #0d2018cc, 0 2px 18px #0d2018a6; }
+.ff-bright .hero .button { border-bottom-color: #fff; }
+.ff-bright header:not(.is-scrolled) #main-nav > a, .ff-bright header:not(.is-scrolled) .nav-more, .ff-bright header:not(.is-scrolled) .brand { text-shadow: 0 1px 2px #0d2018cc, 0 2px 14px #0d201899; }
+/* Small copy on snow needs a denser shadow than the headlines. */
+.ff-bright .hero-copy p, .ff-bright .hero .button, .ff-bright .hero-bottom, .ff-bright .ff-scene-copy p, .ff-bright .ff-scene-note { text-shadow: 0 0 3px #0d2018, 0 1px 3px #0d2018e6, 0 2px 16px #0d2018cc; }
+/* The hero link sits on snow here: a solid button instead of white text with a line. */
+.ff-bright .hero .button.cream, .ff-bright .hero .button.cream:hover, .ff-bright .hero .button.cream:focus-visible { background: var(--paper); color: var(--ink); border: 0; padding: 14px 20px; text-shadow: none; }
+.ff-bright .hero .button.cream:hover, .ff-bright .hero .button.cream:focus-visible { background: #dbe0ce; }
