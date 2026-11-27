@@ -107,14 +107,44 @@
   <url>
     <loc>https://teichhof.com/ferienhaus-10-personen/</loc>
     <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-10-personen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/holiday-house-for-10/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-10-personen/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/en/holiday-house-for-10/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-10-personen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/holiday-house-for-10/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-10-personen/" />
   </url>
   <url>
     <loc>https://teichhof.com/ferienhaus-familienfeier/</loc>
     <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-familienfeier/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/family-gathering-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-familienfeier/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/en/family-gathering-house/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-familienfeier/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/family-gathering-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-familienfeier/" />
   </url>
   <url>
     <loc>https://teichhof.com/ferienhaus-mit-hund/</loc>
     <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-mit-hund/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/dog-friendly-holiday-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-mit-hund/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/en/dog-friendly-holiday-house/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-mit-hund/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/dog-friendly-holiday-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-mit-hund/" />
   </url>
   <url>
     <loc>https://teichhof.com/ferienhaus-mit-teich/</loc>
@@ -123,10 +153,30 @@
   <url>
     <loc>https://teichhof.com/yoga-retreat-haus/</loc>
     <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/yoga-retreat-haus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/yoga-retreat-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/yoga-retreat-haus/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/en/yoga-retreat-house/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/yoga-retreat-haus/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/yoga-retreat-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/yoga-retreat-haus/" />
   </url>
   <url>
     <loc>https://teichhof.com/ferienhaus-silvester/</loc>
     <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-silvester/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/new-years-eve-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-silvester/" />
+  </url>
+  <url>
+    <loc>https://teichhof.com/en/new-years-eve-house/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://teichhof.com/ferienhaus-silvester/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://teichhof.com/en/new-years-eve-house/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teichhof.com/ferienhaus-silvester/" />
   </url>
   <url>
     <loc>https://teichhof.com/anfahrt/</loc>
